@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Illuminate\Support\Facades\Auth::routes([]);
+
+Route::get('/clients', [App\Http\Controllers\HomeController::class, 'index'])->name('clients');
+
+Route::get('/', [\App\Http\Controllers\MainController::class, 'index']);
+
+Route::get('/{locale?}', [\App\Http\Controllers\MainController::class, 'indexSetLocale']);
+
+Route::get('language/{locale}', [\App\Http\Controllers\MainController::class, 'indexChangeLocale']);

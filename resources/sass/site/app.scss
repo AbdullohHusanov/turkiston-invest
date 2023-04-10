@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+//variables
+@import "resources/sass/site/variables/colors";
+@import "resources/sass/site/variables/typography";
+
+@import "resources/sass/site/components/navbar";
+
+
+
+body {
+    margin: 0;
+    line-height: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

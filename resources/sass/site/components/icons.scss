@@ -1,0 +1,92 @@
+.burger {
+    height: 20px;
+    position: relative;
+    width: 20px;
+}
+
+.burger-line {
+    display: flex;
+    width: 20px;
+    height: 2px;
+    background-color: $text-menu;
+    transition: .3s all ease;
+}
+.top-line {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.mid-line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.bottom-line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.burger.active > .top-line {
+    transform: translateY(8px) rotate(45deg);
+    transition: .3s all ease;
+}
+.burger.active > .mid-line {
+    opacity: 0;
+    transition: .3s all ease;
+}
+.burger.active > .bottom-line {
+    transform: translateY(-10px) rotate(-45deg);
+    transition: .3s all ease;
+}
+
+
+
+
+.search{
+    position: relative;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .search-icon{
+        display: inline-block;
+    }
+
+    &.active > .search-icon{
+        display: none;
+    }
+
+    &.active > .search-line{
+        display: inline-block;
+
+        &.first-line{
+            transform: rotate(45deg);
+            transition: .3s all ease;
+        }
+
+        &.second-line{
+            transform: rotate(-45deg);
+            transition: .3s all ease;
+        }
+    }
+
+    .search-line{
+        display: none;
+        background: $text-menu;
+        width: 20px;
+        height: 2px;
+        position: absolute;
+        bottom: 9px;
+        right: 0;
+    }
+}
+
+
+
+.close-icon{
+
+}

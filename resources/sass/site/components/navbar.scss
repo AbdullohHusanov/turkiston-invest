@@ -1,0 +1,165 @@
+@import "burger";
+@import "search";
+
+.navbar{
+    width: 100%;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: $bg-light;
+    position: sticky;
+    z-index: 999;
+    .container{
+        .navbar-logo{
+            padding-bottom: 12px;
+            padding-top: 12px;
+            img{
+                width: auto;
+                height: 40px;
+            }
+        }
+
+        .navbar-menu{
+            margin-left: 50px;
+
+            .navbar-menu-ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                color: $text-menu;
+
+                .navbar-menu-li{
+                    height: 64px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 10px;
+                    margin-right: 10px;
+
+                    .navbar-menu-link{
+                        font-size: 14px;
+                        line-height: 24px;
+                        position: relative;
+
+                        &:after {
+                            content: "";
+                            display: inline-block;
+                            position: absolute;
+                            width: 0;
+                            bottom: 0;
+                            height: 2px;
+                            margin: 1px 0;
+                            left: 0;
+                            background-color: #DCBF85;
+                            transition: all 0.4s ease-in 0s;
+                        }
+
+                        &:hover:after {
+                            width: 100%;
+                        }
+                    }
+
+                    &:hover{
+                        .submenu{
+                            display: flex;
+                        }
+                    }
+
+                    .submenu{
+                        display: none;
+                        position: absolute;
+                        width: 100%;
+                        left: 0;
+                        top: 64px;
+                        background: $bg-light;
+                        padding: 15px;
+                        z-index: 800;
+                        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+                        border-top: $bg-component-5 solid 2px;
+
+                        .submenu-menu{
+                            margin-left: 173px;
+                            border-left: $bg-component-5 solid 2px;
+                            display: flex;
+                            flex-direction: row;
+                            .submenu-row{
+                                display: flex;
+                                width: 100%;
+
+
+                                .submenu-col{
+                                    width: 25%;
+                                    .submenu-ul{
+
+                                        .submenu-li{
+                                            display: flex;
+                                            margin-left: 10px;
+                                            padding-left: 0px;
+                                            width: auto;
+                                            margin-top: 10px;
+                                            margin-bottom: 10px;
+                                            .submenu-link{
+                                                position: relative;
+                                                &:after {
+                                                    content: "";
+                                                    display: inline-block;
+                                                    position: absolute;
+                                                    width: 0;
+                                                    bottom: 0;
+                                                    height: 2px;
+                                                    margin: 1px 0;
+                                                    left: 0;
+                                                    background-color: #DCBF85;
+                                                    transition: all 0.4s ease-in 0s;
+                                                }
+
+                                                &:hover:after {
+                                                    width: 100%;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .end-burger{
+            margin-left: 50px;
+            height: 64px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .navbar-icons{
+            margin-left: auto;
+            height: 64px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+
+            .right-icons{
+                .icon-box{
+                    margin-left: 5px;
+                    margin-right: 5px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .search-icon{
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

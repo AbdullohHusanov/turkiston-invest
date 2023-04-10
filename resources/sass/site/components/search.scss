@@ -1,0 +1,23 @@
+.search-window{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background: $bg-light;
+    display: none;
+
+    .container{
+        .search-window-header{
+            display: flex;
+            align-items: center;
+            padding: 30px 15px 15px;
+        }
+    }
+
+    &.active{
+        display: block;
+    }
+}
+
