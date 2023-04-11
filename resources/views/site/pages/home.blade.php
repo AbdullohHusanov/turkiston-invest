@@ -54,51 +54,51 @@
                     </div>
                     <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
                         <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <div><img src="{{Vite::asset('/resources/images/icons/team2.png')}}" alt=""></div>
-                            <div class="size4 mt-2">ALI CHOKLI</div>
-                            <div class="text-note size2">TEXNIK DIREKTOR</div>
+                            <img src="{{Vite::asset('/resources/images/icons/team2.png')}}" alt="">
+                            <p class="size4 mt-2">ALI CHOKLI</p>
+                            <p class="text-note size2">TEXNIK DIREKTOR</p>
                         </div>
                     </div>
                     <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
                         <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <div><img src="{{Vite::asset('/resources/images/icons/team1.png')}}" alt=""></div>
-                            <div class="size4 mt-2">IVETTIK ALEKSAN</div>
-                            <div class="text-note size2">MOLIYA DIREKTOR</div>
+                            <img src="{{Vite::asset('/resources/images/icons/team1.png')}}" alt="">
+                            <p class="size4 mt-2">IVETTIK ALEKSAN</p>
+                            <p class="text-note size2">MOLIYA DIREKTOR</p>
                         </div>
                     </div>
                     <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
                         <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <div><img src="{{Vite::asset('/resources/images/icons/team3.png')}}" alt=""></div>
-                            <div class="size4 mt-2">AISHA FERIDE</div>
-                            <div class="text-note size2">BOSH DIREKTOR</div>
+                            <img src="{{Vite::asset('/resources/images/icons/team3.png')}}" alt="">
+                            <p class="size4 mt-2">AISHA FERIDE</p>
+                            <p class="text-note size2">BOSH DIREKTOR</p>
                         </div>
                     </div>
                     <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
                         <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <div><img src="{{Vite::asset('/resources/images/icons/team1.png')}}" alt=""></div>
-                            <div class="size4 mt-2">IVETTIK ALEKSAN</div>
-                            <div class="text-note size2">MOLIYA DIREKTOR</div>
+                            <img src="{{Vite::asset('/resources/images/icons/team1.png')}}" alt="">
+                            <p class="size4 mt-2">IVETTIK ALEKSAN</p>
+                            <p class="text-note size2">MOLIYA DIREKTOR</p>
                         </div>
                     </div>
                     <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
                         <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <div><img src="{{Vite::asset('/resources/images/icons/team1.png')}}" alt=""></div>
-                            <div class="size4 mt-2">IVETTIK ALEKSAN</div>
-                            <div class="text-note size2">MOLIYA DIREKTOR</div>
+                            <img src="{{Vite::asset('/resources/images/icons/team1.png')}}" alt="">
+                            <p class="size4 mt-2">IVETTIK ALEKSAN</p>
+                            <p class="text-note size2">MOLIYA DIREKTOR</p>
                         </div>
                     </div>
                     <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
                         <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <div><img src="{{Vite::asset('/resources/images/icons/team3.png')}}" alt=""></div>
-                            <div class="size4 mt-2">SASHA SUNAME</div>
-                            <div class="text-note size2">YURDIK DIREKTOR</div>
+                            <img src="{{Vite::asset('/resources/images/icons/team3.png')}}" alt="">
+                            <p class="size4 mt-2">SASHA SUNAME</p>
+                            <p class="text-note size2">YURDIK DIREKTOR</p>
                         </div>
                     </div>
                     <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
                         <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <div><img src="{{Vite::asset('/resources/images/icons/team1.png')}}" alt=""></div>
-                            <div class="size4 mt-2">IVETTIK ALEKSAN</div>
-                            <div class="text-note size2">MOLIYA DIREKTOR</div>
+                            <img src="{{Vite::asset('/resources/images/icons/team1.png')}}" alt="">
+                            <p class="size4 mt-2">IVETTIK ALEKSAN</p>
+                            <p class="text-note size2">MOLIYA DIREKTOR</p>
                         </div>
                     </div>
                 </div>
