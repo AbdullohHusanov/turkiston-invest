@@ -9,9 +9,9 @@
                 <p>Maxsus imkoniyatlar</p>
             </div>
             <div class="accessibility-header-close" id="accessibility-window-close">
-                <img class="block dark:hidden" src="{{Vite::asset('resources/images/icons/close-light.svg')}}"
+                <img class="block dark:hidden" src="{{Vite::asset('resources/images/icons/icons-light/close-light.svg')}}"
                      alt="close">
-                <img class="hidden dark:block" src="{{Vite::asset('resources/images/icons/close-dark.svg')}}"
+                <img class="hidden dark:block" src="{{Vite::asset('resources/images/icons/icons-dark/close-dark.svg')}}"
                      alt="close">
             </div>
         </div>

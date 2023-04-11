@@ -12,3 +12,30 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
+.button {
+    color: #ffffff;
+    background: #DCBF85;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0 10px 0;
+}
+
+label {
+    line-height: 24px;
+    color: var(--text-color)
+}
+
+input {
+    border-color: var(--border-color-9) !important;
+    border-radius: 5px !important;
+    background-color: var(--bg-color) !important;
+    color: var(--text-color);
+}
+
+.text-note {
+    font-size: var(--font-size3);
+    color: var(--text-note);
+    line-height: 24px;
+}
