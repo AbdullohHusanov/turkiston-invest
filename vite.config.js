@@ -48,7 +48,7 @@ export default defineConfig({
             refresh: true,
         }),
     ],
-    server: {
-        port: 9900,
-    },
+    // server: {
+    //     port: 9900,
+    // },
 });

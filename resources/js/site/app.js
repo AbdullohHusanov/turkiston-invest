@@ -13,14 +13,16 @@ import.meta.glob([
     '../../fonts/ProximaNova/**/**.woff',
     '../../fonts/ProximaNova/**/**.eot',
 ]);
+
 checkTheme();
 applyTheme();
-// setInterval(() => {
-//     applyTheme();
-// },1000)
+setTimeout(() => {
+    applyTheme();
+},1000)
 
 function applyTheme(){
-    let body = document.getElementById('body');
+let body = document.getElementById('body');
+let toggleTheme = document.getElementById('toggleTheme')
 
     if (themeIsDark()){
         body.classList.remove('light')
@@ -49,7 +51,6 @@ function themeIsDark(){
         return true
     }
 }
-
 function themeIsLight(){
     let theme = window.localStorage.getItem('siteTheme')
 
@@ -61,7 +62,6 @@ function themeIsLight(){
         return false
     }
 }
-
 function getTheme() {
     let theme = window.localStorage.getItem('siteTheme')
 
@@ -191,4 +191,21 @@ accessibilityClose.addEventListener('click', function () {
 
 navbarMenu.addEventListener('mouseenter', function () {
     closeFullMenu()
+})
+
+
+const rangeInputs = document.querySelectorAll('input[type="range"]')
+function handleInputChange(e) {
+    let target = e.target
+    if (e.target.type !== 'range') {
+        target = document.getElementById('range')
+    }
+    const min = target.min
+    const max = target.max
+    const val = target.value
+    target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
+}
+rangeInputs.forEach(input => {
+    input.style.backgroundSize = '0% 100%'
+    input.addEventListener('input', handleInputChange)
 })

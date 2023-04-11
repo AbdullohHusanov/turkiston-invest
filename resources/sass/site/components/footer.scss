@@ -1,0 +1,71 @@
+footer {
+    box-shadow: var(--footer-shadow);
+    padding-top: 50px;
+    color: var(--text-color);
+    label {
+        line-height: 24px;
+    }
+    .border-bottom {
+        border-bottom: 2px solid var(--text-gold);
+        padding-bottom: 20px;
+    }
+    .footer-menu {
+        input[type='radio'] {
+            -webkit-appearance: none;
+            appearance: none;
+            border-radius: 50px !important;
+            border-color: var(--text-gold) !important;
+            color: var(--text-gold) !important;
+            outline-color: var(--text-gold) !important;
+        }
+        .footer-menu-ul {
+
+            color: var(--text-menu);
+
+            .footer-menu-li {
+
+                .footer-menu-link {
+                    font-size: var(--font-size3);
+                    line-height: 24px;
+                    position: relative;
+                    color: var(--text-menu);
+
+                    &:after {
+                        content: "";
+                        display: inline-block;
+                        position: absolute;
+                        width: 0;
+                        bottom: -5px;
+                        height: 2px;
+                        margin: 1px 0;
+                        left: 0;
+                        background-color: #DCBF85;
+                        transition: all 0.4s ease-in 0s;
+                    }
+
+                    &:hover:after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .button {
+            color: #ffffff;
+            background: #DCBF85;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 20px;
+            padding: 6px 0 6px 0;
+        }
+        input {
+            border-color: var(--border-color-9) !important;
+            border-radius: 5px !important;
+            background-color: var(--bg-color);
+        }
+    }
+    .text-note {
+        font-size: var(--font-size3);
+        color: var(--text-note);
+        line-height: 24px;
+    }
+}

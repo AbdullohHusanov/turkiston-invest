@@ -25,7 +25,7 @@
         position: fixed;
         width: 0;
         opacity: 0.8;
-        background: $bg-dark;
+        background: var(--mask-color);
         left: 0;
         top: 0;
         height: 100%;
@@ -34,7 +34,7 @@
     .accessibility-modal{
         position: fixed;
         width: 0;
-        background: $bg-light;
+        background: var(--bg-color);
         right: 0;
         top: 0;
         height: 100%;
@@ -62,6 +62,117 @@
                 margin-left: auto;
                 margin-right: 15px;
                 cursor: pointer;
+            }
+        }
+
+        .accessibility-body {
+            padding: 20px;
+            transition: .5s ease-in-out;
+            .switch {
+                position: relative;
+                display: inline-block;
+                width: 60px;
+                height: 26px;
+            }
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+            .slider {
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: #ccc;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 20px;
+                width: 20px;
+                left: 4px;
+                top: 2px;
+                background-color: var(--slider-color);
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+            input:checked + .slider:before {
+                -webkit-transform: translateX(30px);
+                -ms-transform: translateX(30px);
+                transform: translateX(30px);
+            }
+            .slider.round {
+                border-radius: 34px;
+                background-color: #fff;
+                border: 1px solid var(--bg-component-4);
+            }
+            .slider.round:before {
+                border-radius: 50%;
+            }
+
+            input[type="range"] {
+                -webkit-appearance: none;
+                height: 12px;
+                border-radius: 5px;
+                border: 1px solid var(--border-color-9);
+                background-size: 0% 100%;
+                background: #ffffff linear-gradient(to right, var(--slider-color), var(--slider-color)) no-repeat;
+            }
+            input[type="range"]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: background .3s ease-in-out;
+                background: var(--slider-color) no-repeat;
+            }
+            input[type="range"]::-moz-range-thumb {
+                -webkit-appearance: none;
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: background .3s ease-in-out;
+            }
+            input[type="range"]::-ms-thumb {
+                -webkit-appearance: none;
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                cursor: pointer;
+                transition: background .3s ease-in-out;
+            }
+            input[type=range]::-webkit-slider-runnable-track  {
+                -webkit-appearance: none;
+                box-shadow: none;
+                border: none;
+                background: transparent;
+            }
+            input[type=range]::-moz-range-track {
+                -webkit-appearance: none;
+                box-shadow: none;
+                border: none;
+                background: transparent;
+                margin-top: -12px;
+            }
+            input[type="range"]::-ms-track {
+                -webkit-appearance: none;
+                box-shadow: none;
+                border: none;
+                background: transparent;
+                margin-top: -12px;
+            }
+            button {
+                padding: 5px 18px 5px 18px;
+                background-color: var(--btn-bg);
+                color: var(--text-gold);
+                border-radius: 30px;
             }
         }
     }
