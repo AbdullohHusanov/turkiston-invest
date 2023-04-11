@@ -1,28 +1,95 @@
 import './bootstrap'
+import {createApp} from 'vue'
+import App from './App.vue'
 
-import.meta.glob(['../../images/**',]);
-import.meta.glob(['../../logos/**',]);
+createApp(App).mount("#app")
 
+
+import.meta.glob([
+    '../../images/**/**',
+    '../../images/**',
+    '../../logos/**',
+    '../../fonts/ProximaNova/**/**.ttf',
+    '../../fonts/ProximaNova/**/**.woff',
+    '../../fonts/ProximaNova/**/**.eot',
+]);
+checkTheme();
+applyTheme();
+// setInterval(() => {
+//     applyTheme();
+// },1000)
+
+function applyTheme(){
+    let body = document.getElementById('body');
+
+    if (themeIsDark()){
+        body.classList.remove('light')
+        body.classList.add('dark')
+    }else{
+        body.classList.remove('dark')
+        body.classList.add('light')
+    }
+}
+
+function checkTheme() {
+    let theme = window.localStorage.getItem('siteTheme')
+
+    if (theme === null || theme === undefined){
+        window.localStorage.setItem('siteTheme','light')
+    }
+}
+function themeIsDark(){
+    let theme = window.localStorage.getItem('siteTheme')
+
+    checkTheme();
+
+    if (theme === 'light'){
+        return false
+    }else{
+        return true
+    }
+}
+
+function themeIsLight(){
+    let theme = window.localStorage.getItem('siteTheme')
+
+    checkTheme();
+
+    if (theme === 'light'){
+        return true
+    }else{
+        return false
+    }
+}
+
+function getTheme() {
+    let theme = window.localStorage.getItem('siteTheme')
+
+    checkTheme();
+
+    if (theme === 'light'){
+        return 'light'
+    }else{
+        return 'dark'
+    }
+}
 
 let burger = document.getElementById('burger');
-
-let stateBurger = false;
-burger.addEventListener('click', function () {
-    stateBurger = !stateBurger;
-    if (stateBurger)
-        burger.classList.add('active')
-    else
-        burger.classList.remove('active')
-})
-
+let fullMenuWindow = document.getElementById('full-menu');
+let navbarMenu = document.getElementById('navbar-menu')
 let search = document.getElementById('search');
 let searchWindow = document.getElementById('search-window');
 let searchWindowClose = document.getElementById('search-window-close');
+let accessibility = document.getElementById('accessibility');
+let accessibilityBg = document.getElementById('accessibility-bg')
+let accessibilityWindow = document.getElementById('accessibility-window')
 
+let stateBurger = false;
+let accessibilityState = false;
 let stateSearch = false;
 
 
-search.addEventListener('click', function () {
+function toggleSearch() {
     stateSearch = !stateSearch;
     if (stateSearch) {
         search.classList.add('active')
@@ -31,17 +98,97 @@ search.addEventListener('click', function () {
         search.classList.remove('active')
         searchWindow.classList.remove('active')
     }
+}
+
+function closeSearch() {
+    stateSearch = false;
+    search.classList.remove('active')
+    searchWindow.classList.remove('active')
+}
+
+function openSearch() {
+    stateSearch = true;
+    search.classList.add('active')
+    searchWindow.classList.add('active')
+}
+
+function toggleAccessibility() {
+    accessibilityState = !accessibilityState;
+
+    if (accessibilityState) {
+        accessibility.classList.add('active')
+        accessibilityWindow.classList.add('active')
+    } else {
+        accessibility.classList.remove('active')
+        accessibilityWindow.classList.remove('active')
+    }
+}
+
+function openAccessibility() {
+    accessibilityState = true;
+    accessibility.classList.add('active')
+    accessibilityWindow.classList.add('active')
+}
+
+function closeAccessibility() {
+    accessibilityState = false;
+    accessibility.classList.remove('active')
+    accessibilityWindow.classList.remove('active')
+}
+
+function toggleFullMenu() {
+    stateBurger = !stateBurger;
+    if (stateBurger) {
+        burger.classList.add('active');
+        fullMenuWindow.classList.add('active');
+    } else {
+        burger.classList.remove('active')
+        fullMenuWindow.classList.remove('active');
+    }
+}
+
+function openFullMenu() {
+    stateBurger = true;
+    burger.classList.add('active')
+    fullMenuWindow.classList.add('active');
+}
+
+function closeFullMenu() {
+    stateBurger = false;
+    burger.classList.remove('active')
+    fullMenuWindow.classList.remove('active');
+}
+
+
+burger.addEventListener('click', function () {
+    toggleFullMenu()
+})
+
+
+search.addEventListener('click', function () {
+    closeFullMenu()
+    toggleSearch()
 })
 
 searchWindowClose.addEventListener('click', function () {
-    stateSearch = !stateSearch;
-    if (stateSearch) {
-        search.classList.add('active')
-        searchWindow.classList.add('active')
-    } else {
-        search.classList.remove('active')
-        searchWindow.classList.remove('active')
-    }
+    closeSearch()
 })
 
+accessibility.addEventListener('click', function () {
+    closeFullMenu()
+    toggleAccessibility();
+})
 
+accessibilityBg.addEventListener('click', function () {
+    closeAccessibility();
+})
+
+let accessibilityClose = document.getElementById('accessibility-window-close')
+
+accessibilityClose.addEventListener('click', function () {
+    closeAccessibility()
+})
+
+navbarMenu.addEventListener('mouseenter', function () {
+    closeFullMenu()
+})

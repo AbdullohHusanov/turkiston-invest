@@ -31,21 +31,27 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
 
     public function initMenu(){
 
-//        Nova::mainMenu(function (Request $request) {
-//            return [
-//                MenuSection::dashboard(Main::class)->icon('chart-bar'),
-//
-//                MenuSection::make('Resources', [
-//                    MenuItem::resource(User::class),
-//                    MenuItem::resource(Role::class),
-//                ])->icon('user')
-//                    ->collapsable(),
-//
-//                MenuSection::make('Menu builder')
-//                    ->path('/menus')
-//                    ->icon('adjustments')
-//            ];
-//        });
+        Nova::mainMenu(function (Request $request) {
+            return [
+                MenuSection::dashboard(Main::class)->icon('chart-bar'),
+
+                MenuSection::make('Resources', [
+                    MenuItem::resource(User::class),
+                    MenuItem::resource(Role::class),
+                ])->icon('user')
+                    ->collapsable(),
+
+                MenuSection::make('Menu builder')
+                    ->path('/menus')
+                    ->icon('adjustments'),
+
+                MenuItem::
+                externalLink('< clients area','/clients'),
+
+                MenuItem::
+                externalLink('< website','/')
+            ];
+        });
     }
 
 

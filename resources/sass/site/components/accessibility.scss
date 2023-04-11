@@ -1,0 +1,68 @@
+.accessibility-window{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    z-index: 1002;
+
+    &.active{
+        display: flex;
+        height: 100%;
+        width: 100%;
+    }
+
+    &.active > .accessibility-modal{
+        width: 290px;
+    }
+
+    &.active > .accessibility-bg{
+        width: calc(100% - 290px);
+    }
+
+    .accessibility-bg{
+        position: fixed;
+        width: 0;
+        opacity: 0.8;
+        background: $bg-dark;
+        left: 0;
+        top: 0;
+        height: 100%;
+    }
+
+    .accessibility-modal{
+        position: fixed;
+        width: 0;
+        background: $bg-light;
+        right: 0;
+        top: 0;
+        height: 100%;
+
+        .accessibility-header{
+            display: flex;
+            padding-top: 20px;
+            padding-right: 10px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid $text-gold-light;
+            justify-content: center;
+            align-items: center;
+
+            .accessibility-header-title{
+                color: $text-mute-light;
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            .accessibility-header-close{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: auto;
+                margin-right: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+}

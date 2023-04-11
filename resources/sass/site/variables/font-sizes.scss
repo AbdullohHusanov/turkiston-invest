@@ -1,0 +1,125 @@
+$font-size1: 12px;
+$font-size2: 13px;
+$font-size3: 14px;
+$font-size4: 16px;
+$font-size5: 18px;
+$font-size6: 20px;
+$font-size7: 24px;
+$font-size8: 26px;
+$font-size9: 32px;
+$font-size10: 72px;
+
+body{
+    --font-size1: #{$font-size1};
+    --font-size2: #{$font-size2};
+    --font-size3: #{$font-size3};
+    --font-size4: #{$font-size4};
+    --font-size5: #{$font-size5};
+    --font-size6: #{$font-size6};
+    --font-size7: #{$font-size7};
+    --font-size8: #{$font-size8};
+    --font-size9: #{$font-size9};
+    --font-size10: #{$font-size10};
+}
+
+body.small {
+    --font-size1: calc(#{$font-size1} + 0px);
+    --font-size2: calc(#{$font-size2} + 0px);
+    --font-size3: calc(#{$font-size3} + 0px);
+    --font-size4: calc(#{$font-size4} + 0px);
+    --font-size5: calc(#{$font-size5} + 0px);
+    --font-size6: calc(#{$font-size6} + 0px);
+    --font-size7: calc(#{$font-size7} + 0px);
+    --font-size8: calc(#{$font-size8} + 0px);
+    --font-size9: calc(#{$font-size9} + 0px);
+    --font-size10: calc(#{$font-size10} + 0px);
+}
+
+body.medium {
+    --font-size1: calc(#{$font-size1} + 2px);
+    --font-size2: calc(#{$font-size2} + 2px);
+    --font-size3: calc(#{$font-size3} + 2px);
+    --font-size4: calc(#{$font-size4} + 2px);
+    --font-size5: calc(#{$font-size5} + 2px);
+    --font-size6: calc(#{$font-size6} + 2px);
+    --font-size7: calc(#{$font-size7} + 2px);
+    --font-size8: calc(#{$font-size8} + 2px);
+    --font-size9: calc(#{$font-size9} + 2px);
+    --font-size10: calc(#{$font-size10} + 2px);
+}
+
+body.large {
+    --font-size1: calc(#{$font-size1} + 4px);
+    --font-size2: calc(#{$font-size2} + 4px);
+    --font-size3: calc(#{$font-size3} + 4px);
+    --font-size4: calc(#{$font-size4} + 4px);
+    --font-size5: calc(#{$font-size5} + 4px);
+    --font-size6: calc(#{$font-size6} + 4px);
+    --font-size7: calc(#{$font-size7} + 4px);
+    --font-size8: calc(#{$font-size8} + 4px);
+    --font-size9: calc(#{$font-size9} + 4px);
+    --font-size10: calc(#{$font-size10} + 4px);
+}
+
+body.big {
+    --font-size1: calc(#{$font-size1} + 6px);
+    --font-size2: calc(#{$font-size2} + 6px);
+    --font-size3: calc(#{$font-size3} + 6px);
+    --font-size4: calc(#{$font-size4} + 6px);
+    --font-size5: calc(#{$font-size5} + 6px);
+    --font-size6: calc(#{$font-size6} + 6px);
+    --font-size7: calc(#{$font-size7} + 6px);
+    --font-size8: calc(#{$font-size8} + 6px);
+    --font-size9: calc(#{$font-size9} + 6px);
+    --font-size10: calc(#{$font-size10} + 6px);
+}
+
+// 12px - 14px - 16px
+.size1 {
+    font-size: var(--font-size1);
+}
+
+// 13px - 15px - 17px
+.size2 {
+    font-size: var(--font-size2);
+}
+
+// 14px - 16px - 18px
+.size3 {
+    font-size: var(--font-size3);
+}
+
+// 16px - 18px - 20px
+.size4 {
+    font-size: var(--font-size4);
+}
+
+// 18px - 20px - 22px
+.size5 {
+    font-size: var(--font-size5);
+}
+
+// 20px - 22px - 24px
+.size6 {
+    font-size: var(--font-size6);
+}
+
+// 24px - 26px - 28px
+.size7 {
+    font-size: var(--font-size7);
+}
+
+// 26px - 28px - 30px
+.size8 {
+    font-size: var(--font-size8);
+}
+
+// 32px - 34px - 36px
+.size9 {
+    font-size: var(--font-size9);
+}
+
+// 72px - 74px - 76px
+.size10 {
+    font-size: var(--font-size10);
+}

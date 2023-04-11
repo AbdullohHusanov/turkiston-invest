@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" id="html">
+<html lang="{{ app()->getLocale() }}" id="html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -11,8 +11,11 @@
     @vite('resources/sass/site/app.scss')
     @yield('custom_styles')
 </head>
-<body class="main light" id="body">
-    @include('site.components.navbar')
+<body class="main" id="body">
+    <div id="app">
+
+    </div>
+    @include('site.components.navbar.navbar')
 
     @yield('content')
 

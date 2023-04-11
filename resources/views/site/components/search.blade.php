@@ -5,7 +5,7 @@
         <div class="search-window-header">
 
             <div class="ml-auto cursor-pointer inline-block" id="search-window-close">
-                <img src="{{Vite::asset('resources/images/close-light.svg')}}" alt="close">
+                <img src="{{Vite::asset('resources/images/icons/close-light.svg')}}" alt="close">
             </div>
 
         </div>
@@ -21,7 +21,7 @@
                     <div
                         style="position: absolute; top: 0; right: 0; height: 42px; width: 42px; display: flex; justify-content: center; align-items: center">
                         <button type="submit">
-                            <img src="{{Vite::asset("resources/images/search-light.svg")}}" alt="search">
+                            <img src="{{Vite::asset("resources/images/icons/search-light.svg")}}" alt="search">
                         </button>
                     </div>
                 </form>

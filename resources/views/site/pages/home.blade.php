@@ -4,7 +4,7 @@
 
 @section('content')
     <h1>Home content</h1>
-
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur autem commodi culpa error facilis in libero maiores ratione, sequi veritatis.</p>
 @endsection
 
 @section('custom_js')

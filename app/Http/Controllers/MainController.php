@@ -25,6 +25,7 @@ class MainController extends Controller
     {
         app()->setLocale($locale);
         session()->put('locale', $locale);
+        cookie()->queue('locale', $locale,120);
         return redirect()->back();
     }
 }

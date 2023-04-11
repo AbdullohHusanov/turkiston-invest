@@ -1,10 +1,12 @@
-@import "burger";
 @import "search";
+@import "icons";
+@import "accessibility";
+@import "animations";
 
 .navbar{
     width: 100%;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-    background-color: $bg-light;
+    box-shadow: 0 4px 4px var(--border-color-2);
+    background-color: var(--bg-color);
     position: sticky;
     z-index: 999;
     .container{
@@ -25,7 +27,7 @@
                 flex-direction: row;
                 justify-content: center;
                 align-items: center;
-                color: $text-menu;
+                color: var(--text-menu);
 
                 .navbar-menu-li{
                     height: 64px;
@@ -40,7 +42,7 @@
                         font-size: 14px;
                         line-height: 24px;
                         position: relative;
-
+                        color: var(--text-menu);
                         &:after {
                             content: "";
                             display: inline-block;
@@ -75,11 +77,11 @@
                         padding: 15px;
                         z-index: 800;
                         box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-                        border-top: $bg-component-5 solid 2px;
+                        border-top: $bg-component-light-1 solid 2px;
 
                         .submenu-menu{
                             margin-left: 173px;
-                            border-left: $bg-component-5 solid 2px;
+                            border-left: $bg-component-light-1 solid 2px;
                             display: flex;
                             flex-direction: row;
                             .submenu-row{
@@ -100,6 +102,7 @@
                                             margin-bottom: 10px;
                                             .submenu-link{
                                                 position: relative;
+                                                color: $text-menu-light;
                                                 &:after {
                                                     content: "";
                                                     display: inline-block;
@@ -163,3 +166,19 @@
 }
 
 
+.full-menu{
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 64px;
+    background: $bg-light;
+    padding: 15px;
+    z-index: 800;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-top: $bg-component-light-1 solid 2px;
+
+    &.active{
+        display: block;
+    }
+}

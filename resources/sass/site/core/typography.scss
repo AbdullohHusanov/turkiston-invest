@@ -1,0 +1,92 @@
+p{
+    font-size: var(--font-size4);
+    line-height: calc(var(--font-size4) + 8px);
+    font-weight: normal;
+    color: var(--text-color);
+}
+
+b > p {
+    font-size: var(--font-size4);
+    line-height: calc(var(--font-size4) + 8px);
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+b > a{
+    font-size: var(--font-size4);
+    line-height: calc(var(--font-size4) + 8px);
+    font-weight: bold;
+    color: var(--text-link);
+    &:hover{
+        color: var(--text-link-hover);
+    }
+}
+
+a{
+    font-size: var(--font-size4);
+    line-height: calc(var(--font-size4) + 8px);
+    font-weight: normal;
+    color: var(--text-link);
+    &:hover{
+        color: var(--text-link-hover);
+    }
+}
+
+small{
+    font-size: var(--font-size1);
+    line-height: calc(var(--font-size1) + 8px);
+    font-weight: normal;
+    color: var(--text-color);
+}
+
+
+
+h1{
+    font-size: var(--font-size9);
+    line-height: calc(var(--font-size9) + 8px);
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+h2{
+    font-size: var(--font-size7);
+    line-height: calc(var(--font-size7) + 8px);
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+h3{
+    font-size: var(--font-size6);
+    line-height: calc(var(--font-size6) + 8px);
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+h4{
+    font-size: var(--font-size4);
+    line-height: calc(var(--font-size4) + 8px);
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+h5{
+    font-size: var(--font-size2);
+    line-height: calc(var(--font-size2) + 8px);
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+h6{
+    font-size: var(--font-size1);
+    line-height: calc(var(--font-size1) + 8px);
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+ul {
+
+}
+
+li{
+    text-decoration: none;
+}

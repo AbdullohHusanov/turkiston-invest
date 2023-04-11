@@ -4,20 +4,15 @@
 @tailwind variants;
 
 //variables
-@import "resources/sass/site/variables/colors";
-@import "resources/sass/site/variables/typography";
+@import "variables/colors-light";
+@import "variables/colors-dark";
 
-@import "resources/sass/site/components/navbar";
+@import "variables/font-sizes";
+@import "./core/colors";
+
+@import "core/typography";
+@import "core/general";
 
 
-
-body {
-    margin: 0;
-    line-height: inherit;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "./components/navbar";
+@import "./components/fonts";

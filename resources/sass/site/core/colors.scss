@@ -1,0 +1,94 @@
+body{
+    --bg-color: #{$bg-light};
+    --bg-invert: #{$bg-invert-light};
+    --bg-grayscale: #{bg-grayscale-light};
+
+    --text-color: #{$text-light};
+    --text-mute: #{$text-mute-light};
+    --text-menu: #{$text-menu-light};
+    --text-link: #{$text-link-light};
+    --text-link-hover: #{$text-link-hover-light};
+    --text-gold: #{$text-gold-light};
+
+    --bg-component-1: #{$bg-component-light-1};
+    --bg-component-2: #{$bg-component-light-2};
+    --bg-component-3: #{$bg-component-light-3};
+    --bg-component-4: #{$bg-component-light-4};
+    --bg-component-5: #{$bg-component-light-5};
+    --bg-component-6: #{$bg-component-light-6};
+    --bg-component-7: #{$bg-component-light-7};
+    --bg-component-8: #{$bg-component-light-8};
+
+    --border-color-1: #{$border-color-light-1};
+    --border-color-2: #{$border-color-light-2};
+    --border-color-3: #{$border-color-light-3};
+    --border-color-4: #{$border-color-light-4};
+    --border-color-5: #{$border-color-light-5};
+    --border-color-6: #{$border-color-light-6};
+    --border-color-7: #{$border-color-light-7};
+    --border-color-8: #{$border-color-light-8};
+
+}
+
+body.light{
+    --bg-color: #{$bg-light};
+    --bg-invert: #{$bg-invert-light};
+    --bg-grayscale: #{bg-grayscale-light};
+
+    --text-color: #{$text-light};
+    --text-mute: #{$text-mute-light};
+    --text-menu: #{$text-menu-light};
+    --text-link: #{$text-link-light};
+    --text-link-hover: #{$text-link-hover-light};
+    --text-gold: #{$text-gold-light};
+
+    --bg-component-1: #{$bg-component-light-1};
+    --bg-component-2: #{$bg-component-light-2};
+    --bg-component-3: #{$bg-component-light-3};
+    --bg-component-4: #{$bg-component-light-4};
+    --bg-component-5: #{$bg-component-light-5};
+    --bg-component-6: #{$bg-component-light-6};
+    --bg-component-7: #{$bg-component-light-7};
+    --bg-component-8: #{$bg-component-light-8};
+
+    --border-color-1: #{$border-color-light-1};
+    --border-color-2: #{$border-color-light-2};
+    --border-color-3: #{$border-color-light-3};
+    --border-color-4: #{$border-color-light-4};
+    --border-color-5: #{$border-color-light-5};
+    --border-color-6: #{$border-color-light-6};
+    --border-color-7: #{$border-color-light-7};
+    --border-color-8: #{$border-color-light-8};
+
+}
+
+body.dark{
+    --bg-color: #{$bg-dark};
+    --bg-invert: #{$bg-invert-dark};
+    --bg-grayscale: #{bg-grayscale-dark};
+
+    --text-color: #{$text-dark};
+    --text-mute: #{$text-mute-dark};
+    --text-menu: #{$text-menu-dark};
+    --text-link: #{$text-link-light};
+    --text-link-hover: #{$text-link-hover-dark};
+    --text-gold: #{$text-gold-dark};
+
+    --bg-component-1: #{$bg-component-dark-1};
+    --bg-component-2: #{$bg-component-dark-2};
+    --bg-component-3: #{$bg-component-dark-3};
+    --bg-component-4: #{$bg-component-dark-4};
+    --bg-component-5: #{$bg-component-dark-5};
+    --bg-component-6: #{$bg-component-dark-6};
+    --bg-component-7: #{$bg-component-dark-7};
+    --bg-component-8: #{$bg-component-dark-8};
+
+    --border-color-1: #{$border-color-dark-1};
+    --border-color-2: #{$border-color-dark-2};
+    --border-color-3: #{$border-color-dark-3};
+    --border-color-4: #{$border-color-dark-4};
+    --border-color-5: #{$border-color-dark-5};
+    --border-color-6: #{$border-color-dark-6};
+    --border-color-7: #{$border-color-dark-7};
+    --border-color-8: #{$border-color-dark-8};
+}
