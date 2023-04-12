@@ -13,66 +13,33 @@ import.meta.glob([
     '../../fonts/ProximaNova/**/**.woff',
     '../../fonts/ProximaNova/**/**.eot',
 ]);
+let html = document.getElementById('html');
+const body = document.getElementById('body')
 
-checkTheme();
-applyTheme();
-setTimeout(() => {
-    applyTheme();
-},1000)
-
-function applyTheme(){
-let body = document.getElementById('body');
-let toggleTheme = document.getElementById('toggleTheme')
-
-    if (themeIsDark()){
-        body.classList.remove('light')
+let toggleTheme = document.getElementById('toggleTheme');
+toggleTheme.addEventListener('click', changeTheme)
+function changeTheme() {
+    if(toggleTheme.checked === true) {
         body.classList.add('dark')
-    }else{
-        body.classList.remove('dark')
+        body.classList.remove('light')
+    }else {
         body.classList.add('light')
+        body.classList.remove('dark')
     }
+    toggleTheme.checked === true
+        ? localStorage.setItem("PageTheme", "DARK")
+        : localStorage.setItem("PageTheme", "LIGHT")
+}
+let getTheme = localStorage.getItem("PageTheme");
+if(getTheme === 'DARK') {
+    toggleTheme.checked = true
+    body.classList.add('dark')
+}
+else if(getTheme === 'LIGHT'){
+    toggleTheme.checked = false
+    body.classList.add('light')
 }
 
-function checkTheme() {
-    let theme = window.localStorage.getItem('siteTheme')
-
-    if (theme === null || theme === undefined){
-        window.localStorage.setItem('siteTheme','light')
-    }
-}
-function themeIsDark(){
-    let theme = window.localStorage.getItem('siteTheme')
-
-    checkTheme();
-
-    if (theme === 'light'){
-        return false
-    }else{
-        return true
-    }
-}
-function themeIsLight(){
-    let theme = window.localStorage.getItem('siteTheme')
-
-    checkTheme();
-
-    if (theme === 'light'){
-        return true
-    }else{
-        return false
-    }
-}
-function getTheme() {
-    let theme = window.localStorage.getItem('siteTheme')
-
-    checkTheme();
-
-    if (theme === 'light'){
-        return 'light'
-    }else{
-        return 'dark'
-    }
-}
 
 let burger = document.getElementById('burger');
 let fullMenuWindow = document.getElementById('full-menu');
@@ -221,3 +188,91 @@ nextButton.addEventListener("click", () => {
 prevButton.addEventListener("click", () => {
     slidesContainer.scrollLeft -= slideWidth;
 });
+
+
+
+function mobile() {
+    const mobile = document.getElementById('mobile');
+    mobile.addEventListener('click', () => {
+        window.open('http://127.0.0.1:8000/#', "_blank", "menubar=1,resizable=1,width=400,height=550")
+    })
+}
+mobile()
+
+
+const slider = document.getElementById('slider')
+font_size_set('small');
+slider.addEventListener('change', (event) => {
+    if (slider.value === '1') {
+        font_size_set('small');
+    } else if (slider.value === '2') {
+        font_size_set('medium');
+    } else if (slider.value === '3') {
+        font_size_set('large');
+    }
+    else if (slider.value === '4') {
+        font_size_set('big');
+    } else {
+        font_size_set('small');
+    }
+});
+function font_size_set(new_size) {
+    let body = document.getElementById('body');
+    body.classList.remove('small');
+    body.classList.remove('medium');
+    body.classList.remove('large');
+    body.classList.remove('big');
+    body.classList.add(new_size);
+}
+
+
+const grayscaleTheme = document.getElementById('grayscaleTheme');
+const invertTheme = document.getElementById('invertTheme');
+const primaryTheme = document.getElementById('primaryTheme');
+grayscaleTheme.addEventListener('click', () => {
+    html.style.filter = 'grayscale(100%)'
+})
+invertTheme.addEventListener('click', () => {
+    html.style.filter = 'invert(100%)'
+})
+primaryTheme.addEventListener('click', () => {
+    html.style.filter = 'none'
+})
+
+
+let btnSpeak = document.querySelector('#btnSpeak');
+let synth = window.speechSynthesis;
+const mute = document.getElementById('mute');
+mute.addEventListener('click', (e) => {
+    if(mute.checked) {
+        btnSpeak.style.display = ''
+        document.addEventListener('click', (event) => {
+            let xPosition = event.clientX - body.getBoundingClientRect().left - (btnSpeak.clientWidth / 2);
+            let yPosition = event.clientY - body.getBoundingClientRect().top - (btnSpeak.clientHeight / 2);
+            if (window.getSelection().toString() !== '') {
+                btnSpeak.style.left = xPosition + "px"
+                btnSpeak.style.top = yPosition + "px"
+                console.log(btnSpeak.style.top)
+                console.log(btnSpeak.style.left)
+
+                btnSpeak.classList.remove('hidden');
+            } else btnSpeak.classList.add('hidden')
+        })
+        btnSpeak.addEventListener('click', () => {
+            synth.getVoices();
+            let toSpeak = new SpeechSynthesisUtterance(window.getSelection().toString());
+            synth.speak(toSpeak);
+        });
+        window.addEventListener('keyup', (event) => {
+            if (event.code === 'Space') {
+                if (window.getSelection().toString() !== '') {
+                    synth.getVoices();
+                    let toSpeak = new SpeechSynthesisUtterance(window.getSelection().toString());
+                    synth.speak(toSpeak);
+                }
+            }
+        });
+    }else {
+        btnSpeak.style.display = 'none'
+    }
+})

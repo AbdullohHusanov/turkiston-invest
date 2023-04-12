@@ -37,24 +37,24 @@
             </div>
 
             <div class="flex justify-between items-center my-7">
-                <img class="block dark:hidden cursor-pointer"
+                <img id="primaryTheme" class="block dark:hidden cursor-pointer"
                      src="{{Vite::asset('resources/images/icons/accessability-light/accessability-off-light.svg')}}"
                      alt="light icon" width="35">
-                <img class="hidden dark:block cursor-pointer"
+                <img id="primaryTheme" class="hidden dark:block cursor-pointer"
                      src="{{Vite::asset('resources/images/icons/accessability-dark/accessability-off-dark.svg')}}"
                      alt="dark icon" width="35">
 
-                <img class="block dark:hidden cursor-pointer"
+                <img id="grayscaleTheme" class="block dark:hidden cursor-pointer"
                      src="{{Vite::asset('resources/images/icons/accessability-light/grayscale-light.svg')}}" alt="light icon"
                      width="35">
-                <img class="hidden dark:block cursor-pointer"
+                <img id="grayscaleTheme" class="hidden dark:block cursor-pointer"
                      src="{{Vite::asset('resources/images/icons/accessability-dark/grayscale-dark.svg')}}" alt="dark icon"
                      width="35">
 
-                <img class="block dark:hidden cursor-pointer"
+                <img id="invertTheme" class="block dark:hidden cursor-pointer"
                      src="{{Vite::asset('resources/images/icons/accessability-light/invert-light.svg')}}" alt="light icon"
                      width="35">
-                <img class="hidden dark:block cursor-pointer"
+                <img id="invertTheme" class="hidden dark:block cursor-pointer"
                      src="{{Vite::asset('resources/images/icons/accessability-dark/invert-dark.svg')}}" alt="dark icon"
                      width="35">
 
@@ -91,7 +91,7 @@
                      src="{{Vite::asset('resources/images/icons/accessability-dark/icon-mute-dark.svg')}}" alt="dark icon"
                      width="35">
                 <label class="switch">
-                    <input type="checkbox" id="toggleTheme">
+                    <input type="checkbox" id="mute">
                     <span class="slider round"></span>
                 </label>
                 <img class="block dark:hidden"
@@ -109,7 +109,7 @@
                 <img class="hidden dark:block"
                      src="{{Vite::asset('resources/images/icons/accessability-dark/icon-font-size-dark.svg')}}" alt="dark icon"
                      width="35">
-                <input class="w-3/4" type="range" min="1" max="3" value="1" id="slider"/>
+                <input class="w-3/4" type="range" min="1" max="4" value="1" id="slider"/>
             </div>
 
             <div class="flex justify-between items-center my-7">

@@ -15,11 +15,13 @@
     <div id="app">
 
     </div>
+
     @include('site.components.navbar.navbar')
 
     @yield('content')
 
     @include('site.components.footer')
+    <img id="btnSpeak" class="cursor-pointer absolute hidden" src="{{Vite::asset('resources/images/icons/volume.svg')}}" alt="" width="20">
 
     @vite('resources/js/site/app.js')
 

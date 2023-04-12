@@ -1,5 +1,4 @@
 @extends('site.layouts.main')
-
 @section('title', __('Home page'))
 
 @section('content')
@@ -19,19 +18,19 @@
             <div class="grid grid-cols-1 sm:grid-cols-3">
 
                 <div class="flex-col items-center justify-center">
-                    <img class="mx-auto mb-5" src="{{Vite::asset('/resources/images/icons/specification-1.svg')}}" alt="">
+                    <img class="mx-auto mb-5" src="{{Vite::asset('resources/images/icons/specification-1.svg')}}" alt="">
                     <p data-target="20" class="size4 text-center font-bold ">15+</p>
                     <p class="size4 text-center font-bold ">yillik tajriba</p>
                 </div>
 
                 <div class="flex-col items-center justify-center my-10 sm:my-0">
-                    <img class="mx-auto mb-5" src="{{Vite::asset('/resources/images/icons/specification-2.svg')}}" alt="">
+                    <img class="mx-auto mb-5" src="{{Vite::asset('resources/images/icons/specification-2.svg')}}" alt="">
                     <p data-target="2000" class="size4 text-center font-bold ">2000+</p>
                     <p class="size4 text-center font-bold">aksionerlar</p>
                 </div>
 
                 <div class="flex-col items-center justify-center">
-                    <img class="mx-auto mb-5" src="{{Vite::asset('/resources/images/icons/specification-3.svg')}}"  alt="">
+                    <img class="mx-auto mb-5" src="{{Vite::asset('resources/images/icons/specification-3.svg')}}"  alt="">
                     <p data-target="15000" class="size4 text-center font-bold ">15000+ </p>
                     <p class="size4 text-center font-bold">abligatsiyalar</p>
                 </div>
@@ -47,56 +46,56 @@
                     class="slides-container h-72 flex snap-x snap-mandatory overflow-hidden overflow-x-auto space-x-2 rounded scroll-smooth before:w-[45vw] before:shrink-0 after:w-[45vw] after:shrink-0 md:before:w-0 md:after:w-0">
                     <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
                         <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <img src="{{Vite::asset('/resources/images/icons/team1.png')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/team1.png')}}" alt="">
                             <p class="size4 mt-2">IVETTIK ALEKSAN</p>
                             <p class="size2 text-note">MOLIYA DIREKTOR</p>
                         </div>
                     </div>
                     <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
                         <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <img src="{{Vite::asset('/resources/images/icons/team2.png')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/team2.png')}}" alt="">
                             <p class="size4 mt-2">ALI CHOKLI</p>
                             <p class="text-note size2">TEXNIK DIREKTOR</p>
                         </div>
                     </div>
                     <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
                         <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <img src="{{Vite::asset('/resources/images/icons/team1.png')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/team1.png')}}" alt="">
                             <p class="size4 mt-2">IVETTIK ALEKSAN</p>
                             <p class="text-note size2">MOLIYA DIREKTOR</p>
                         </div>
                     </div>
                     <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
                         <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <img src="{{Vite::asset('/resources/images/icons/team3.png')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/team3.png')}}" alt="">
                             <p class="size4 mt-2">AISHA FERIDE</p>
                             <p class="text-note size2">BOSH DIREKTOR</p>
                         </div>
                     </div>
                     <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
                         <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <img src="{{Vite::asset('/resources/images/icons/team1.png')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/team1.png')}}" alt="">
                             <p class="size4 mt-2">IVETTIK ALEKSAN</p>
                             <p class="text-note size2">MOLIYA DIREKTOR</p>
                         </div>
                     </div>
                     <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
                         <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <img src="{{Vite::asset('/resources/images/icons/team1.png')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/team1.png')}}" alt="">
                             <p class="size4 mt-2">IVETTIK ALEKSAN</p>
                             <p class="text-note size2">MOLIYA DIREKTOR</p>
                         </div>
                     </div>
                     <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
                         <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <img src="{{Vite::asset('/resources/images/icons/team3.png')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/team3.png')}}" alt="">
                             <p class="size4 mt-2">SASHA SUNAME</p>
                             <p class="text-note size2">YURDIK DIREKTOR</p>
                         </div>
                     </div>
                     <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
                         <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <img src="{{Vite::asset('/resources/images/icons/team1.png')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/team1.png')}}" alt="">
                             <p class="size4 mt-2">IVETTIK ALEKSAN</p>
                             <p class="text-note size2">MOLIYA DIREKTOR</p>
                         </div>
@@ -136,8 +135,8 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 items-center">
                 <div class="mb-5 mx-auto md:mb-0 md:mx-0">
-                    <img class="inline-block dark:hidden" src="{{Vite::asset('/resources/logos/logo-big-light.svg')}}" alt="Logo" width="282">
-                    <img class="hidden dark:block" src="{{Vite::asset('/resources/logos/logo-big-dark.svg')}}" alt="Logo" width="282">
+                    <img class="inline-block dark:hidden" src="{{Vite::asset('resources/logos/logo-big-light.svg')}}" alt="Logo" width="282">
+                    <img class="hidden dark:block" src="{{Vite::asset('resources/logos/logo-big-dark.svg')}}" alt="Logo" width="282">
                 </div>
                 <div class="size3 text-note">
                     Lorem ipsum dolor sit amet consectetur. Sed ac facilisi velit nisi. Mauris cum in integer commodo
@@ -155,7 +154,7 @@
         <div class="container px-3">
             <div class="size6 section-title w-full md:w-1/2">JAMIYAT HAQIDA</div>
             <div class="relative z-0">
-                <img src="{{Vite::asset('/resources/images/icons/background/video-back.svg')}}" alt="" width="100%" height="100%">
+                <img src="{{Vite::asset('resources/images/icons/background/video-back.svg')}}" alt="" width="100%" height="100%">
                 <div class="video"></div>
             </div>
         </div>
@@ -205,31 +204,31 @@
                 <div class="contact w-full md:w-1/2">
                     <p class="size5 font-bold mb-10">Biz bilan bog'lanish</p>
                     <div class="flex items-center my-2">
-                        <img class="inline-block dark:hidden" src="{{Vite::asset('/resources/images/icons/icons-light/phone-light.svg')}}" alt="">
-                        <img class="hidden dark:block" src="{{Vite::asset('/resources/images/icons/icons-dark/phone-dark.svg')}}" alt="">
+                        <img class="inline-block dark:hidden" src="{{Vite::asset('resources/images/icons/icons-light/phone-light.svg')}}" alt="">
+                        <img class="hidden dark:block" src="{{Vite::asset('resources/images/icons/icons-dark/phone-dark.svg')}}" alt="">
                         <p class="ml-2 size2">+99899 999 99 99</p>
                     </div>
 
                     <div class="flex items-center my-2">
-                        <img class="inline-block dark:hidden" src="{{Vite::asset('/resources/images/icons/icons-light/email-light.svg')}}" alt="">
-                        <img class="hidden dark:block" src="{{Vite::asset('/resources/images/icons/icons-dark/email-dark.svg')}}" alt="">
+                        <img class="inline-block dark:hidden" src="{{Vite::asset('resources/images/icons/icons-light/email-light.svg')}}" alt="">
+                        <img class="hidden dark:block" src="{{Vite::asset('resources/images/icons/icons-dark/email-dark.svg')}}" alt="">
                         <p class="ml-2 size2">turkiston.invest@mail.ru</p>
                     </div>
 
                     <div class="flex items-center my-2">
-                        <img class="inline-block dark:hidden" src="{{Vite::asset('/resources/images/icons/icons-light/map-light.svg')}}" alt="">
-                        <img class="hidden dark:block" src="{{Vite::asset('/resources/images/icons/icons-dark/map-dark.svg')}}" alt="">
+                        <img class="inline-block dark:hidden" src="{{Vite::asset('resources/images/icons/icons-light/map-light.svg')}}" alt="">
+                        <img class="hidden dark:block" src="{{Vite::asset('resources/images/icons/icons-dark/map-dark.svg')}}" alt="">
                         <p class="ml-2 size2">28 Hawthorn Lane, Braidwood, AUSTRALIA</p>
                     </div>
 
                     <div class="flex items-center my-2">
-                        <img class="inline-block dark:hidden" src="{{Vite::asset('/resources/images/icons/icons-light/map-light.svg')}}" alt="">
-                        <img class="hidden dark:block" src="{{Vite::asset('/resources/images/icons/icons-dark/map-dark.svg')}}" alt="">
+                        <img class="inline-block dark:hidden" src="{{Vite::asset('resources/images/icons/icons-light/map-light.svg')}}" alt="">
+                        <img class="hidden dark:block" src="{{Vite::asset('resources/images/icons/icons-dark/map-dark.svg')}}" alt="">
                         <p class="ml-2 size2">28 Hawthorn Lane, Braidwood, AUSTRALIA</p>
                     </div>
                     <div class="flex items-center my-2">
-                        <img class="inline-block dark:hidden" src="{{Vite::asset('/resources/images/icons/icons-light/map-light.svg')}}" alt="">
-                        <img class="hidden dark:block" src="{{Vite::asset('/resources/images/icons/icons-dark/map-dark.svg')}}" alt="">
+                        <img class="inline-block dark:hidden" src="{{Vite::asset('resources/images/icons/icons-light/map-light.svg')}}" alt="">
+                        <img class="hidden dark:block" src="{{Vite::asset('resources/images/icons/icons-dark/map-dark.svg')}}" alt="">
                         <p class="ml-2 size2">28 Hawthorn Lane, Braidwood, AUSTRALIA</p>
                     </div>
                 </div>
@@ -265,7 +264,7 @@
                 </div>
 
                 <div class="hero mx-auto">
-                    <img src="{{Vite::asset("/resources/images/icons/background/hero2.svg")}}" alt="Hero">
+                    <img src="{{Vite::asset("resources/images/icons/background/hero2.svg")}}" alt="Hero">
                     <p class="size5 font-bold text-center">24 Years of Experience</p>
                 </div>
             </div>
@@ -273,7 +272,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 text-center md:text-left  mt-28">
 
                 <div class="hidden md:block hero mx-auto">
-                    <img src="{{Vite::asset("./resources/images/icons/background/hero1.svg")}}" alt="Hero">
+                    <img src="{{Vite::asset("resources/images/icons/background/hero1.svg")}}" alt="Hero">
                 </div>
 
                 <div class="hero w-2/3 mx-auto md:mx-0">
@@ -286,7 +285,7 @@
                 </div>
 
                 <div class="block md:hidden hero mx-auto">
-                    <img src="{{Vite::asset("./public/build/assets/hero1-1858b332.svg")}}" alt="Hero">
+                    <img src="{{Vite::asset("resources/images/icons/background/hero1.svg")}}" alt="Hero">
                 </div>
 
             </div>
@@ -299,7 +298,7 @@
 
             <div class="news-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
                 <div class="news-item">
-                    <img src="{{Vite::asset("/resources/images/icons/background/video-back.svg")}}" alt="">
+                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
                     <p class="size4 my-2">Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
                         kuzating !
                     </p>
@@ -309,22 +308,22 @@
                     </p>
                     <div class="flex justify-between">
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-user.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-user.svg')}}" alt="">
                             <p class="text-note ml-1 size2">Admin Admin</p>
                         </div>
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-calendar.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-calendar.svg')}}" alt="">
                             <p class="text-note ml-1 size2">01-01-2021</p>
                         </div>
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-eye.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-eye.svg')}}" alt="">
                             <p class="text-note ml-1 size2">1200</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="news-item">
-                    <img src="{{Vite::asset("/resources/images/icons/background/video-back.svg")}}" alt="">
+                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
                     <p class="size4 my-2">Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
                         kuzating !
                     </p>
@@ -334,22 +333,22 @@
                     </p>
                     <div class="flex justify-between">
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-user.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-user.svg')}}" alt="">
                             <p class="text-note ml-1 size2">Admin Admin</p>
                         </div>
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-calendar.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-calendar.svg')}}" alt="">
                             <p class="text-note ml-1 size2">01-01-2021</p>
                         </div>
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-eye.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-eye.svg')}}" alt="">
                             <p class="text-note ml-1 size2">1200</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="news-item">
-                    <img src="{{Vite::asset("/resources/images/icons/background/video-back.svg")}}" alt="">
+                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
                     <p class="size4 my-2">Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
                         kuzating !
                     </p>
@@ -359,15 +358,15 @@
                     </p>
                     <div class="flex justify-between">
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-user.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-user.svg')}}" alt="">
                             <p class="text-note ml-1 size2">Admin Admin</p>
                         </div>
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-calendar.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-calendar.svg')}}" alt="">
                             <p class="text-note ml-1 size2">01-01-2021</p>
                         </div>
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-eye.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-eye.svg')}}" alt="">
                             <p class="text-note ml-1 size2">1200</p>
                         </div>
                     </div>
@@ -383,7 +382,7 @@
 
             <div class="news-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
                 <div class="news-item">
-                    <img src="{{Vite::asset("/resources/images/icons/background/video-back.svg")}}" alt="">
+                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
                     <p class="size4 my-2">Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
                         kuzating !
                     </p>
@@ -393,22 +392,22 @@
                     </p>
                     <div class="flex justify-between">
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-user.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-user.svg')}}" alt="">
                             <p class="text-note ml-1 size2">Admin Admin</p>
                         </div>
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-calendar.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-calendar.svg')}}" alt="">
                             <p class="text-note ml-1 size2">01-01-2021</p>
                         </div>
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-eye.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-eye.svg')}}" alt="">
                             <p class="text-note ml-1 size2">1200</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="news-item">
-                    <img src="{{Vite::asset("/resources/images/icons/background/video-back.svg")}}" alt="">
+                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
                     <p class="size4 my-2">Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
                         kuzating !
                     </p>
@@ -418,22 +417,22 @@
                     </p>
                     <div class="flex justify-between">
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-user.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-user.svg')}}" alt="">
                             <p class="text-note ml-1 size2">Admin Admin</p>
                         </div>
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-calendar.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-calendar.svg')}}" alt="">
                             <p class="text-note ml-1 size2">01-01-2021</p>
                         </div>
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-eye.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-eye.svg')}}" alt="">
                             <p class="text-note ml-1 size2">1200</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="news-item">
-                    <img src="{{Vite::asset("/resources/images/icons/background/video-back.svg")}}" alt="">
+                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
                     <p class="size4 my-2">Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
                         kuzating !
                     </p>
@@ -443,15 +442,15 @@
                     </p>
                     <div class="flex justify-between">
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-user.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-user.svg')}}" alt="">
                             <p class="text-note ml-1 size2">Admin Admin</p>
                         </div>
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-calendar.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-calendar.svg')}}" alt="">
                             <p class="text-note ml-1 size2">01-01-2021</p>
                         </div>
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-eye.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-eye.svg')}}" alt="">
                             <p class="text-note ml-1 size2">1200</p>
                         </div>
                     </div>
@@ -467,7 +466,7 @@
 
             <div class="news-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
                 <div class="news-item">
-                    <img src="{{Vite::asset("/resources/images/icons/background/video-back.svg")}}" alt="">
+                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
                     <p class="size4 my-2">Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
                         kuzating !
                     </p>
@@ -477,22 +476,22 @@
                     </p>
                     <div class="flex justify-between">
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-user.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-user.svg')}}" alt="">
                             <p class="text-note ml-1 size2">Admin Admin</p>
                         </div>
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-calendar.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-calendar.svg')}}" alt="">
                             <p class="text-note ml-1 size2">01-01-2021</p>
                         </div>
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-eye.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-eye.svg')}}" alt="">
                             <p class="text-note ml-1 size2">1200</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="news-item">
-                    <img src="{{Vite::asset("/resources/images/icons/background/video-back.svg")}}" alt="">
+                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
                     <p class="size4 my-2">Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
                         kuzating !
                     </p>
@@ -502,22 +501,22 @@
                     </p>
                     <div class="flex justify-between">
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-user.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-user.svg')}}" alt="">
                             <p class="text-note ml-1 size2">Admin Admin</p>
                         </div>
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-calendar.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-calendar.svg')}}" alt="">
                             <p class="text-note ml-1 size2">01-01-2021</p>
                         </div>
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-eye.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-eye.svg')}}" alt="">
                             <p class="text-note ml-1 size2">1200</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="news-item">
-                    <img src="{{Vite::asset("/resources/images/icons/background/video-back.svg")}}" alt="">
+                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
                     <p class="size4 my-2">Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
                         kuzating !
                     </p>
@@ -527,15 +526,15 @@
                     </p>
                     <div class="flex justify-between">
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-user.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-user.svg')}}" alt="">
                             <p class="text-note ml-1 size2">Admin Admin</p>
                         </div>
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-calendar.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-calendar.svg')}}" alt="">
                             <p class="text-note ml-1 size2">01-01-2021</p>
                         </div>
                         <div class="flex">
-                            <img src="{{Vite::asset('/resources/images/icons/news-eye.svg')}}" alt="">
+                            <img src="{{Vite::asset('resources/images/icons/news-eye.svg')}}" alt="">
                             <p class="text-note ml-1 size2">1200</p>
                         </div>
                     </div>
