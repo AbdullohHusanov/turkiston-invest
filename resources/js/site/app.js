@@ -16,6 +16,16 @@ import.meta.glob([
 let html = document.getElementById('html');
 const body = document.getElementById('body')
 
+let loader = document.querySelector(".loader_bg");
+function startLoader() {
+    setTimeout(function() {
+        loader.style.zIndex = "0";
+        loader.style.transition = ".3s linear";
+        loader.style.display = "none";
+    }, 1000);
+}
+startLoader();
+
 const toTop = document.querySelector(".to-top");
 window.addEventListener("scroll", () => {
     if (window.pageYOffset > 100) {

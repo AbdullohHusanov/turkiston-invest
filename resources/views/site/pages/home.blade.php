@@ -559,7 +559,7 @@
                 map: map
             });
         }
-    </script>1
+    </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiIRV4Lkcqz-GxYGkFUZ-wHhrJXXdHj4I&callback=initMap"></script>
 
 
