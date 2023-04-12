@@ -19,9 +19,13 @@
     @include('site.components.navbar.navbar')
 
     @yield('content')
-
+    <a href="#" class="to-top">
+        <img src="{{Vite::asset('resources/images/icons/scrol-top.svg')}}" alt="">
+    </a>
+    <img id="btnSpeak" class="cursor-pointer absolute hidden" style="z-index: 99999999;"
+         src="{{Vite::asset('resources/images/icons/volume.svg')}}" alt="" width="20">
     @include('site.components.footer')
-    <img id="btnSpeak" class="cursor-pointer absolute hidden" src="{{Vite::asset('resources/images/icons/volume.svg')}}" alt="" width="20">
+
 
     @vite('resources/js/site/app.js')
 

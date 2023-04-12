@@ -13,6 +13,22 @@ body {
     box-sizing: border-box;
 }
 
+.to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: all .4s;
+    z-index: 1 !important;
+    visibility: hidden;
+}
+.to-top.active {
+    cursor: pointer;
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+    visibility: visible;
+}
+
 .button {
     color: #ffffff;
     background: #DCBF85;

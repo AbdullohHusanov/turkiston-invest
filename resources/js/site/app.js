@@ -16,6 +16,16 @@ import.meta.glob([
 let html = document.getElementById('html');
 const body = document.getElementById('body')
 
+const toTop = document.querySelector(".to-top");
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 100) {
+        toTop.classList.add("active");
+    } else {
+        toTop.classList.remove("active");
+    }
+})
+
+
 let toggleTheme = document.getElementById('toggleTheme');
 toggleTheme.addEventListener('click', changeTheme)
 function changeTheme() {
@@ -252,9 +262,6 @@ mute.addEventListener('click', (e) => {
             if (window.getSelection().toString() !== '') {
                 btnSpeak.style.left = xPosition + "px"
                 btnSpeak.style.top = yPosition + "px"
-                console.log(btnSpeak.style.top)
-                console.log(btnSpeak.style.left)
-
                 btnSpeak.classList.remove('hidden');
             } else btnSpeak.classList.add('hidden')
         })
