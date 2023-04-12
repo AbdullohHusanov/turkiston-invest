@@ -1,11 +1,9 @@
 .home-bg {
-    height: 100vh;
-    position: relative;
-    background-image: url("/resources/images/icons/background/Fon.svg");
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
+    img {
+        position: static;
+        min-width: 100%;
+        min-height: 100%;
+    }
 }
 
 .slides-container {

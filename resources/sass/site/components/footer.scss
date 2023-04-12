@@ -54,5 +54,27 @@ footer {
             background-color: var(--bg-color);
         }
     }
+
+    .icon-facebook:before {
+        content: "\e900";
+        color: #dcbf85;
+        font-size: 20px;
+    }
+
+    .icon-instagram:before {
+        content: "\e901";
+        color: #dcbf85;
+        font-size: 20px;
+    }
+    .icon-telegram:before {
+        content: "\e902";
+        color: #dcbf85;
+        font-size: 20px;
+    }
+    .icon-twitter:before {
+        content: "\e903";
+        color: #dcbf85;
+        font-size: 20px;
+    }
 }
 

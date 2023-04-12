@@ -89,10 +89,14 @@
             <p class="size3">2022 -2023 © “TURKISTON INVEST” AO | <a href="#" class="text-link">support@turkisoninvest.uz</a>
             </p>
             <div class="flex justify-center gap-4 mt-4 md:mt-0">
-                <a href="#"><img src="{{Vite::asset('resources/images/icons/facebook.svg')}}" alt="facebook"></a>
-                <a href="#"><img src="{{Vite::asset('resources/images/icons/instagram.svg')}}" alt="instagram"></a>
-                <a href="#"><img src="{{Vite::asset('resources/images/icons/twitter.svg')}}" alt="twitter"></a>
-                <a href="#"><img src="{{Vite::asset('resources/images/icons/telegram.svg')}}" alt="telegram"></a>
+                <a href="#"><span class="icon-facebook"></span></a>
+                <a href="#"><span class="icon-instagram"></span></a>
+                <a href="#"><span class="icon-twitter"></span></a>
+                <a href="#"><span class="icon-telegram"></span></a>
+{{--                <a href="#"><img src="{{Vite::asset('resources/images/icons/facebook.svg')}}" alt="facebook"></a>--}}
+{{--                <a href="#"><img src="{{Vite::asset('resources/images/icons/instagram.svg')}}" alt="instagram"></a>--}}
+{{--                <a href="#"><img src="{{Vite::asset('resources/images/icons/twitter.svg')}}" alt="twitter"></a>--}}
+{{--                <a href="#"><img src="{{Vite::asset('resources/images/icons/telegram.svg')}}" alt="telegram"></a>--}}
             </div>
         </div>
     </div>

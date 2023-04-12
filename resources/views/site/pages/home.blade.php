@@ -3,6 +3,7 @@
 
 @section('content')
     <div class="home-bg">
+        <img src="{{Vite::asset('resources/images/icons/background/Fon.svg')}}" alt="">
         <div class="container p-3 flex items-center h-full">
             <p class="size9 md:w-1/2 text-white leading-9">
                 Bugun investitsiya qiling va millionga sayohatingizni boshlang
