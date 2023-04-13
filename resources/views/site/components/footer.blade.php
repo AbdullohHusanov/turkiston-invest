@@ -47,7 +47,7 @@
                     <label class="size3" for="">Xatolari ko’p</label>
                 </div>
 
-                <div class="button">
+                <div class="button mt-2">
                     <button>Jo'natish</button>
                 </div>
             </div>
@@ -65,7 +65,7 @@
                     <input type="text">
                 </div>
 
-                <div class="button">
+                <div class="button mt-5">
                     <button>Obuna bo’lish</button>
                 </div>
             </div>

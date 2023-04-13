@@ -17,7 +17,6 @@ let html = document.getElementById('html');
 const body = document.getElementById('body')
 
 
-
 const toTop = document.querySelector(".to-top");
 window.addEventListener("scroll", () => {
     if (window.pageYOffset > 100) {
@@ -190,16 +189,16 @@ rangeInputs.forEach(input => {
 })
 
 
-const slidesContainer = document.querySelector(".slides-container");
-const slideWidth = slidesContainer.querySelector(".slide").clientWidth;
-const prevButton = document.querySelector(".prev");
-const nextButton = document.querySelector(".next");
-nextButton.addEventListener("click", () => {
-    slidesContainer.scrollLeft += slideWidth;
-});
-prevButton.addEventListener("click", () => {
-    slidesContainer.scrollLeft -= slideWidth;
-});
+// const slidesContainer = document.querySelector(".slides-container");
+// const slideWidth = slidesContainer.querySelector(".slide").clientWidth;
+// const prevButton = document.querySelector(".prev");
+// const nextButton = document.querySelector(".next");
+// nextButton.addEventListener("click", () => {
+//     slidesContainer.scrollLeft += slideWidth;
+// });
+// prevButton.addEventListener("click", () => {
+//     slidesContainer.scrollLeft -= slideWidth;
+// });
 
 
 

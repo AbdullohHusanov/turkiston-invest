@@ -22,3 +22,6 @@ Route::get('/', [\App\Http\Controllers\MainController::class, 'index']);
 Route::get('/{locale?}', [\App\Http\Controllers\MainController::class, 'indexSetLocale']);
 
 Route::get('language/{locale}', [\App\Http\Controllers\MainController::class, 'indexChangeLocale']);
+
+Route::get('/simple', [\App\Http\Controllers\SimpleController::class, 'index']);
+Route::view('/repost', 'site.pages.repost');
