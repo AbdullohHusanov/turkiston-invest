@@ -6,8 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Turkiston Invest | @yield('title')</title>
-    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/9c9738207c/UntitledProject/style.css">
-{{--    <script src="https://www.google.com/recaptcha/api.js?render=6LeAYGolAAAAALbPJMsvw_6CFV8Ql3GFnTf2vAim"></script>--}}
+    {{--    <script src="https://www.google.com/recaptcha/api.js?render=6LeAYGolAAAAALbPJMsvw_6CFV8Ql3GFnTf2vAim"></script>--}}
     @vite('resources/sass/site/app.scss')
     @yield('custom_styles')
 </head>
@@ -15,15 +14,18 @@
     <div id="app">
 
     </div>
-
+    <div id="loader" class="lds-roller">
+        <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    </div>
     @include('site.components.navbar.navbar')
-
     @yield('content')
     <a href="#" class="to-top">
-        <img src="{{Vite::asset('resources/images/icons/scrol-top.svg')}}" alt="">
+        <span class="icon-arrow-top"></span>
+{{--        <img src="{{Vite::asset('resources/images/icons/scrol-top.svg')}}" alt="">--}}
     </a>
-    <img id="btnSpeak" class="cursor-pointer absolute hidden" style="z-index: 99999999;"
-         src="{{Vite::asset('resources/images/icons/volume.svg')}}" alt="" width="20">
+    <span id="btnSpeak" class="icon-speaker-icon cursor-pointer absolute hidden"></span>
+{{--    <img id="btnSpeak" class="cursor-pointer absolute hidden" style="z-index: 99999999;"--}}
+{{--         src="{{Vite::asset('resources/images/icons/volume.svg')}}" alt="" width="20">--}}
     @include('site.components.footer')
 
 

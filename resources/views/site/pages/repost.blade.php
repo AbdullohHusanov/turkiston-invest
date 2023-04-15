@@ -18,7 +18,7 @@
             <div class="menu border-r pr-5">
                 <div class="logo mb-8"></div>
 
-                <p class="size1 font-medium text-center my-5">HISOBOT DAVRINI TANLANG</p>
+                <p class="size3 font-medium text-center my-5">HISOBOT DAVRINI TANLANG</p>
 
                 <div class="flex items-center gap-2">
                     <select>
@@ -30,23 +30,23 @@
                 </div>
 
                 <div class="my-5">
-                    <p class="size1">Lorem ipsum dolor sit amet consectetur. Ac varius nisl erat ut eget viverra faucibus feugiat id.</p>
-                    <a href="#" class="size1 text-link">1 - yanvar 2021 yil</a>
+                    <p class="size3">Lorem ipsum dolor sit amet consectetur. Ac varius nisl erat ut eget viverra faucibus feugiat id.</p>
+                    <a href="#" class="size3 text-link">1 - yanvar 2021 yil</a>
                 </div>
 
                 <div class="my-5">
-                    <p class="size1">Lorem ipsum dolor sit amet consectetur. Ac varius nisl erat ut eget viverra faucibus feugiat id.</p>
-                    <a href="#" class="size1 text-link">1 - yanvar 2021 yil</a>
+                    <p class="size3">Lorem ipsum dolor sit amet consectetur. Ac varius nisl erat ut eget viverra faucibus feugiat id.</p>
+                    <a href="#" class="size3 text-link">1 - yanvar 2021 yil</a>
                 </div>
 
                 <div class="my-5">
-                    <p class="size1">Lorem ipsum dolor sit amet consectetur. Ac varius nisl erat ut eget viverra faucibus feugiat id.</p>
-                    <a href="#" class="size1 text-link">1 - yanvar 2021 yil</a>
+                    <p class="size3">Lorem ipsum dolor sit amet consectetur. Ac varius nisl erat ut eget viverra faucibus feugiat id.</p>
+                    <a href="#" class="size3 text-link">1 - yanvar 2021 yil</a>
                 </div>
 
                 <div class="my-5">
-                    <p class="size1">Lorem ipsum dolor sit amet consectetur. Ac varius nisl erat ut eget viverra faucibus feugiat id.</p>
-                    <a href="#" class="size1 text-link">1 - yanvar 2021 yil</a>
+                    <p class="size3">Lorem ipsum dolor sit amet consectetur. Ac varius nisl erat ut eget viverra faucibus feugiat id.</p>
+                    <a href="#" class="size3 text-link">1 - yanvar 2021 yil</a>
                 </div>
             </div>
 
@@ -57,20 +57,23 @@
 
                 <div class="flex justify-between w-fit">
                     <div class="flex">
-                        <img src="{{Vite::asset('resources/images/icons/news-user.svg')}}" alt="">
+{{--                        <img src="{{Vite::asset('resources/images/icons/news-user.svg')}}" alt="">--}}
+                        <span class="icon-news-user flex items-center"></span>
                         <p class="size2 text-mute ml-1">Admin Admin</p>
                     </div>
                     <div class="flex mx-3">
-                        <img src="{{Vite::asset('resources/images/icons/news-calendar-674e7704.svg')}}" alt="">
+{{--                        <img src="{{Vite::asset('resources/images/icons/news-calendar.svg')}}" alt="">--}}
+                        <span class="icon-news-calendar flex items-center"></span>
                         <p class="size2 text-mute ml-1">01-01-2021</p>
                     </div>
                     <div class="flex">
-                        <img src="{{Vite::asset('resources/images/icons/news-eye-8a983c2a.svg')}}" alt="">
+{{--                        <img src="{{Vite::asset('resources/images/icons/news-eye.svg')}}" alt="">--}}
+                        <span class="icon-news-eye flex items-center"></span>
                         <p class="size2 text-mute ml-1">1200</p>
                     </div>
                 </div>
 
-                <p class="size3 mt-10">
+                <p class="size4 mt-10">
                     Lorem ipsum dolor sit amet consectetur. Tempus id sed viverra nibh lorem. Pellentesque nulla ullamcorper quam lorem nulla amet vel etiam proin. Scelerisque senectus nullam enim viverra neque. Eget mattis orci lorem vitae faucibus sit ut nulla. Ultrices eu elementum interdum in elit porta lectus in euismod. Cras sed vitae tortor nisi. Mauris mauris sollicitudin accumsan pellentesque egestas lorem facilisi nibh. Vulputate lorem ultrices magna dictum faucibus et consequat. Et neque metus congue at scelerisque imperdiet laoreet. Habitant auctor cras eget sed morbi ut convallis tempus risus. Est lobortis sed elit hendrerit mi diam interdum posuere id. Cursus pellentesque in pharetra diam vitae. Sed neque elementum dignissim tortor sem eget risus.
                     Dolor faucibus eget porta ullamcorper ut bibendum non leo. Nunc at ac nam feugiat ornare. Pharetra rutrum at mi at proin faucibus eu. Sit feugiat at lectus adipiscing. Neque ipsum arcu sed eget turpis facilisi facilisis cras nunc. In amet pellentesque nunc pharetra tristique. Sit viverra nisl mattis viverra. Erat neque lacus in bibendum enim. Ullamcorper adipiscing risus adipiscing pulvinar urna turpis placerat lobortis. At vitae enim at ornare gravida tincidunt urna. Adipiscing porta facilisi id id sed amet ac.
                     Tortor consectetur integer enim molestie velit sit sapien id. Turpis pellentesque eget gravida netus ullamcorper lectus etiam amet eu. Duis neque morbi odio tincidunt vestibulum sed ut amet. Scelerisque amet porttitor sit habitasse amet tellus mattis dictum. Odio aliquam ultricies adipiscing mauris purus. Morbi tortor massa diam tellus nulla tristique commodo euismod. Semper enim egestas amet in. Vulputate convallis in placerat amet consectetur odio aenean at. Nisl aliquet congue ultrices commodo. Facilisi eget posuere ut fermentum cursus suspendisse amet. Urna lectus neque aliquam vitae elementum quis sed pellentesque. Dui id nibh non viverra.

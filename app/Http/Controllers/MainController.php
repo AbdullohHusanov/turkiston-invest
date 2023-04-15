@@ -18,7 +18,7 @@ class MainController extends Controller
             app()->setLocale($locale);
         }
 
-        return view('site.pages.simple');
+        return view('site.pages.repost');
     }
 
     public function indexChangeLocale($locale): \Illuminate\Http\RedirectResponse

@@ -47,7 +47,6 @@ footer {
                 }
             }
         }
-
         input {
             border-color: var(--border-color-9) !important;
             border-radius: 5px !important;
@@ -55,26 +54,26 @@ footer {
         }
     }
 
-    .icon-facebook:before {
-        content: "\e900";
-        color: #dcbf85;
-        font-size: 20px;
-    }
-
-    .icon-instagram:before {
-        content: "\e901";
-        color: #dcbf85;
-        font-size: 20px;
-    }
     .icon-telegram:before {
-        content: "\e902";
-        color: #dcbf85;
+        content: "\e917";
+        color: var(--text-gold);
         font-size: 20px;
     }
     .icon-twitter:before {
-        content: "\e903";
-        color: #dcbf85;
+        content: "\e918";
+        color: var(--text-gold);
         font-size: 20px;
     }
+    .icon-facebook:before {
+        content: "\e905";
+        color: var(--text-gold);
+        font-size: 20px;
+    }
+    .icon-instagram:before {
+        content: "\e907";
+        color: var(--text-gold);
+        font-size: 20px;
+    }
+
 }
 

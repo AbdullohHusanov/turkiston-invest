@@ -12,9 +12,14 @@ import.meta.glob([
     '../../fonts/ProximaNova/**/**.ttf',
     '../../fonts/ProximaNova/**/**.woff',
     '../../fonts/ProximaNova/**/**.eot',
+    '../../fonts/icons/**/**.ttf',
+    '../../fonts/icons/**/**.woff',
+    '../../fonts/icons/**/**.eot',
+    '../../fonts/icons/**/**.svg',
 ]);
+
 let html = document.getElementById('html');
-const body = document.getElementById('body')
+let body = document.getElementById('body')
 
 
 const toTop = document.querySelector(".to-top");
@@ -26,6 +31,10 @@ window.addEventListener("scroll", () => {
     }
 })
 
+const loader = document.getElementById("loader");
+setTimeout(() => {
+   loader.style.display = 'none'
+}, 1500);
 
 let toggleTheme = document.getElementById('toggleTheme');
 toggleTheme.addEventListener('click', changeTheme)
@@ -230,6 +239,7 @@ const grayscaleTheme = document.getElementById('grayscaleTheme');
 const invertTheme = document.getElementById('invertTheme');
 const primaryTheme = document.getElementById('primaryTheme');
 grayscaleTheme.addEventListener('click', () => {
+    console.log('gray')
     html.style.filter = 'grayscale(100%)'
 })
 invertTheme.addEventListener('click', () => {
