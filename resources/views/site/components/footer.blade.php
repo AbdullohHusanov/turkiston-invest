@@ -86,8 +86,7 @@
         </div>
 
         <div class="block text-center md:flex md:text-left justify-between mt-10">
-            <p class="size3">2022 -2023 © “TURKISTON INVEST” AO | <a href="#" class="text-link">support@turkisoninvest.uz</a>
-            </p>
+            <p class="size3">2022 -2023 © “TURKISTON INVEST” AO | <a href="#" class="text-link">support@turkisoninvest.uz</a></p>
             <div class="flex justify-center gap-4 mt-4 md:mt-0">
                 <a href="#"><span class="icon-facebook"></span></a>
                 <a href="#"><span class="icon-instagram"></span></a>

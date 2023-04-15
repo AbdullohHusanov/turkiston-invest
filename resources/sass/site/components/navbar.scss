@@ -41,7 +41,7 @@
                     margin-right: 10px;
 
                     .navbar-menu-link {
-                        font-size: 14px;
+                        font-size: var(--font-size3);
                         line-height: 24px;
                         position: relative;
                         color: var(--text-menu);
@@ -172,7 +172,6 @@
         }
     }
 }
-
 
 .full-menu {
     display: none;
