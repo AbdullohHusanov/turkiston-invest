@@ -1,9 +1,9 @@
-<div class="accessibility-window" id="accessibility-window">
+<div class="accessibility-window " id="accessibility-window">
     <div class="accessibility-bg" id="accessibility-bg">
 
     </div>
 
-    <div class="accessibility-modal" id="accessibility-modal">
+    <div class="accessibility-modal overflow-auto" id="accessibility-modal">
         <div class="accessibility-header">
             <div class="accessibility-header-title fill-text-color">
                 <p>Maxsus imkoniyatlar</p>

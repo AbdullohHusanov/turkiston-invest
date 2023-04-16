@@ -171,11 +171,9 @@ accessibilityBg.addEventListener('click', function () {
 })
 
 let accessibilityClose = document.getElementById('accessibility-window-close')
-
 accessibilityClose.addEventListener('click', function () {
     closeAccessibility()
 })
-
 navbarMenu.addEventListener('mouseenter', function () {
     closeFullMenu()
 })

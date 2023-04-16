@@ -551,17 +551,17 @@
                     <div class="flex justify-between">
                         <div class="flex">
                             <span class="icon-news-user flex items-center"></span>
-                            {{--                            <img src="{{Vite::asset('resources/images/icons/news-user.svg')}}" alt="">--}}
+{{--                            <img src="{{Vite::asset('resources/images/icons/news-user.svg')}}" alt="">--}}
                             <p class="text-note ml-1 size2">Admin Admin</p>
                         </div>
                         <div class="flex">
                             <span class="icon-news-calendar flex items-center"></span>
-                            {{--                            <img src="{{Vite::asset('resources/images/icons/news-calendar.svg')}}" alt="">--}}
+{{--                            <img src="{{Vite::asset('resources/images/icons/news-calendar.svg')}}" alt="">--}}
                             <p class="text-note ml-1 size2">01-01-2021</p>
                         </div>
                         <div class="flex">
                             <span class="icon-news-eye flex items-center"></span>
-                            {{--                            <img src="{{Vite::asset('resources/images/icons/news-eye.svg')}}" alt="">--}}
+{{--                            <img src="{{Vite::asset('resources/images/icons/news-eye.svg')}}" alt="">--}}
                             <p class="text-note ml-1 size2">1200</p>
                         </div>
                     </div>
