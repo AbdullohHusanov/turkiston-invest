@@ -21,14 +21,15 @@ body {
     transition: all .4s;
     z-index: 1 !important;
     visibility: hidden;
+
 }
 .icon-arrow-top:before {
     content: "\e901";
-    background-color: var(--text-gold);
-    border-radius: 50%;
-    padding: 20px;
     color: #ffffff;
     font-size: 22px;
+    padding: 20px;
+    background-color: var(--text-gold);
+    border-radius: 50%;
 }
 .to-top.active {
     cursor: pointer;
@@ -36,6 +37,72 @@ body {
     pointer-events: auto;
     opacity: 1;
     visibility: visible;
+    &:hover {
+        opacity: .8;
+    }
+}
+
+
+
+.button {
+    color: #ffffff;
+    background: #DCBF85;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 5px 10px 5px;
+    width: 100%;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+label {
+    line-height: 24px;
+    color: var(--text-color)
+}
+
+input {
+    border-color: var(--border-color-9) !important;
+    border-radius: 5px !important;
+    background-color: var(--bg-color) !important;
+    color: var(--text-color);
+}
+
+.text-note {
+    font-size: var(--font-size3);
+    color: var(--text-note);
+    line-height: 24px;
+}
+
+.icon-speaker-icon:before {
+    z-index: 9999999;
+    content: "\e912";
+    font-size: 20px;
+    padding: 7px;
+    border: 2px solid #546fff;
+    border-radius: 50%;
+    color: #546fff;
+}
+.icon-search:before {
+    content: "\e911";
+    font-size: 20px;
+    color: var(--nav-icons);
+}
+.icon-close-icon:before {
+    content: "\e902";
+    color: var(--nav-icons);
+}
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-note);
 }
 
 .lds-roller {
@@ -137,66 +204,3 @@ body {
         transform: rotate(360deg);
     }
 }
-
-.button {
-    color: #ffffff;
-    background: #DCBF85;
-    border-radius: 5px;
-    text-align: center;
-    padding: 10px 5px 10px 5px;
-    width: 100%;
-    &:hover {
-        opacity: 0.8;
-    }
-}
-label {
-    line-height: 24px;
-    color: var(--text-color)
-}
-
-input {
-    border-color: var(--border-color-9) !important;
-    border-radius: 5px !important;
-    background-color: var(--bg-color) !important;
-    color: var(--text-color);
-}
-
-.text-note {
-    font-size: var(--font-size3);
-    color: var(--text-note);
-    line-height: 24px;
-}
-
-.icon-speaker-icon:before {
-    z-index: 9999999;
-    content: "\e912";
-    font-size: 20px;
-    padding: 10px;
-    border: 2px solid #546fff;
-    border-radius: 50%;
-    color: #546fff;
-}
-.icon-search:before {
-    content: "\e911";
-    font-size: 20px;
-    color: var(--nav-icons);
-}
-.icon-close-icon:before {
-    content: "\e902";
-    color: var(--nav-icons);
-}
-
-
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--bg-color);
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--text-note);
-}
-
-

@@ -1,8 +1,8 @@
 {
     "private": true,
     "scripts": {
-        "dev": "vite",
-        "dev_host": "vite --host=test1.client.aslim.uz",
+        "dev": "vite --host=192.168.5.102",
+        "dev_host": "vite --host=192.168.5.102:4200",
         "build": "vite build"
     },
     "devDependencies": {

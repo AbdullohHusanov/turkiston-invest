@@ -237,11 +237,10 @@ const grayscaleTheme = document.getElementById('grayscaleTheme');
 const invertTheme = document.getElementById('invertTheme');
 const primaryTheme = document.getElementById('primaryTheme');
 grayscaleTheme.addEventListener('click', () => {
-    console.log('gray')
-    html.style.filter = 'grayscale(100%)'
+    html.style.filter = 'grayscale(100%)';
 })
 invertTheme.addEventListener('click', () => {
-    html.style.filter = 'invert(100%)'
+    html.style.filter = 'invert(100%)';
 })
 primaryTheme.addEventListener('click', () => {
     html.style.filter = 'none'
