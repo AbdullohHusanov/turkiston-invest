@@ -63,8 +63,8 @@
 {{--                     width="35">--}}
             </div>
 
-            <div style="height: 40px" class="flex justify-between items-center my-4">
-                <p class="lang-icon text-3xl">UZ</p>
+            <div style="height: 40px" class="lang-list flex justify-between items-center my-4">
+                <p class="lang-icon text-3xl active">UZ</p>
                 <p class="lang-icon text-3xl">RU</p>
                 <p class="lang-icon text-3xl">EN</p>
 {{--                <img class="block dark:hidden cursor-pointer"--}}

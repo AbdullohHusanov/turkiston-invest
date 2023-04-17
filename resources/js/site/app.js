@@ -33,16 +33,17 @@ window.addEventListener("scroll", () => {
 
 const loader = document.getElementById("loader");
 setTimeout(() => {
-   loader.style.display = 'none'
+    loader.style.display = 'none'
 }, 1500);
 
 let toggleTheme = document.getElementById('toggleTheme');
 toggleTheme.addEventListener('click', changeTheme)
+
 function changeTheme() {
-    if(toggleTheme.checked === true) {
+    if (toggleTheme.checked === true) {
         body.classList.add('dark')
         body.classList.remove('light')
-    }else {
+    } else {
         body.classList.add('light')
         body.classList.remove('dark')
     }
@@ -50,12 +51,12 @@ function changeTheme() {
         ? localStorage.setItem("PageTheme", "DARK")
         : localStorage.setItem("PageTheme", "LIGHT")
 }
+
 let getTheme = localStorage.getItem("PageTheme");
-if(getTheme === 'DARK') {
+if (getTheme === 'DARK') {
     toggleTheme.checked = true
     body.classList.add('dark')
-}
-else if(getTheme === 'LIGHT'){
+} else if (getTheme === 'LIGHT') {
     toggleTheme.checked = false
     body.classList.add('light')
 }
@@ -156,7 +157,6 @@ search.addEventListener('click', function () {
     closeFullMenu()
     toggleSearch()
 })
-
 searchWindowClose.addEventListener('click', function () {
     closeSearch()
 })
@@ -165,11 +165,9 @@ accessibility.addEventListener('click', function () {
     closeFullMenu()
     toggleAccessibility();
 })
-
 accessibilityBg.addEventListener('click', function () {
     closeAccessibility();
 })
-
 let accessibilityClose = document.getElementById('accessibility-window-close')
 accessibilityClose.addEventListener('click', function () {
     closeAccessibility()
@@ -180,6 +178,7 @@ navbarMenu.addEventListener('mouseenter', function () {
 
 
 const rangeInputs = document.querySelectorAll('input[type="range"]')
+
 function handleInputChange(e) {
     let target = e.target
     if (e.target.type !== 'range') {
@@ -190,13 +189,22 @@ function handleInputChange(e) {
     const val = target.value
     target.style.backgroundSize = (val - min) * 100 / (max - min) + '% 100%'
 }
+
 rangeInputs.forEach(input => {
     input.style.backgroundSize = '0% 100%'
     input.addEventListener('input', handleInputChange)
 })
 
-
-
+const langList = document.querySelectorAll('.lang-icon')
+for (let i = 0, length = langList.length; i < length; i++) {
+    langList[i].onclick = function () {
+        let b = document.querySelector('.lang-icon.active')
+        if (b) {
+            b.classList.remove('active')
+        }
+        langList[i].classList.add('active')
+    }
+}
 
 function mobile() {
     const mobile = document.getElementById('mobile');
@@ -204,6 +212,7 @@ function mobile() {
         window.open('http://127.0.0.1:8000/#', "_blank", "menubar=1,resizable=1,width=400,height=550")
     })
 }
+
 mobile()
 
 
@@ -216,13 +225,13 @@ slider.addEventListener('change', (event) => {
         font_size_set('medium');
     } else if (slider.value === '3') {
         font_size_set('large');
-    }
-    else if (slider.value === '4') {
+    } else if (slider.value === '4') {
         font_size_set('big');
     } else {
         font_size_set('small');
     }
 });
+
 function font_size_set(new_size) {
     let body = document.getElementById('body');
     body.classList.remove('small');
@@ -251,7 +260,7 @@ let btnSpeak = document.querySelector('#btnSpeak');
 let synth = window.speechSynthesis;
 const mute = document.getElementById('mute');
 mute.addEventListener('click', (e) => {
-    if(mute.checked) {
+    if (mute.checked) {
         btnSpeak.style.display = ''
         document.addEventListener('click', (event) => {
             let xPosition = event.clientX - body.getBoundingClientRect().left - (btnSpeak.clientWidth / 2);
@@ -276,7 +285,7 @@ mute.addEventListener('click', (e) => {
                 }
             }
         });
-    }else {
+    } else {
         btnSpeak.style.display = 'none'
     }
 })

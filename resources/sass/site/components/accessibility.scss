@@ -174,7 +174,11 @@
                 color: var(--text-gold);
                 border-radius: 30px;
             }
+            .active {
+                border-bottom: 1px solid var(--text-color);
+            }
         }
+
     }
 
 
@@ -209,7 +213,9 @@
     &:hover {
         opacity: .8;
     }
+
 }
+
 
 .accessibility-icon:before {
     color: var(--accessibility-icon);
