@@ -156,7 +156,6 @@
             <div class="size6 section-title w-full md:w-1/2">JAMIYAT HAQIDA</div>
             <div class="mx-auto">
                 <img src="{{Vite::asset('resources/images/icons/background/video-back.svg')}}" alt="" width="100%">
-
             </div>
         </div>
     </section>

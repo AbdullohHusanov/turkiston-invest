@@ -2,8 +2,6 @@
 @section('title', __('Simple page'))
 
 @section('content')
-    <h1>Simple</h1>
-
     <section>
         <div class="bg-img">
             <img src="{{Vite::asset('resources/images/icons/background/simple-bg.png')}}"  alt="">
