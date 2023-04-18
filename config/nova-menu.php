@@ -50,24 +50,24 @@ return [
     */
 
     'menus' => [
-        'header' => [
-            'name' => 'Header',
+        'site_main_menu' => [
+            'name' => 'Site menu',
             'unique' => true,
             'max_depth' => 10,
             'menu_item_types' => [
 
             ]
-        ],
-        'admin' => [
-            'name' => 'Admin',
-            'unique' => true,
-            'max_depth' => 10,
-            'menu_item_types' => [
-                \App\Nova\MenuBuilderTypes\AdminMenuSectionType::class,
-                \App\Nova\MenuBuilderTypes\AdminMenuSectionDashboardType::class,
-                \App\Nova\MenuBuilderTypes\AdminMenuItemResourceType::class
-            ]
         ]
+//        'admin' => [
+//            'name' => 'Admin',
+//            'unique' => true,
+//            'max_depth' => 10,
+//            'menu_item_types' => [
+//                \App\Nova\MenuBuilderTypes\AdminMenuSectionType::class,
+//                \App\Nova\MenuBuilderTypes\AdminMenuSectionDashboardType::class,
+//                \App\Nova\MenuBuilderTypes\AdminMenuItemResourceType::class
+//            ]
+//        ]
     ],
 
     /*
