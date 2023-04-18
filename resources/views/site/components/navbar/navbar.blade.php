@@ -13,8 +13,8 @@
 
 
         <div class="navbar-icons ml-auto">
-            <div class="end-burger ">
-                <button class="burger hidden md:block" id="burger">
+            <div class="end-burger">
+                <button class="burger block" id="burger">
                     <span class="burger-line top-line"></span>
                     <span class="burger-line mid-line"></span>
                     <span class="burger-line bottom-line"></span>

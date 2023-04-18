@@ -5,6 +5,7 @@
                 <ul class="full-menu-ul">
                     <li class="full-menu-li">
                         <a class="full-menu-link" href="#">test</a>
+                        <span class="arrow-menu"></span>
                     </li>
                     <li class="full-menu-li">
                         <a class="full-menu-link" href="#">test</a>

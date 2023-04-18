@@ -535,20 +535,20 @@
 
 @section('custom_js')
 
-{{--    <script>--}}
-{{--        var initMap = function () {--}}
-{{--            var options = {--}}
-{{--                zoom: 18,--}}
-{{--                center: {lat: 41.267586786380264, lng: 69.18045942512036}--}}
-{{--            }--}}
-{{--            var map = new google.maps.Map(document.getElementById('googleMap'), options);--}}
-{{--            var marker = new google.maps.Marker({--}}
-{{--                position: {lat: 41.26787306286429, lng: 69.18286699979},--}}
-{{--                map: map--}}
-{{--            });--}}
-{{--        }--}}
-{{--    </script>--}}
-{{--    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiIRV4Lkcqz-GxYGkFUZ-wHhrJXXdHj4I&callback=initMap"></script>--}}
+    <script>
+        var initMap = function () {
+            var options = {
+                zoom: 18,
+                center: {lat: 41.267586786380264, lng: 69.18045942512036}
+            }
+            var map = new google.maps.Map(document.getElementById('googleMap'), options);
+            var marker = new google.maps.Marker({
+                position: {lat: 41.26787306286429, lng: 69.18286699979},
+                map: map
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiIRV4Lkcqz-GxYGkFUZ-wHhrJXXdHj4I&callback=initMap"></script>
     <script>
         function onClick(e) {
             e.preventDefault();
