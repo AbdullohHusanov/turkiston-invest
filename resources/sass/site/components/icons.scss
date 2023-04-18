@@ -6,7 +6,7 @@
 
 .burger-line {
     display: flex;
-    width: 20px;
+    width: 22px;
     height: 2px;
     background-color: var(--text-menu);
     transition: .3s all ease;
@@ -41,6 +41,9 @@
     transition: .3s all ease;
 }
 
+.burger.active {
+    margin-top: 3px;
+}
 .search{
     position: relative;
     height: 20px;
