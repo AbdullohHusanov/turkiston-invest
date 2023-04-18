@@ -3,10 +3,12 @@ footer {
     padding-top: 50px;
     color: var(--text-color);
     margin-top: 100px;
+
     .border-bottom {
         border-bottom: 2px solid var(--text-gold);
         padding-bottom: 20px;
     }
+
     .footer-menu {
         input[type='radio'] {
             -webkit-appearance: none;
@@ -14,8 +16,9 @@ footer {
             border-radius: 50px !important;
             border-color: var(--text-gold) !important;
             color: var(--text-gold) !important;
-            outline-color: var(--text-gold) !important;
+            outline-color: var(--text-gold);
         }
+
         .footer-menu-ul {
 
             color: var(--text-menu);
@@ -48,11 +51,7 @@ footer {
                 }
             }
         }
-        input {
-            border-color: var(--border-color-9) !important;
-            border-radius: 5px !important;
-            background-color: var(--bg-color);
-        }
+
     }
 
     .icon-telegram:before {
@@ -60,21 +59,29 @@ footer {
         color: var(--text-gold);
         font-size: 20px;
     }
+
     .icon-twitter:before {
         content: "\e918";
         color: var(--text-gold);
         font-size: 20px;
     }
+
     .icon-facebook:before {
         content: "\e905";
         color: var(--text-gold);
         font-size: 20px;
     }
+
     .icon-instagram:before {
         content: "\e907";
         color: var(--text-gold);
         font-size: 20px;
     }
 
+    input[type='text'] {
+        border-color: var(--border-color-9) !important;
+        border-radius: 5px !important;
+        background-color: var(--bg-color);
+    }
 }
 

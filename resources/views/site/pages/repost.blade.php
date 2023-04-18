@@ -3,7 +3,6 @@
 
 
 @section('content')
-    <h1>Repost</h1>
     <section>
         <div class="bg-img">
             <img src="{{Vite::asset('resources/images/icons/background/simple-bg.png')}}" alt="">
@@ -94,6 +93,7 @@
                 </p>
 
             </div>
+
         </div>
     </section>
 @endsection
