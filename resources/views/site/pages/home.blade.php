@@ -158,7 +158,10 @@
         <div class="container px-3">
             <div class="size6 section-title w-full md:w-1/2">JAMIYAT HAQIDA</div>
             <div class="relative z-0">
-              <img src="{{Vite::asset('resources/images/icons/background/video-back.svg')}}" alt="" width="100%" height="100%">
+{{--              <img src="{{Vite::asset('resources/images/icons/background/video-back.svg')}}" alt="" width="100%" height="100%">--}}
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/aFnXjlkPwfc" height="300px" width="450" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </section>
