@@ -219,9 +219,6 @@
             width: 25%;
             .full-menu-ul {
                 .full-menu-li {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
                     margin-left: 10px;
                     padding-left: 0;
                     width: auto;
@@ -249,6 +246,19 @@
                             width: 100%;
                         }
                     }
+
+                    .mobile-submenu-ul {
+                        .mobile-submenu-li {
+                            margin-left: 10px;
+                            padding-left: 0;
+                            width: auto;
+                            margin-top: 10px;
+                            margin-bottom: 10px;
+                            &:after {
+                                margin: -1px 0 !important;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -271,15 +281,21 @@
             display: block;
             .full-menu-col {
                 width: 100%;
+                .full-menu-li {
+                    margin-left: 0 !important;
+                    .arrow-menu {
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 10px 5px 0 5px;
+                        border-color: var(--text-color) transparent transparent  transparent;
+                    }
+                    .mobile-submenu {
+                    }
+                }
             }
         }
     }
 
-    .arrow-menu {
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 10px 10px 10px;
-        border-color: transparent transparent var(--text-color) transparent;
-    }
+
 }
