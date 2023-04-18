@@ -10,4 +10,9 @@ class SimpleController extends Controller
     {
         return view('site.pages.simple');
     }
+
+    public function repost(Request $request): \Illuminate\Contracts\View\View|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application
+    {
+        return view('site.pages.repost');
+    }
 }

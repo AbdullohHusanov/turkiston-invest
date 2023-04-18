@@ -15,13 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 Illuminate\Support\Facades\Auth::routes([]);
 
+Route::get('/', [\App\Http\Controllers\MainController::class, 'index']);
+
 Route::get('/clients', [App\Http\Controllers\HomeController::class, 'index'])->name('clients');
 
-Route::get('/', [\App\Http\Controllers\MainController::class, 'index']);
+Route::get('/simple', [\App\Http\Controllers\SimpleController::class, 'index']);
+Route::get('/repost', [\App\Http\Controllers\SimpleController::class,'repost']);
 
 Route::get('/{locale?}', [\App\Http\Controllers\MainController::class, 'indexSetLocale']);
 
-Route::get('language/{locale}', [\App\Http\Controllers\MainController::class, 'indexChangeLocale']);
-
-Route::get('/simple', [\App\Http\Controllers\SimpleController::class, 'index']);
-Route::view('/repost', 'site.pages.repost');
+Route::get('locale/{locale}', [\App\Http\Controllers\MainController::class, 'indexChangeLocale']);

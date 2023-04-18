@@ -260,32 +260,50 @@ let btnSpeak = document.querySelector('#btnSpeak');
 let synth = window.speechSynthesis;
 const mute = document.getElementById('mute');
 mute.addEventListener('click', (e) => {
+    console.log("click mute")
     if (mute.checked) {
+        console.log("click checked")
+
         btnSpeak.style.display = ''
+
         document.addEventListener('click', (event) => {
             let xPosition = event.clientX - body.getBoundingClientRect().left - (btnSpeak.clientWidth / 2);
             let yPosition = event.clientY - body.getBoundingClientRect().top - (btnSpeak.clientHeight / 2);
+
             if (window.getSelection().toString() !== '') {
                 btnSpeak.style.left = xPosition + "px"
                 btnSpeak.style.top = yPosition + "px"
                 btnSpeak.classList.remove('hidden');
             } else btnSpeak.classList.add('hidden')
         })
+
         btnSpeak.addEventListener('click', () => {
+            synth.cancel();
+
+            console.log("click btnSpeak")
+            console.log(window.getSelection())
+
             synth.getVoices();
             let toSpeak = new SpeechSynthesisUtterance(window.getSelection().toString());
             synth.speak(toSpeak);
         });
+
         window.addEventListener('keyup', (event) => {
-            if (event.code === 'Space') {
+            synth.cancel();
+
+            if (event.code === 'Enter') {
                 if (window.getSelection().toString() !== '') {
                     synth.getVoices();
+
                     let toSpeak = new SpeechSynthesisUtterance(window.getSelection().toString());
                     synth.speak(toSpeak);
                 }
             }
         });
+
     } else {
+        window.removeEventListener('keyup','')
+
         btnSpeak.style.display = 'none'
     }
 })
