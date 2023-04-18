@@ -9,6 +9,7 @@ body{
     --text-link: #{$text-link-light};
     --text-link-hover: #{$text-link-hover-light};
     --text-gold: #{$text-gold-light};
+    --text-note: #{$text-note-light};
 
     --bg-component-1: #{$bg-component-light-1};
     --bg-component-2: #{$bg-component-light-2};
@@ -41,6 +42,7 @@ body.light{
     --text-link: #{$text-link-light};
     --text-link-hover: #{$text-link-hover-light};
     --text-gold: #{$text-gold-light};
+    --text-note: #{$text-note-light};
 
     --bg-component-1: #{$bg-component-light-1};
     --bg-component-2: #{$bg-component-light-2};
@@ -59,7 +61,18 @@ body.light{
     --border-color-6: #{$border-color-light-6};
     --border-color-7: #{$border-color-light-7};
     --border-color-8: #{$border-color-light-8};
+    --border-color-9: #{$border-color-light-9};
 
+    --nav-icons: #{$nav-icon-light};
+    --accessibility-icon: #{$accessibility-icon-light};
+    --accessibility-bg-icon: #{$accessibility-icon-bg-light};
+    --contact-icon: #{$contact-icon-light};
+
+    --mask-color: #{$mask-color-light};
+    --slider-color: #{$slider-color-light};
+    --btn-bg: #{$btn-bg-light};
+    --nav-shadow: #{$nav-shadow-light};
+    --footer-shadow: #{$footer-shadow-light};
 }
 
 body.dark{
@@ -73,6 +86,7 @@ body.dark{
     --text-link: #{$text-link-light};
     --text-link-hover: #{$text-link-hover-dark};
     --text-gold: #{$text-gold-dark};
+    --text-note: #{$text-note-dark};
 
     --bg-component-1: #{$bg-component-dark-1};
     --bg-component-2: #{$bg-component-dark-2};
@@ -91,4 +105,17 @@ body.dark{
     --border-color-6: #{$border-color-dark-6};
     --border-color-7: #{$border-color-dark-7};
     --border-color-8: #{$border-color-dark-8};
+    --border-color-9: #{$border-color-dark-9};
+
+    --nav-icons: #{$nav-icon-dark};
+    --accessibility-icon: #{$accessibility-icon-dark};
+    --accessibility-bg-icon: #{$accessibility-icon-bg-dark};
+    --contact-icon: #{$contact-icon-dark};
+
+    --mask-color: #{$mask-color-dark};
+    --slider-color: #{$slider-color-dark};
+    --btn-bg: #{$btn-bg-dark};
+    --nav-shadow: #{$nav-shadow-dark};
+    --footer-shadow: #{$footer-shadow-dark}
+
 }

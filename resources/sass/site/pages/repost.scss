@@ -1,0 +1,23 @@
+section {
+    color: var(--text-color);
+    .bg-img {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        p {
+            position: absolute;
+            top: 30%;
+            left: 0%
+        }
+    }
+
+    select {
+        padding: 5px 15px !important;
+        background: none;
+        border-radius: 5px;
+    }
+
+}

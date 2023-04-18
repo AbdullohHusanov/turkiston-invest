@@ -5,7 +5,7 @@
     left: 0;
     top: 0;
     z-index: 1000;
-    background: $bg-light;
+    background: var(--bg-color);
     display: none;
 
     .container{
@@ -19,5 +19,6 @@
     &.active{
         display: block;
     }
+
 }
 

@@ -7,12 +7,21 @@
 @import "variables/colors-light";
 @import "variables/colors-dark";
 
+@import "./core/glyphicons";
+@import "./core/fonts";
+
 @import "variables/font-sizes";
 @import "./core/colors";
 
 @import "core/typography";
+
 @import "core/general";
 
 
 @import "./components/navbar";
-@import "./components/fonts";
+@import "./components/footer";
+@import "./pages/home";
+@import "./pages/simple";
+@import "./pages/repost";
+
+
