@@ -1,6 +1,7 @@
 import './bootstrap'
 import {createApp} from 'vue'
 import App from './App.vue'
+import {arrow} from "@popperjs/core";
 
 createApp(App).mount("#app")
 
@@ -318,3 +319,21 @@ nextButton.addEventListener("click", () => {
 prevButton.addEventListener("click", () => {
     slidesContainer.scrollLeft -= slideWidth;
 });
+
+const mobileSubmenu = document.getElementById('mobileSubmenu')
+const menuItem = document.getElementById('menuItem');
+const arrowMenu = document.getElementById('arrowMenu');
+
+
+arrowMenu.addEventListener('click',  () => {
+    if (arrowMenu.style.transform === '') {
+        arrowMenu.style.transform = 'rotate(180deg)'
+        mobileSubmenu.style.display = 'block'
+    } else if (arrowMenu.style.transform === 'rotate(180deg)') {
+        arrowMenu.style.transform = 'rotate(0deg)'
+        mobileSubmenu.style.display = 'none'
+    } else if (arrowMenu.style.transform === 'rotate(0deg)') {
+        arrowMenu.style.transform = 'rotate(180deg)'
+        mobileSubmenu.style.display = 'block'
+    }
+})
