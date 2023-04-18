@@ -198,7 +198,7 @@
 
 .full-menu {
     display: none;
-    position: sticky;
+    position: fixed;
     width: 100%;
     left: 0;
     top: 64px;
@@ -220,6 +220,8 @@
             .full-menu-ul {
                 .full-menu-li {
                     display: flex;
+                    justify-content: space-between;
+                    align-items: center;
                     margin-left: 10px;
                     padding-left: 0;
                     width: auto;
@@ -250,5 +252,34 @@
                 }
             }
         }
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .full-menu {
+        overflow: auto;
+        display: none;
+        position: fixed;
+        width: 80%;
+        height: 100%;
+        left: 0;
+        top: 64px;
+        border-top: var(--text-gold) solid 2px;
+        .full-menu-row {
+            width: 100%;
+            display: block;
+            .full-menu-col {
+                width: 100%;
+            }
+        }
+    }
+
+    .arrow-menu {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 10px 10px 10px;
+        border-color: transparent transparent var(--text-color) transparent;
     }
 }

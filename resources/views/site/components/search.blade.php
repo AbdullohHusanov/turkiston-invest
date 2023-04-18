@@ -1,6 +1,6 @@
 <div class="search-window" id="search-window">
 
-    <div class="container">
+    <div class="container px-3">
 
         <div class="search-window-header">
 

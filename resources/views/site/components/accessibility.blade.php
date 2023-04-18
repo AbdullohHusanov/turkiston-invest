@@ -122,7 +122,7 @@
                 <input class="w-3/4" type="range" min="1" max="4" value="1" id="slider"/>
             </div>
 
-            <div style="height: 40px" class="flex justify-between items-center my-4">
+            <div style="height: 40px" class="hidden md:flex justify-between items-center my-4">
                 <span class="accessibility-icon icon-mobile-icon"></span>
 {{--                <img class="block dark:hidden"--}}
 {{--                     src="{{Vite::asset('resources/images/icons/accessability-light/icon-mobile-light.svg')}}"--}}
