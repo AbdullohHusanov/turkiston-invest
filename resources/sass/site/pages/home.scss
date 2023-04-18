@@ -22,7 +22,10 @@
 .slides-container::-webkit-scrollbar {
     display: none; /* Safari and Chrome */
 }
+iframe {
+    width: 100%;
 
+}
 .contact {
     display: flex;
     flex-direction: column;

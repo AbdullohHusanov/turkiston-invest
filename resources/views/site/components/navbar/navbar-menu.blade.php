@@ -1,13 +1,13 @@
 <div class="navbar-menu">
     <ul class="navbar-menu-ul" id="navbar-menu">
         <li class="navbar-menu-li">
-            <a class="navbar-menu-link size4" href="#">
+            <a class="navbar-menu-link" href="#">
                 Jamiyat haqida
             </a>
         </li>
 
         <li class="navbar-menu-li">
-            <a class="navbar-menu-link size4" href="#">
+            <a class="navbar-menu-link" href="#">
                 Biz bila aloqa
             </a>
 
@@ -18,52 +18,52 @@
                             <div class="submenu-col">
                                 <ul class="submenu-ul">
                                     <li class="submenu-li">
-                                        <a class="submenu-link size4" href="">test</a>
+                                        <a class="submenu-link " href="">test</a>
                                     </li>
                                     <li class="submenu-li">
-                                        <a class="submenu-link size4" href="">test</a>
+                                        <a class="submenu-link " href="">test</a>
                                     </li>
                                     <li class="submenu-li">
-                                        <a class="submenu-link size4" href="">test</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="submenu-col">
-                                <ul class="submenu-ul">
-                                    <li class="submenu-li">
-                                        <a class="submenu-link size4" href="">test</a>
-                                    </li>
-                                    <li class="submenu-li">
-                                        <a class="submenu-link size4" href="">test</a>
-                                    </li>
-                                    <li class="submenu-li">
-                                        <a class="submenu-link size4" href="">test</a>
+                                        <a class="submenu-link " href="">test</a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="submenu-col">
                                 <ul class="submenu-ul">
                                     <li class="submenu-li">
-                                        <a class="submenu-link size4" href="">test</a>
+                                        <a class="submenu-link " href="">test</a>
                                     </li>
                                     <li class="submenu-li">
-                                        <a class="submenu-link size4" href="">test</a>
+                                        <a class="submenu-link " href="">test</a>
                                     </li>
                                     <li class="submenu-li">
-                                        <a class="submenu-link size4" href="">test</a>
+                                        <a class="submenu-link " href="">test</a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="submenu-col">
                                 <ul class="submenu-ul">
                                     <li class="submenu-li">
-                                        <a class="submenu-link size4" href="">test</a>
+                                        <a class="submenu-link " href="">test</a>
                                     </li>
                                     <li class="submenu-li">
-                                        <a class="submenu-link size4" href="">test</a>
+                                        <a class="submenu-link " href="">test</a>
                                     </li>
                                     <li class="submenu-li">
-                                        <a class="submenu-link size4" href="">test</a>
+                                        <a class="submenu-link " href="">test</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="submenu-col">
+                                <ul class="submenu-ul">
+                                    <li class="submenu-li">
+                                        <a class="submenu-link " href="">test</a>
+                                    </li>
+                                    <li class="submenu-li">
+                                        <a class="submenu-link " href="">test</a>
+                                    </li>
+                                    <li class="submenu-li">
+                                        <a class="submenu-link " href="">test</a>
                                     </li>
                                 </ul>
                             </div>
@@ -74,7 +74,7 @@
         </li>
 
         <li class="navbar-menu-li">
-            <a class="navbar-menu-link size4" href="#">
+            <a class="navbar-menu-link " href="#">
                 Kunlik teg'ilishlar rejasi
             </a>
 
