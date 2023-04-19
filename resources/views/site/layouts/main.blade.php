@@ -22,14 +22,15 @@
 
 </div>
 <div id="loader" class="lds-roller">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <img class="loader-logo" src="{{Vite::asset('resources/logos/icon-mini.svg')}}">
+{{--    <div></div>--}}
+{{--    <div></div>--}}
+{{--    <div></div>--}}
+{{--    <div></div>--}}
+{{--    <div></div>--}}
+{{--    <div></div>--}}
+{{--    <div></div>--}}
+{{--    <div></div>--}}
 </div>
 @include('site.components.navbar.navbar')
 @yield('content')

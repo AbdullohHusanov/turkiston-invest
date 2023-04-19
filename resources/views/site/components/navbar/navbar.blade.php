@@ -1,7 +1,7 @@
 <nav class="navbar">
     <div class="container px-3 md:px-0 flex flex-row justify-content-between items-start">
         <div class="navbar-logo">
-            <a href="#">
+            <a href="/">
                 <img class="block dark:hidden"  src="{{ Vite::asset('resources/logos/logo-big-light.svg') }}" alt="navbar-logo">
                 <img class="hidden dark:block"  src="{{ Vite::asset('resources/logos/logo-big-dark.svg') }}" alt="navbar-logo">
             </a>
