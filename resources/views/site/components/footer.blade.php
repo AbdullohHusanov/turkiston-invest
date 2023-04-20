@@ -87,10 +87,6 @@
                 <a href="#"><span class="icon-instagram"></span></a>
                 <a href="#"><span class="icon-twitter"></span></a>
                 <a href="#"><span class="icon-telegram"></span></a>
-{{--                <a href="#"><img src="{{Vite::asset('resources/images/icons/facebook.svg')}}" alt="facebook"></a>--}}
-{{--                <a href="#"><img src="{{Vite::asset('resources/images/icons/instagram.svg')}}" alt="instagram"></a>--}}
-{{--                <a href="#"><img src="{{Vite::asset('resources/images/icons/twitter.svg')}}" alt="twitter"></a>--}}
-{{--                <a href="#"><img src="{{Vite::asset('resources/images/icons/telegram.svg')}}" alt="telegram"></a>--}}
             </div>
         </div>
     </div>

@@ -19,16 +19,13 @@
             <div class="flex justify-between w-fit">
                 <div class="flex">
                     <span class="icon-news-user flex items-center"></span>
-{{--                    <img src="{{Vite::asset('resources/images/icons/news-user.svg')}}" alt="">--}}
                     <p class="size2 text-mute ml-1">Admin Admin</p>
                 </div>
                 <div class="flex mx-3">
-{{--                    <img src="{{Vite::asset('resources/images/icons/news-calendar.svg')}}" alt="">--}}
                     <span class="icon-news-calendar flex items-center"></span>
                     <p class="size2 text-mute ml-1">01-01-2021</p>
                 </div>
                 <div class="flex">
-{{--                    <img src="{{Vite::asset('resources/images/icons/news-eye.svg')}}" alt="">--}}
                     <span class="icon-news-eye flex items-center"></span>
                     <p class="size2 text-mute ml-1">1200</p>
                 </div>

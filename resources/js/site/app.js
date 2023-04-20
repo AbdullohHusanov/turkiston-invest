@@ -212,7 +212,6 @@ function mobile() {
         window.open('http://127.0.0.1:8000/#', "_blank", "menubar=1,resizable=1,width=400,height=550")
     })
 }
-
 mobile()
 
 
