@@ -259,7 +259,7 @@
                 </div>
 
                 <div class="hero mx-auto">
-                    <img src="{{Vite::asset("resources/images/icons/background/hero2.svg")}}" alt="Hero">
+                    <img src="{{Vite::asset("resources/images/icons/background/hero1.svg")}}" alt="Hero">
                     <p class="size5 font-bold text-center">24 Years of Experience</p>
                 </div>
             </div>
@@ -267,7 +267,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 text-center md:text-left  mt-28">
 
                 <div class="hidden md:block hero mx-auto">
-                    <img src="{{Vite::asset("resources/images/icons/background/hero1.svg")}}" alt="Hero">
+                    <img src="{{Vite::asset("resources/images/icons/background/hero2.svg")}}" alt="Hero">
                 </div>
 
                 <div class="hero w-2/3 mx-auto md:mx-0">
@@ -294,19 +294,25 @@
             <div class="news-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
                 <div class="news-item">
                     <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="size4 my-2">Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                    <p class="news-title">
+                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
                         kuzating !
                     </p>
-                    <p class="size2 my-1">Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
+                    <p class="news-text">
+                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        <a class="text-link" href="#">Davomi...</a>
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                     </p>
-                    <div class="flex justify-between">
+                    <a href="#"><span>Read more</span></a>
+                    <div class="flex">
                         <div class="flex">
                             <span class="icon-news-user flex items-center"></span>
                             <p class="text-note ml-1 size2">Admin Admin</p>
                         </div>
-                        <div class="flex">
+                        <div class="flex mx-5">
                             <span class="icon-news-calendar flex items-center"></span>
                             <p class="text-note ml-1 size2">01-01-2021</p>
                         </div>
@@ -318,19 +324,25 @@
                 </div>
                 <div class="news-item">
                     <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="size4 my-2">Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                    <p class="news-title">
+                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
                         kuzating !
                     </p>
-                    <p class="size2 my-1">Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
+                    <p class="news-text">
+                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        <a class="text-link" href="#">Davomi...</a>
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                     </p>
-                    <div class="flex justify-between">
+                    <a href="#"><span>Read more</span></a>
+                    <div class="flex">
                         <div class="flex">
                             <span class="icon-news-user flex items-center"></span>
                             <p class="text-note ml-1 size2">Admin Admin</p>
                         </div>
-                        <div class="flex">
+                        <div class="flex mx-5">
                             <span class="icon-news-calendar flex items-center"></span>
                             <p class="text-note ml-1 size2">01-01-2021</p>
                         </div>
@@ -342,19 +354,25 @@
                 </div>
                 <div class="news-item">
                     <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="size4 my-2">Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                    <p class="news-title">
+                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
                         kuzating !
                     </p>
-                    <p class="size2 my-1">Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
+                    <p class="news-text">
+                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        <a class="text-link" href="#">Davomi...</a>
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                     </p>
-                    <div class="flex justify-between">
+                    <a href="#"><span>Read more</span></a>
+                    <div class="flex">
                         <div class="flex">
                             <span class="icon-news-user flex items-center"></span>
                             <p class="text-note ml-1 size2">Admin Admin</p>
                         </div>
-                        <div class="flex">
+                        <div class="flex mx-5">
                             <span class="icon-news-calendar flex items-center"></span>
                             <p class="text-note ml-1 size2">01-01-2021</p>
                         </div>
@@ -371,23 +389,28 @@
     <section class="news">
         <div class="container px-3">
             <div class="size6 section-title w-full md:w-1/2">ENG KO’P KO’RILGANLARI</div>
-
             <div class="news-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
                 <div class="news-item">
                     <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="size4 my-2">Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                    <p class="news-title">
+                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
                         kuzating !
                     </p>
-                    <p class="size2 my-1">Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
+                    <p class="news-text">
+                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        <a class="text-link" href="#">Davomi...</a>
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                     </p>
-                    <div class="flex justify-between">
+                    <a href="#"><span>Read more</span></a>
+                    <div class="flex">
                         <div class="flex">
                             <span class="icon-news-user flex items-center"></span>
                             <p class="text-note ml-1 size2">Admin Admin</p>
                         </div>
-                        <div class="flex">
+                        <div class="flex mx-5">
                             <span class="icon-news-calendar flex items-center"></span>
                             <p class="text-note ml-1 size2">01-01-2021</p>
                         </div>
@@ -399,19 +422,25 @@
                 </div>
                 <div class="news-item">
                     <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="size4 my-2">Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                    <p class="news-title">
+                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
                         kuzating !
                     </p>
-                    <p class="size2 my-1">Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
+                    <p class="news-text">
+                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        <a class="text-link" href="#">Davomi...</a>
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                     </p>
-                    <div class="flex justify-between">
+                    <a href="#"><span>Read more</span></a>
+                    <div class="flex">
                         <div class="flex">
                             <span class="icon-news-user flex items-center"></span>
                             <p class="text-note ml-1 size2">Admin Admin</p>
                         </div>
-                        <div class="flex">
+                        <div class="flex mx-5">
                             <span class="icon-news-calendar flex items-center"></span>
                             <p class="text-note ml-1 size2">01-01-2021</p>
                         </div>
@@ -423,19 +452,25 @@
                 </div>
                 <div class="news-item">
                     <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="size4 my-2">Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                    <p class="news-title">
+                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
                         kuzating !
                     </p>
-                    <p class="size2 my-1">Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
+                    <p class="news-text">
+                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        <a class="text-link" href="#">Davomi...</a>
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                     </p>
-                    <div class="flex justify-between">
+                    <a href="#"><span>Read more</span></a>
+                    <div class="flex">
                         <div class="flex">
                             <span class="icon-news-user flex items-center"></span>
                             <p class="text-note ml-1 size2">Admin Admin</p>
                         </div>
-                        <div class="flex">
+                        <div class="flex mx-5">
                             <span class="icon-news-calendar flex items-center"></span>
                             <p class="text-note ml-1 size2">01-01-2021</p>
                         </div>
@@ -452,23 +487,28 @@
     <section class="news">
         <div class="container px-3">
             <div class="size6 section-title w-full md:w-1/2">BLOG</div>
-
             <div class="news-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
                 <div class="news-item">
                     <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="size4 my-2">Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                    <p class="news-title">
+                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
                         kuzating !
                     </p>
-                    <p class="size2 my-1">Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
+                    <p class="news-text">
+                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        <a class="text-link" href="#">Davomi...</a>
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                     </p>
-                    <div class="flex justify-between">
+                    <a href="#"><span>Read more</span></a>
+                    <div class="flex">
                         <div class="flex">
                             <span class="icon-news-user flex items-center"></span>
                             <p class="text-note ml-1 size2">Admin Admin</p>
                         </div>
-                        <div class="flex">
+                        <div class="flex mx-5">
                             <span class="icon-news-calendar flex items-center"></span>
                             <p class="text-note ml-1 size2">01-01-2021</p>
                         </div>
@@ -480,19 +520,25 @@
                 </div>
                 <div class="news-item">
                     <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="size4 my-2">Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                    <p class="news-title">
+                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
                         kuzating !
                     </p>
-                    <p class="size2 my-1">Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
+                    <p class="news-text">
+                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        <a class="text-link" href="#">Davomi...</a>
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                     </p>
-                    <div class="flex justify-between">
+                    <a href="#"><span>Read more</span></a>
+                    <div class="flex">
                         <div class="flex">
                             <span class="icon-news-user flex items-center"></span>
                             <p class="text-note ml-1 size2">Admin Admin</p>
                         </div>
-                        <div class="flex">
+                        <div class="flex mx-5">
                             <span class="icon-news-calendar flex items-center"></span>
                             <p class="text-note ml-1 size2">01-01-2021</p>
                         </div>
@@ -504,19 +550,25 @@
                 </div>
                 <div class="news-item">
                     <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="size4 my-2">Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                    <p class="news-title">
+                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
                         kuzating !
                     </p>
-                    <p class="size2 my-1">Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
+                    <p class="news-text">
+                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        <a class="text-link" href="#">Davomi...</a>
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                     </p>
-                    <div class="flex justify-between">
+                    <a href="#"><span>Read more</span></a>
+                    <div class="flex">
                         <div class="flex">
                             <span class="icon-news-user flex items-center"></span>
                             <p class="text-note ml-1 size2">Admin Admin</p>
                         </div>
-                        <div class="flex">
+                        <div class="flex mx-5">
                             <span class="icon-news-calendar flex items-center"></span>
                             <p class="text-note ml-1 size2">01-01-2021</p>
                         </div>

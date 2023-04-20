@@ -1,7 +1,6 @@
 import './bootstrap'
 import {createApp} from 'vue'
 import App from './App.vue'
-import {arrow} from "@popperjs/core";
 
 createApp(App).mount("#app")
 
