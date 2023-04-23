@@ -22,24 +22,14 @@
 
 </div>
 <div id="loader" class="lds-roller">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <img class="loader-logo" src="{{Vite::asset('resources/logos/icon-mini.svg')}}">
 </div>
 @include('site.components.navbar.navbar')
 @yield('content')
 <a href="#" class="to-top">
     <span class="icon-arrow-top"></span>
-{{--            <img src="{{Vite::asset('resources/images/icons/scrol-top.svg')}}" alt="">--}}
 </a>
 <span id="btnSpeak" class="icon-speaker-icon cursor-pointer absolute hidden"></span>
-{{--    <img id="btnSpeak" class="cursor-pointer absolute hidden" style="z-index: 99999999;"--}}
-{{--         src="{{Vite::asset('resources/images/icons/volume.svg')}}" alt="" width="20">--}}
 @include('site.components.footer')
 
 

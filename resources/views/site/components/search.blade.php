@@ -6,8 +6,6 @@
 
             <div class="ml-auto cursor-pointer inline-block" id="search-window-close">
                 <span class="icon-close-icon"></span>
-{{--                <img class="inline-block dark:hidden" src="{{Vite::asset('resources/images/icons/icons-light/close-light.svg')}}" alt="close">--}}
-{{--                <img class="hidden dark:block" src="{{Vite::asset('resources/images/icons/icons-dark/close-dark.svg')}}" alt="close">--}}
             </div>
 
         </div>
@@ -24,8 +22,6 @@
                         style="position: absolute; top: 0; right: 0; height: 42px; width: 42px; display: flex; justify-content: center; align-items: center">
                         <button type="submit">
                             <span class="icon-search"></span>
-{{--                            <img class="inline-block dark:hidden" src="{{Vite::asset("resources/images/icons/icons-light/search-light.svg")}}" alt="search">--}}
-{{--                            <img class="hidden dark:block" src="{{Vite::asset("resources/images/icons/icons-dark/search-dark.svg")}}" alt="search">--}}
                         </button>
                     </div>
                 </form>

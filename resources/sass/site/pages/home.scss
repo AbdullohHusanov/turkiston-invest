@@ -64,6 +64,20 @@
     margin-left: 25px;
 }
 
+.news-title {
+    font-size: var(--font-size4);
+    margin: 0.5rem 0;
+}
+
+.news-text {
+    display: -webkit-box;
+    width: 100%;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: var(--font-size2);
+}
+
 .icon-Union:before {
     content: "\e919";
     color: #000;
