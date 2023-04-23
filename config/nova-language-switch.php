@@ -14,7 +14,7 @@ return [
     */
     'supported-languages' => [
         'uz' => "O'zbekcha",
-        'uz_cry' => "Узбекча",
+//        'uz_cry' => "Узбекча",
         'en' => 'English',
         'ru' => 'Русский'
     ],

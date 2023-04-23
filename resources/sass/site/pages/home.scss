@@ -38,26 +38,37 @@
 
 .section-title {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     text-align: center;
     margin: 100px auto;
     font-weight: 600;
     color: var(--text-color);
 }
-.section-title:before,
+
+.section-title:before {
+    content: "";
+    display: block;
+    width: calc(100% / 5);
+    height: 2px;
+    background: var(--bg-component-1);
+    margin-right: 25px;
+}
+
 .section-title:after {
     content: "";
     display: block;
     width: calc(100% / 5);
     height: 2px;
     background: var(--bg-component-1);
+    margin-left: 25px;
 }
 
 .icon-Union:before {
     content: "\e919";
     color: #000;
 }
+
 .icon-specification-1:before {
     content: "\e914";
     font-size: 80px;
@@ -65,6 +76,7 @@
     border-radius: 50%;
     color: var(--text-gold);
 }
+
 .icon-specification-2:before {
     content: "\e915";
     font-size: 80px;
@@ -72,6 +84,7 @@
     border-radius: 50%;
     color: var(--text-gold);
 }
+
 .icon-specification-3:before {
     content: "\e916";
     font-size: 80px;
@@ -79,38 +92,146 @@
     border-radius: 50%;
     color: var(--text-gold);
 }
+
 .icon-email-icon:before {
     content: "\e904";
     font-size: 22px;
     color: var(--contact-icon);
 }
+
 .icon-map-icon:before {
     content: "\e909";
     font-size: 22px;
     color: var(--contact-icon);
 }
+
 .icon-phone-icon:before {
     content: "\e90f";
     font-size: 22px;
     color: var(--contact-icon);
 }
+
 .icon-Union:before {
     content: "\e919";
     color: var(--text-gold);
     font-size: 16px;
 }
+
 .icon-news-user:before {
     content: "\e90e";
     font-size: 15px;
     color: var(--text-gold);
 }
+
 .icon-news-calendar:before {
     content: "\e90c";
     font-size: 15px;
     color: var(--text-gold);
 }
+
 .icon-news-eye:before {
     content: "\e90d";
     font-size: 15px;
     color: var(--text-gold);
+}
+
+.contactUs {
+    .container-fluid {
+        width: 100%;
+
+        .contactUs-map-contact-bg {
+            background: var(--bg-color);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            opacity: 0.9;
+        }
+
+        .contactUs-map-contact-text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 500px;
+
+            .container {
+                .text-layer {
+                    width: 50%;
+                    height: 500px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    margin-left: 25px;
+                }
+            }
+        }
+    }
+}
+
+.call-back {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+
+    .call-back-title{
+        width: 60%
+    }
+
+}
+
+@media (max-width: 770px){
+    .section-title{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .contactUs {
+        .container-fluid {
+            width: 100%;
+
+            .contactUs-map-contact-bg {
+                background: var(--bg-color);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0.9;
+            }
+
+            .contactUs-map-contact-text {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 500px;
+
+                .container {
+                    display: flex;
+                    .text-layer {
+                        width: 60%;
+                        height: 500px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .call-back {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .call-back-title{
+            width: 60%
+        }
+    }
 }

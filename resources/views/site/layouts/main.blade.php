@@ -46,5 +46,10 @@
 @vite('resources/js/site/app.js')
 
 @yield('custom_js')
+
+<script>
+    window.lightLogoPath = "{{Vite::asset('resources/logos/logo-big-light.svg')}}";
+    window.darkLogoPath = "{{Vite::asset('resources/logos/logo-big-dark.svg')}}";
+</script>
 </body>
 </html>

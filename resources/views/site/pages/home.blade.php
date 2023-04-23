@@ -41,7 +41,7 @@
 
     <section class="team">
         <div class="size6 section-title w-full md:w-1/2">JAMOA</div>
-        <div id="app" class="max-w-screen-lg mx-auto transition-all duration-500 ease-linear">
+        <div id="app" class="container transition-all duration-500 ease-linear">
             <div class="relative">
                 <div
                     class="slides-container h-72 flex snap-x snap-mandatory overflow-hidden overflow-x-auto space-x-2 rounded scroll-smooth before:w-[45vw] before:shrink-0 after:w-[45vw] after:shrink-0 md:before:w-0 md:after:w-0">
@@ -136,8 +136,10 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 items-center">
                 <div class="mb-5 mx-auto md:mb-0 md:mx-0">
-                    <img class="inline-block dark:hidden" src="{{Vite::asset('resources/logos/logo-big-light.svg')}}" alt="Logo" width="282">
-                    <img class="hidden dark:block" src="{{Vite::asset('resources/logos/logo-big-dark.svg')}}" alt="Logo" width="282">
+                    <img class="inline-block dark:hidden" src="{{Vite::asset('resources/logos/logo-big-light.svg')}}"
+                         alt="Logo" width="282">
+                    <img class="hidden dark:block" src="{{Vite::asset('resources/logos/logo-big-dark.svg')}}" alt="Logo"
+                         width="282">
                 </div>
                 <div class="size3 text-note">
                     Lorem ipsum dolor sit amet consectetur. Sed ac facilisi velit nisi. Mauris cum in integer commodo
@@ -162,12 +164,57 @@
 
     <section class="contactUs  relative z-0 mt-20">
         <div class="container px-3">
+            <div class="size6 section-title w-full md:w-1/2">BIZ BILAN BOG'LANISH</div>
+        </div>
+        <div class="container-fluid" style="height: 500px; position: relative">
+            <div class="flex flex-col md:flex-row">
+                <div class="w-full h-48  md:h-96" style="width: 100%; height: 500px" id="googleMap"></div>
+            </div>
+
+            <div class="contactUs-map-contact-bg">
+
+            </div>
+            <div class="contactUs-map-contact-text">
+                <div class="container">
+                    <div class="text-layer">
+                        <p class="size5 font-bold mb-10">Biz bilan bog'lanish</p>
+                        <div class="flex items-center my-2">
+                            <span class="icon-phone-icon"></span>
+                            <p class="ml-2 size2">+99899 999 99 99</p>
+                        </div>
+
+                        <div class="flex items-center my-2">
+                            <span class="icon-email-icon"></span>
+                            <p class="ml-2 size2">turkiston.invest@mail.ru</p>
+                        </div>
+
+                        <div class="flex items-center my-2">
+                            <span class="icon-map-icon"></span>
+                            <p class="ml-2 size2">28 Hawthorn Lane, Braidwood, AUSTRALIA</p>
+                        </div>
+
+                        <div class="flex items-center my-2">
+                            <span class="icon-map-icon"></span>
+                            <p class="ml-2 size2">28 Hawthorn Lane, Braidwood, AUSTRALIA</p>
+                        </div>
+                        <div class="flex items-center my-2">
+                            <span class="icon-map-icon"></span>
+                            <p class="ml-2 size2">28 Hawthorn Lane, Braidwood, AUSTRALIA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container px-3">
             <div class="size6 section-title w-full md:w-1/2">QAYTA ALOQA</div>
-            <div class="contact-form md:flex justify-around items-center mb-10">
-                <div class="text-note text-center md:text-left size3 w-full md:w-1/3">
-                    Bizning telefon raqamlarimizga bo’lana olmasangiz noqulayliklar uchun uzur so’raymiz ush formani
-                    to’ldirin va jo’nating biz sizga qayta aloqaga chiqamiz. Dam olish kunlari va bayram kunlaridan
-                    tashqari mutaxassislarimiz siz bilan tez orada bog’lanishadi !
+            <div class="contact-form md:flex justify-start items-center mb-10">
+                <div class="call-back text-note text-center md:text-left size3 w-full md:w-1/3 call-back">
+                    <div class="call-back-title">
+                        Bizning telefon raqamlarimizga bo’lana olmasangiz noqulayliklar uchun uzur so’raymiz ush formani
+                        to’ldirin va jo’nating biz sizga qayta aloqaga chiqamiz. Dam olish kunlari va bayram kunlaridan
+                        tashqari mutaxassislarimiz siz bilan tez orada bog’lanishadi !
+                    </div>
                 </div>
 
                 <div class="w-full md:w-1/3">
@@ -198,36 +245,7 @@
 
                     <button class="w-full button">Yuborish</button>
                 </div>
-            </div>
 
-            <div class="flex flex-col md:flex-row">
-                <div class="contact w-full md:w-1/2">
-                    <p class="size5 font-bold mb-10">Biz bilan bog'lanish</p>
-                    <div class="flex items-center my-2">
-                        <span class="icon-phone-icon"></span>
-                        <p class="ml-2 size2">+99899 999 99 99</p>
-                    </div>
-
-                    <div class="flex items-center my-2">
-                        <span class="icon-email-icon"></span>
-                        <p class="ml-2 size2">turkiston.invest@mail.ru</p>
-                    </div>
-
-                    <div class="flex items-center my-2">
-                        <span class="icon-map-icon"></span>
-                        <p class="ml-2 size2">28 Hawthorn Lane, Braidwood, AUSTRALIA</p>
-                    </div>
-
-                    <div class="flex items-center my-2">
-                        <span class="icon-map-icon"></span>
-                        <p class="ml-2 size2">28 Hawthorn Lane, Braidwood, AUSTRALIA</p>
-                    </div>
-                    <div class="flex items-center my-2">
-                        <span class="icon-map-icon"></span>
-                        <p class="ml-2 size2">28 Hawthorn Lane, Braidwood, AUSTRALIA</p>
-                    </div>
-                </div>
-                <div class="w-full h-48  md:h-96" id="googleMap"></div>
             </div>
         </div>
     </section>
@@ -537,25 +555,37 @@
         var initMap = function () {
             var options = {
                 zoom: 18,
-                center: {lat: 41.267586786380264, lng: 69.18045942512036}
+                center: { lat: 41.267586786380264, lng: 69.18045942512036 }
             }
             var map = new google.maps.Map(document.getElementById('googleMap'), options);
             var marker = new google.maps.Marker({
-                position: {lat: 41.26787306286429, lng: 69.18286699979},
+                position: { lat: 41.26787306286429, lng: 69.18286699979 },
                 map: map
             });
         }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiIRV4Lkcqz-GxYGkFUZ-wHhrJXXdHj4I&callback=initMap"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiIRV4Lkcqz-GxYGkFUZ-wHhrJXXdHj4I&callback=initMap"></script>
     <script>
         function onClick(e) {
             e.preventDefault();
-            grecaptcha.ready(function() {
-                grecaptcha.execute('6LeAYGolAAAAALbPJMsvw_6CFV8Ql3GFnTf2vAim', {action: 'submit'}).then(function(token) {
+            grecaptcha.ready(function () {
+                grecaptcha.execute('6LeAYGolAAAAALbPJMsvw_6CFV8Ql3GFnTf2vAim', {action: 'submit'}).then(function (token) {
                     // Add your logic to submit to your backend server here.
                     console.log(token)
                 });
             });
         }
+
+        const slidesContainer = document.querySelector(".slides-container");
+        const slideWidth = slidesContainer.querySelector(".slide").clientWidth;
+        const prevButton = document.querySelector(".prev");
+        const nextButton = document.querySelector(".next");
+        nextButton.addEventListener("click", () => {
+            slidesContainer.scrollLeft += slideWidth;
+        });
+        prevButton.addEventListener("click", () => {
+            slidesContainer.scrollLeft -= slideWidth;
+        });
     </script>
 @endsection

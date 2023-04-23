@@ -1,15 +1,14 @@
 <nav class="navbar">
     <div class="container px-3 md:px-0 flex flex-row justify-content-between items-start">
         <div class="navbar-logo">
-            <a href="#">
-                <img class="block dark:hidden"  src="{{ Vite::asset('resources/logos/logo-big-light.svg') }}" alt="navbar-logo">
-                <img class="hidden dark:block"  src="{{ Vite::asset('resources/logos/logo-big-dark.svg') }}" alt="navbar-logo">
+            <a href="/">
+                <img class="block" src="{{ Vite::asset('resources/logos/logo-big-light.svg') }}" alt="navbar-logo"
+                     id="logo">
             </a>
         </div>
         <div class="hidden md:flex">
-          @include('site.components.navbar.navbar-menu')
+            @include('site.components.navbar.navbar-menu')
         </div>
-
 
 
         <div class="navbar-icons ml-auto">
@@ -31,7 +30,7 @@
                 </div>
                 <div class="icon-box">
                     <button class="accessibility" id="accessibility">
-                       <span class="icon-accessability-icon cursor-pointer"></span>
+                        <span class="icon-accessability-icon cursor-pointer"></span>
                         <span class="accessibility-line first-line"></span>
                         <span class="accessibility-line second-line"></span>
                     </button>

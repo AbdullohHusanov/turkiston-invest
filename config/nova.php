@@ -163,7 +163,7 @@ return [
     */
 
      'brand' => [
-         'logo' => resource_path('/logos/logo-big-light.svg'),
+         'logo' => resource_path('/logos/universal.svg'),
 
 //         'colors' => [
 //             "400" => "24, 182, 155, 0.5",

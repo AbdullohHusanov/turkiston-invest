@@ -38,15 +38,23 @@ setTimeout(() => {
 }, 1500);
 
 let toggleTheme = document.getElementById('toggleTheme');
+let logo = document.getElementById('logo');
+
 toggleTheme.addEventListener('click', changeTheme)
 
 function changeTheme() {
     if (toggleTheme.checked === true) {
         body.classList.add('dark')
+        logo.classList.remove('light')
+        logo.classList.add('dark')
         body.classList.remove('light')
+        logo.src = window.darkLogoPath;
     } else {
         body.classList.add('light')
+        logo.classList.remove('dark')
+        logo.classList.add('light')
         body.classList.remove('dark')
+        logo.src = window.lightLogoPath;
     }
     toggleTheme.checked === true
         ? localStorage.setItem("PageTheme", "DARK")
@@ -57,9 +65,11 @@ let getTheme = localStorage.getItem("PageTheme");
 if (getTheme === 'DARK') {
     toggleTheme.checked = true
     body.classList.add('dark')
+    logo.src = window.darkLogoPath;
 } else if (getTheme === 'LIGHT') {
     toggleTheme.checked = false
     body.classList.add('light')
+    logo.src = window.lightLogoPath;
 }
 
 
@@ -327,13 +337,5 @@ arrowMenu.addEventListener('click',  () => {
 })
 
 
-const slidesContainer = document.querySelector(".slides-container");
-const slideWidth = slidesContainer.querySelector(".slide").clientWidth;
-const prevButton = document.querySelector(".prev");
-const nextButton = document.querySelector(".next");
-nextButton.addEventListener("click", () => {
-    slidesContainer.scrollLeft += slideWidth;
-});
-prevButton.addEventListener("click", () => {
-    slidesContainer.scrollLeft -= slideWidth;
-});
+let left = document.getElementById('logo')
+
