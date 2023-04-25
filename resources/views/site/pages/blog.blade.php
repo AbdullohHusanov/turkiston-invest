@@ -3,13 +3,13 @@
 
 @section('content')
     <section class="mt-10">
-        <div class="container px-3">
+        <div class="container px-3 md:px-0">
             <div class="tab">
                 <button class="tablinks active" id="defaultOpen" onclick="openCity(event, 'All')">All</button>
                 <button class="tablinks" onclick="openCity(event, 'Invest')">Invest</button>
                 <button class="tablinks" onclick="openCity(event, 'News')">News</button>
             </div>
-            <div class="flex justify-between px-3 py-10">
+            <div class="flex justify-between px-0 py-10">
                 <div class="articles hidden md:block w-1/3">
                     <p class="font-bold text-xl">Popular Articles</p>
                     <div class="article-item">
@@ -139,7 +139,7 @@
                     </div>
                 </div>
 
-                <div class="posts-list">
+                <div class="posts-list pl-0 md:pl-5">
                     <div id="All" class="tabcontent">
                         <div class="post-item">
                             <img src="{{Vite::asset('resources/images/icons/background/video-back.svg')}}" alt=""
@@ -209,7 +209,7 @@
                                     place
                                     and supplies it with the necessary
                                     regelialia.</p>
-                                <p>
+                                <p class="hidden md:block">
                                     A small river named Duden flows by their place and supplies it with the
                                     necessary
                                     regelialia.
@@ -228,7 +228,7 @@
                                     place
                                     and supplies it with the necessary
                                     regelialia.</p>
-                                <p>
+                                <p class="hidden md:block">
                                     A small river named Duden flows by their place and supplies it with the
                                     necessary
                                     regelialia.
@@ -250,7 +250,7 @@
                                     place
                                     and supplies it with the necessary
                                     regelialia.</p>
-                                <p>
+                                <p class="hidden md:block">
                                     A small river named Duden flows by their place and supplies it with the
                                     necessary
                                     regelialia.
