@@ -210,7 +210,6 @@
     z-index: 99999;
     box-shadow: var(--nav-shadow);
     border-top: var(--text-gold) solid 2px;
-
     &.active {
         display: block;
     }
@@ -231,6 +230,8 @@
                     .full-menu-link {
                         position: relative;
                         color: var(--text-color);
+                        font-size: var(--font-size4);
+                        font-weight: bold;
 
                         &:after {
                             content: "";
