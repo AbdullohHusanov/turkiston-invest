@@ -169,7 +169,7 @@
         <div class="container-fluid" style="height: 500px; position: relative">
             <div class="flex flex-col md:flex-row">
 {{--                <div class="w-full h-48  md:h-96" style="width: 100%; height: 500px" id="googleMap"></div>--}}
-                <div id="map" style="width: 100%; height: 500px; filter: grayscale(1)"></div>
+                <div id="map" style="width: 100%; height: 500px;"></div>
             </div>
 
             <div class="contactUs-map-contact-bg"></div>
