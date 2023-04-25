@@ -275,7 +275,7 @@
                     </p>
                 </div>
 
-                <div class="hero mx-auto">
+                <div class="hero mx-auto md:mr-0">
                     <img src="{{Vite::asset("resources/images/icons/background/hero1.svg")}}" alt="Hero">
                     <p class="size5 font-bold text-center">24 Years of Experience</p>
                 </div>
