@@ -308,7 +308,6 @@
     <section class="news">
         <div class="container px-3">
             <div class="size6 section-title w-full md:w-1/2">YANGILIKLAR</div>
-
             <div class="news-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
                 <div class="news-item">
                     <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
@@ -324,7 +323,7 @@
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                     </p>
-                    <a href="#"><span>Read more</span></a>
+                    <a class="read-more" href="#"><span>Read more</span></a>
                     <div class="flex">
                         <div class="flex">
                             <span class="icon-news-user flex items-center"></span>
@@ -354,7 +353,7 @@
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                     </p>
-                    <a href="#"><span>Read more</span></a>
+                    <a class="read-more" href="#"><span>Read more</span></a>
                     <div class="flex">
                         <div class="flex">
                             <span class="icon-news-user flex items-center"></span>
@@ -384,7 +383,7 @@
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                     </p>
-                    <a href="#"><span>Read more</span></a>
+                    <a class="read-more" href="#"><span>Read more</span></a>
                     <div class="flex">
                         <div class="flex">
                             <span class="icon-news-user flex items-center"></span>
@@ -422,7 +421,7 @@
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                     </p>
-                    <a href="#"><span>Read more</span></a>
+                    <a class="read-more" href="#"><span>Read more</span></a>
                     <div class="flex">
                         <div class="flex">
                             <span class="icon-news-user flex items-center"></span>
@@ -452,7 +451,7 @@
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                     </p>
-                    <a href="#"><span>Read more</span></a>
+                    <a class="read-more" href="#"><span>Read more</span></a>
                     <div class="flex">
                         <div class="flex">
                             <span class="icon-news-user flex items-center"></span>
@@ -482,7 +481,7 @@
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                     </p>
-                    <a href="#"><span>Read more</span></a>
+                    <a class="read-more" href="#"><span>Read more</span></a>
                     <div class="flex">
                         <div class="flex">
                             <span class="icon-news-user flex items-center"></span>
@@ -520,7 +519,7 @@
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                     </p>
-                    <a href="#"><span>Read more</span></a>
+                    <a class="read-more" href="#"><span>Read more</span></a>
                     <div class="flex">
                         <div class="flex">
                             <span class="icon-news-user flex items-center"></span>
@@ -550,7 +549,7 @@
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                     </p>
-                    <a href="#"><span>Read more</span></a>
+                    <a class="read-more" href="#"><span>Read more</span></a>
                     <div class="flex">
                         <div class="flex">
                             <span class="icon-news-user flex items-center"></span>
@@ -580,7 +579,7 @@
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                         consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
                     </p>
-                    <a href="#"><span>Read more</span></a>
+                    <a class="read-more" href="#"><span>Read more</span></a>
                     <div class="flex">
                         <div class="flex">
                             <span class="icon-news-user flex items-center"></span>

@@ -157,7 +157,7 @@
                                     necessary
                                     regelialia.
                                 </p>
-                                <a href="#"><span>Read more</span></a>
+                                <a class="read-more" href="#"><span>Read more</span></a>
                             </div>
                         </div>
                         <div class="post-item">
@@ -176,7 +176,7 @@
                                     necessary
                                     regelialia.
                                 </p>
-                                <a href="#"><span>Read more</span></a>
+                                <a class="read-more" href="#"><span>Read more</span></a>
                             </div>
                         </div>
                         <div class="post-item">
@@ -195,7 +195,7 @@
                                     necessary
                                     regelialia.
                                 </p>
-                                <a href="#"><span>Read more</span></a>
+                                <a class="read-more" href="#"><span>Read more</span></a>
                             </div>
                         </div>
                     </div>
@@ -217,7 +217,7 @@
                                     necessary
                                     regelialia.
                                 </p>
-                                <a href="#"><span>Read more</span></a>
+                                <a class="read-more" href="#"><span>Read more</span></a>
                             </div>
                         </div>
                         <div class="post-item">
@@ -236,7 +236,7 @@
                                     necessary
                                     regelialia.
                                 </p>
-                                <a href="#"><span>Read more</span></a>
+                                <a class="read-more" href="#"><span>Read more</span></a>
                             </div>
                         </div>
                     </div>
@@ -258,7 +258,7 @@
                                     necessary
                                     regelialia.
                                 </p>
-                                <a href="#"><span>Read more</span></a>
+                                <a class="read-more" href="#"><span>Read more</span></a>
                             </div>
                         </div>
                     </div>

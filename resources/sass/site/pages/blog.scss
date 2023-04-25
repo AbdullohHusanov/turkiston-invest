@@ -54,7 +54,7 @@
         }
     }
 }
-a span:after {
+.read-more span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -64,18 +64,18 @@ a span:after {
     font-size: 20px;
 }
 
-a span {
+.read-more span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
 }
 
-a:hover span {
+.read-more:hover span {
     padding-right: 12px;
 }
 
-a:hover span:after {
+.read-more:hover span:after {
     opacity: 1;
     right: 0;
 }
