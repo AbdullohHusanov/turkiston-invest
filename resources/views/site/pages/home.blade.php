@@ -16,25 +16,26 @@
             <div class="section-title w-full md:w-1/2">
                 KO’RSATKICHLAR
             </div>
-            <div class="flex justify-between">
+            <div class="specification-list justify-center sm:justify-between ">
 
-                <div class="flex-col items-center justify-center">
+                <div class="specification-item">
                     <div class="icon-specification-1 flex justify-center mb-5"></div>
                     <p class="specification-text">15+</p>
                     <p class="specification-text">yillik tajriba</p>
                 </div>
 
-                <div class="flex-col items-center justify-center my-10 sm:my-0">
+                <div class="specification-item">
                     <div class="icon-specification-2 flex justify-center mb-5"></div>
                     <p class="specification-text">2000+</p>
                     <p class="specification-text">aksionerlar</p>
                 </div>
 
-                <div class="flex-col items-center justify-center">
+                <div class="specification-item">
                     <div class="icon-specification-3 flex justify-center mb-5"></div>
                     <p class="specification-text">15000+ </p>
                     <p class="specification-text">abligatsiyalar</p>
                 </div>
+
             </div>
         </div>
     </section>
