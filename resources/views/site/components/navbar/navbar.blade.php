@@ -28,13 +28,19 @@
                         <span class="search-line second-line"></span>
                     </button>
                 </div>
-                <div class="icon-box">
-                    <button class="accessibility" id="accessibility">
-                        <span class="icon-accessability-icon cursor-pointer"></span>
-                        <span class="accessibility-line first-line"></span>
-                        <span class="accessibility-line second-line"></span>
-                    </button>
-                </div>
+                {{--                <div class="icon-box">--}}
+                {{--                    <button class="accessibility" id="accessibility">--}}
+                {{--                        <span class="icon-accessability-icon cursor-pointer"></span>--}}
+                {{--                        <span class="accessibility-line first-line"></span>--}}
+                {{--                        <span class="accessibility-line second-line"></span>--}}
+                {{--                    </button>--}}
+                {{--                </div>--}}
+                <select
+                    class="bg-transparent text-gray-900  rounded-lg focus:ring-0 focus:border-gray-400 block w-full p-1 dark:bg-gray-700  dark:placeholder-gray-400 dark:text-white">
+                    <option value="uz">O'zbekcha</option>
+                    <option value="ru">Русский</option>
+                    <option value="en">English</option>
+                </select>
                 <div class="icon-box">
                     <div style="display: flex;justify-content: center;align-items: center">
                         <a class=" leading-none" href="/login"><span class="icon-user-logo-icon"></span></a>

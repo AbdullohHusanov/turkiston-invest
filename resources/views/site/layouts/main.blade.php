@@ -28,12 +28,11 @@
 </div>
 @include('site.components.navbar.navbar')
 @yield('content')
-<a href="#" class="to-top">
-    <span class="icon-arrow-top"></span>
-</a>
+<a href="#" class="to-top"><span class="icon-arrow-top"></span></a>
 <span id="btnSpeak" class="icon-speaker-icon cursor-pointer absolute hidden"></span>
-@include('site.components.footer')
+<span class="icon-accessability-icon cursor-pointer" id="accessibility"></span>
 
+@include('site.components.footer')
 
 @vite('resources/js/site/app.js')
 

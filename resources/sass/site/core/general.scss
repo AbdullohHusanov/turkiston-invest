@@ -41,7 +41,17 @@ body {
         opacity: .8;
     }
 }
-
+.icon-accessability-icon:before {
+    content: "\e900";
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    font-size: 58px;
+    background-color: var(--text-gold);
+    color: #ffffff;
+    border: 2px solid var(--text-gold);
+    border-radius: 50%;
+}
 
 
 .button {
@@ -92,6 +102,9 @@ input[type='text'] {
     color: var(--nav-icons);
 }
 
+select {
+    background: none;
+}
 
 ::-webkit-scrollbar {
     width: 5px;

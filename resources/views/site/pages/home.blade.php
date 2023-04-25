@@ -13,34 +13,34 @@
 
     <section class="specification">
         <div class="container px-3">
-            <div class="size6 section-title w-full md:w-1/2">
+            <div class="section-title w-full md:w-1/2">
                 KO’RSATKICHLAR
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-3">
+            <div class="flex justify-between">
 
                 <div class="flex-col items-center justify-center">
                     <div class="icon-specification-1 flex justify-center mb-5"></div>
-                    <p data-target="20" class="size4 text-center font-bold ">15+</p>
-                    <p class="size4 text-center font-bold ">yillik tajriba</p>
+                    <p class="specification-text">15+</p>
+                    <p class="specification-text">yillik tajriba</p>
                 </div>
 
                 <div class="flex-col items-center justify-center my-10 sm:my-0">
                     <div class="icon-specification-2 flex justify-center mb-5"></div>
-                    <p data-target="2000" class="size4 text-center font-bold ">2000+</p>
-                    <p class="size4 text-center font-bold">aksionerlar</p>
+                    <p class="specification-text">2000+</p>
+                    <p class="specification-text">aksionerlar</p>
                 </div>
 
                 <div class="flex-col items-center justify-center">
                     <div class="icon-specification-3 flex justify-center mb-5"></div>
-                    <p data-target="15000" class="size4 text-center font-bold ">15000+ </p>
-                    <p class="size4 text-center font-bold">abligatsiyalar</p>
+                    <p class="specification-text">15000+ </p>
+                    <p class="specification-text">abligatsiyalar</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="team">
-        <div class="size6 section-title w-full md:w-1/2">JAMOA</div>
+        <div class="section-title w-full md:w-1/2">JAMOA</div>
         <div id="app" class="container transition-all duration-500 ease-linear">
             <div class="relative">
                 <div
@@ -132,7 +132,7 @@
     <section class="mission">
         <div class="container px-3">
 
-            <div class="size6 section-title w-full md:w-1/2">MAQSAD</div>
+            <div class="section-title w-full md:w-1/2">MAQSAD</div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 items-center">
                 <div class="mb-5 mx-auto md:mb-0 md:mx-0">
@@ -155,7 +155,7 @@
 
     <section class="about">
         <div class="container px-3">
-            <div class="size6 section-title w-full md:w-1/2">JAMIYAT HAQIDA</div>
+            <div class="section-title w-full md:w-1/2">JAMIYAT HAQIDA</div>
             <div class="mx-auto">
                 <img src="{{Vite::asset('resources/images/icons/background/video-back.svg')}}" alt="" width="100%">
             </div>
@@ -164,7 +164,7 @@
 
     <section class="contactUs  relative z-0 mt-20">
         <div class="container px-3">
-            <div class="size6 section-title w-full md:w-1/2">BIZ BILAN BOG'LANISH</div>
+            <div class="section-title w-full md:w-1/2">BIZ BILAN BOG'LANISH</div>
         </div>
         <div class="container-fluid" style="height: 500px; position: relative">
             <div class="flex flex-col md:flex-row">
@@ -306,7 +306,7 @@
 
     <section class="news">
         <div class="container px-3">
-            <div class="size6 section-title w-full md:w-1/2">YANGILIKLAR</div>
+            <div class="section-title w-full md:w-1/2">YANGILIKLAR</div>
             <div class="news-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
                 <div class="news-item">
                     <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
@@ -404,7 +404,7 @@
 
     <section class="news">
         <div class="container px-3">
-            <div class="size6 section-title w-full md:w-1/2">ENG KO’P KO’RILGANLARI</div>
+            <div class="section-title w-full md:w-1/2">ENG KO’P KO’RILGANLARI</div>
             <div class="news-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
                 <div class="news-item">
                     <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
@@ -502,7 +502,7 @@
 
     <section class="news">
         <div class="container px-3">
-            <div class="size6 section-title w-full md:w-1/2">BLOG</div>
+            <div class="section-title w-full md:w-1/2">BLOG</div>
             <div class="news-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
                 <div class="news-item">
                     <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">

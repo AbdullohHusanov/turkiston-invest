@@ -174,13 +174,16 @@
                         font-size: 20px;
                         color: var(--nav-icons);
                     }
-                    .icon-accessability-icon:before {
-                        content: "\e900";
-                        font-size: 17px;
-                        color: var(--nav-icons);
-                        border: 2px solid var(--nav-icons);
-                        border-radius: 50%;
-                    }
+                    //.icon-accessability-icon:before {
+                    //    content: "\e900";
+                    //    position: absolute;
+                    //    top: 50%;
+                    //    right: 5%;
+                    //    font-size: 17px;
+                    //    color: var(--nav-icons);
+                    //    border: 2px solid var(--nav-icons);
+                    //    border-radius: 50%;
+                    //}
                     .icon-user-logo-icon:before {
                         content: "\e91a";
                         font-size: 17px;
