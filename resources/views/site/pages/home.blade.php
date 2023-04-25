@@ -168,12 +168,11 @@
         </div>
         <div class="container-fluid" style="height: 500px; position: relative">
             <div class="flex flex-col md:flex-row">
-                <div class="w-full h-48  md:h-96" style="width: 100%; height: 500px" id="googleMap"></div>
+{{--                <div class="w-full h-48  md:h-96" style="width: 100%; height: 500px" id="googleMap"></div>--}}
+                <div id="map" style="width: 100%; height: 500px; filter: grayscale(1)"></div>
             </div>
 
-            <div class="contactUs-map-contact-bg">
-
-            </div>
+            <div class="contactUs-map-contact-bg"></div>
             <div class="contactUs-map-contact-text">
                 <div class="container">
                     <div class="text-layer">
@@ -601,21 +600,18 @@
 @endsection
 
 @section('custom_js')
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=&lang=ru_RU"></script>
     <script>
-        var initMap = function () {
-            var options = {
+        ymaps.ready(init)
+
+        function init() {
+            let map = new ymaps.Map('map', {
                 zoom: 18,
-                center: { lat: 41.267586786380264, lng: 69.18045942512036 }
-            }
-            var map = new google.maps.Map(document.getElementById('googleMap'), options);
-            var marker = new google.maps.Marker({
-                position: { lat: 41.26787306286429, lng: 69.18286699979 },
-                map: map
-            });
+                center: [41.267586786380264, 69.18045942512036],
+                controls: [],
+            })
         }
     </script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiIRV4Lkcqz-GxYGkFUZ-wHhrJXXdHj4I&callback=initMap"></script>
     <script>
         function onClick(e) {
             e.preventDefault();
@@ -638,4 +634,20 @@
             slidesContainer.scrollLeft -= slideWidth;
         });
     </script>
+
+{{--    <script>--}}
+{{--        var initMap = function () {--}}
+{{--            var options = {--}}
+{{--                zoom: 18,--}}
+{{--                center: {lat: 41.267586786380264, lng: 69.18045942512036}--}}
+{{--            }--}}
+{{--            var map = new google.maps.Map(document.getElementById('googleMap'), options);--}}
+{{--            var marker = new google.maps.Marker({--}}
+{{--                position: {lat: 41.26787306286429, lng: 69.18286699979},--}}
+{{--                map: map--}}
+{{--            });--}}
+{{--        }--}}
+{{--    </script>--}}
+{{--    <script--}}
+{{--        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiIRV4Lkcqz-GxYGkFUZ-wHhrJXXdHj4I&callback=initMap"></script>--}}
 @endsection
