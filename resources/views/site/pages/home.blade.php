@@ -216,7 +216,7 @@
                     </div>
                 </div>
 
-                <div class="w-full md:w-1/3">
+                <div class="w-full md:w-1/2">
                     <div class="flex flex-col my-3">
                         <label class="size2" for="">Ism:</label>
                         <input type="text">
@@ -250,9 +250,9 @@
     </section>
 
     <section class="heroes mt-20">
-        <div class="container">
+        <div class="container px-3">
             <div class="grid grid-cols-1 md:grid-cols-2 text-center md:text-left ">
-                <div class="hero w-2/3 mx-auto">
+                <div class="hero mx-auto">
                     <p class="size7 font-bold">
                         We’re a global stakeholder relations and consultancy.
                     </p>
@@ -283,11 +283,11 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 text-center md:text-left  mt-28">
 
-                <div class="hidden md:block hero mx-auto">
+                <div class="hidden md:block hero">
                     <img src="{{Vite::asset("resources/images/icons/background/hero2.svg")}}" alt="Hero">
                 </div>
 
-                <div class="hero w-2/3 mx-auto md:mx-0">
+                <div class="hero  mx-auto md:mx-0">
                     <p class="size7 font-bold">
                         Make a free consultation with our expert team to solve your prolems.
                     </p>
@@ -297,7 +297,7 @@
                 </div>
 
                 <div class="block md:hidden hero mx-auto">
-                    <img src="{{Vite::asset("resources/images/icons/background/hero1.svg")}}" alt="Hero">
+                    <img src="{{Vite::asset("resources/images/icons/background/hero2.svg")}}" alt="Hero">
                 </div>
 
             </div>
