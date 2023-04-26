@@ -33,36 +33,31 @@
                         <a class=" leading-none" href="/login"><span class="icon-user-logo-icon"></span></a>
                     </div>
                 </div>
+                <div class="icon-box">
+                    <div class="select-menu">
+                        <div class="select-btn">
+                            <span class="sBtn-text">UZ</span>
+                            <i class="chevron-down"></i>
+                        </div>
 
-                <div class="select-menu">
-                    <div class="select-btn">
-                        <span class="sBtn-text">UZ</span>
-                        <i class="chevron-down"></i>
+                        <ul class="options">
+                            <li class="option">
+                                <img src="{{Vite::asset('resources/images/icons/uzbekistan.png')}}" alt="uz" width="20">
+                                <span class="option-text">UZ</span>
+                            </li>
+                            <li class="option">
+                                <img src="{{Vite::asset('resources/images/icons/russia.png')}}" alt="ru" width="20">
+                                <span class="option-text">RU</span>
+                            </li>
+                            <li class="option">
+                                <img src="{{Vite::asset('resources/images/icons/united-kingdom.png')}}" alt="en"
+                                     width="20">
+                                <span class="option-text">EN</span>
+                            </li>
+
+                        </ul>
                     </div>
-
-                    <ul class="options">
-                        <li class="option">
-                            <img src="{{Vite::asset('resources/images/icons/uzbekistan.png')}}" alt="uz" width="20">
-                            <span class="option-text">UZ</span>
-                        </li>
-                        <li class="option">
-                            <img src="{{Vite::asset('resources/images/icons/russia.png')}}" alt="ru" width="20">
-                            <span class="option-text">RU</span>
-                        </li>
-                        <li class="option">
-                            <img src="{{Vite::asset('resources/images/icons/united-kingdom.png')}}" alt="en" width="20">
-                            <span class="option-text">EN</span>
-                        </li>
-
-                    </ul>
                 </div>
-
-                {{--                <select--}}
-                {{--                    class="bg-transparent border-none focus:ring-0 text-gray-900 rounded-lg block w-full p-1 dark:bg-gray-700 dark:placeholder-gray-400 dark:text-white">--}}
-                {{--                    <option value="uz">UZ</option>--}}
-                {{--                    <option value="ru">RU</option>--}}
-                {{--                    <option value="en">EN</option>--}}
-                {{--                </select>--}}
             </div>
         </div>
     </div>

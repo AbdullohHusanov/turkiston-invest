@@ -21,8 +21,8 @@ body {
     transition: all .4s;
     z-index: 1 !important;
     visibility: hidden;
-
 }
+
 .icon-arrow-top:before {
     content: "\e901";
     color: #ffffff;
@@ -31,20 +31,23 @@ body {
     background-color: var(--text-gold);
     border-radius: 50%;
 }
+
 .to-top.active {
     cursor: pointer;
     bottom: 32px;
     pointer-events: auto;
     opacity: 1;
     visibility: visible;
+
     &:hover {
         opacity: .8;
     }
 }
+
 .icon-accessability-icon:before {
     content: "\e900";
     position: fixed;
-    top: 50%;
+    bottom: 85px;
     right: 20px;
     font-size: 58px;
     background-color: var(--text-gold);
@@ -61,10 +64,12 @@ body {
     text-align: center;
     padding: 10px 5px 10px 5px;
     width: 100%;
+
     &:hover {
         opacity: 0.8;
     }
 }
+
 label {
     line-height: 24px;
     color: var(--text-color)
@@ -92,11 +97,13 @@ input[type='text'] {
     border-radius: 50%;
     color: #546fff;
 }
+
 .icon-search:before {
     content: "\e911";
     font-size: 20px;
     color: var(--nav-icons);
 }
+
 .icon-close-icon:before {
     content: "\e902";
     color: var(--nav-icons);
@@ -131,6 +138,7 @@ select {
     height: 100vh;
     z-index: 9999999;
 }
+
 .lds-roller img {
     animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
 }
@@ -169,4 +177,18 @@ select {
     100% {
         transform: scale(2);
     }
+}
+
+@media screen and (max-width: 600px) {
+    .icon-accessability-icon:before {
+        font-size: 50px;
+        right: 10px;
+    }
+    .icon-arrow-top:before {
+        font-size: 16px;
+    }
+    .to-top {
+        right: 10px;
+    }
+
 }
