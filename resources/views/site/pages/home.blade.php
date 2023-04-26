@@ -16,7 +16,7 @@
             <div class="section-title w-full md:w-1/2">
                 KO’RSATKICHLAR
             </div>
-            <div class="specification-list justify-center sm:justify-between ">
+            <div class="specification-list flex-col md:flex-row justify-center sm:justify-between ">
 
                 <div class="specification-item">
                     <div class="icon-specification-1 flex justify-center mb-5"></div>
