@@ -34,8 +34,9 @@
                     </div>
                 </div>
                 <div class="icon-box">
+
                     <div class="select-menu">
-                        <div class="select-btn">
+                        <div class="select-btn" id="selectBtn">
                             <span class="sBtn-text">UZ</span>
                             <i class="chevron-down"></i>
                         </div>
@@ -57,6 +58,7 @@
 
                         </ul>
                     </div>
+
                 </div>
             </div>
         </div>

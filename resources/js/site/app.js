@@ -1,7 +1,6 @@
 import './bootstrap'
 import {createApp} from 'vue'
 import App from './App.vue'
-import {arrow} from "@popperjs/core";
 
 createApp(App).mount("#app")
 
@@ -206,17 +205,6 @@ rangeInputs.forEach(input => {
     input.addEventListener('input', handleInputChange)
 })
 
-const langList = document.querySelectorAll('.lang-icon')
-for (let i = 0, length = langList.length; i < length; i++) {
-    langList[i].onclick = function () {
-        let b = document.querySelector('.lang-icon.active')
-        if (b) {
-            b.classList.remove('active')
-        }
-        langList[i].classList.add('active')
-    }
-}
-
 function mobile() {
     const mobile = document.getElementById('mobile');
     mobile.addEventListener('click', () => {
@@ -242,7 +230,6 @@ slider.addEventListener('change', (event) => {
         font_size_set('small');
     }
 });
-
 function font_size_set(new_size) {
     let body = document.getElementById('body');
     body.classList.remove('small');
@@ -335,24 +322,21 @@ arrowMenu.addEventListener('click',  () => {
     }
 })
 
-let left = document.getElementById('logo')
-
-
+const selectBtn = document.getElementById("selectBtn");
 const optionMenu = document.querySelector(".select-menu"),
-    selectBtn = optionMenu.querySelector(".select-btn"),
     options = optionMenu.querySelectorAll(".option"),
     sBtn_text = optionMenu.querySelector(".sBtn-text");
 
-selectBtn.addEventListener("click", () =>
-    optionMenu.classList.toggle("active")
-);
+document.addEventListener("click", (e) => {
+    if(selectBtn.contains(e.target)) {
+      optionMenu.classList.toggle("active")
+    }
+    else optionMenu.classList.remove("active")
+});
 
 options.forEach((option) => {
     option.addEventListener("click", () => {
-        let selectedOption = option.querySelector(".option-text").innerText;
-        sBtn_text.innerText = selectedOption;
-
+        sBtn_text.innerText = option.querySelector(".option-text").innerText;
         optionMenu.classList.remove("active");
     });
 });
-

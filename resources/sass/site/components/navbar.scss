@@ -219,36 +219,11 @@
             font-size: 25px;
             transition: 0.3s;
         }
-
-        .chevron-down {
-            box-sizing: border-box;
-            position: relative;
-            display: block;
-            transform: scale(var(--ggs, 1));
-            width: 22px;
-            height: 22px;
-            border: 2px solid transparent;
-            border-radius: 100px
-        }
-
-        .chevron-down::after {
-            content: "";
-            display: block;
-            box-sizing: border-box;
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            border-bottom: 2px solid;
-            border-right: 2px solid;
-            transform: rotate(45deg);
-            left: 4px;
-            top: 2px
-        }
     }
 
     .options {
+        display: none;
         position: absolute;
-        padding: 12px 0;
         margin-top: 10px;
         border-radius: 8px;
         animation-name: fadeInDown;
@@ -289,6 +264,8 @@
     display: block;
     opacity: 0;
     z-index: 10;
+    box-shadow: var(--nav-shadow);
+    margin-left: -10px;
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
     animation-duration: 0.4s;
@@ -391,7 +368,30 @@
         }
     }
 }
+.chevron-down {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs, 1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px
+}
 
+.chevron-down::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+    left: 4px;
+    top: 2px
+}
 
 @media only screen and (max-width: 600px) {
     .full-menu {
