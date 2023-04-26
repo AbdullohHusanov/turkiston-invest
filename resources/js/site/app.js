@@ -271,7 +271,6 @@ let btnSpeak = document.querySelector('#btnSpeak');
 let synth = window.speechSynthesis;
 const mute = document.getElementById('mute');
 mute.addEventListener('click', (e) => {
-    console.log("click mute")
     if (mute.checked) {
         console.log("click checked")
 
@@ -336,6 +335,24 @@ arrowMenu.addEventListener('click',  () => {
     }
 })
 
-
 let left = document.getElementById('logo')
+
+
+const optionMenu = document.querySelector(".select-menu"),
+    selectBtn = optionMenu.querySelector(".select-btn"),
+    options = optionMenu.querySelectorAll(".option"),
+    sBtn_text = optionMenu.querySelector(".sBtn-text");
+
+selectBtn.addEventListener("click", () =>
+    optionMenu.classList.toggle("active")
+);
+
+options.forEach((option) => {
+    option.addEventListener("click", () => {
+        let selectedOption = option.querySelector(".option-text").innerText;
+        sBtn_text.innerText = selectedOption;
+
+        optionMenu.classList.remove("active");
+    });
+});
 

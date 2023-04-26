@@ -601,7 +601,7 @@
 @endsection
 
 @section('custom_js')
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=&lang=ru_RU"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=21af990e-8fb4-47ce-be00-45508c871884&lang=ru_RU"></script>
     <script>
         ymaps.ready(init)
 

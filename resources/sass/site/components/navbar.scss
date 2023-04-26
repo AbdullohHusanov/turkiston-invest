@@ -10,6 +10,7 @@
     position: sticky;
     z-index: 999;
     top: 0;
+
     .container {
         .navbar-logo {
             padding-bottom: 12px;
@@ -46,6 +47,7 @@
                         position: relative;
                         color: var(--text-menu);
                         font-weight: bold;
+
                         &:after {
                             content: "";
                             display: inline-block;
@@ -169,11 +171,13 @@
                         height: 21px;
                         width: 21px;
                     }
+
                     .icon-search:before {
                         content: "\e911";
                         font-size: 20px;
                         color: var(--nav-icons);
                     }
+
                     //.icon-accessability-icon:before {
                     //    content: "\e900";
                     //    position: absolute;
@@ -199,6 +203,124 @@
 
 }
 
+.select-menu {
+    margin-left: 3px;
+
+    .select-btn {
+        display: flex;
+        height: 20px;
+        background: var(--bg-color);
+        color: var(--text-menu);
+        font-size: 18px;
+        font-weight: 400;
+        align-items: center;
+        cursor: pointer;
+        justify-content: space-between;
+
+        i {
+            font-size: 25px;
+            transition: 0.3s;
+        }
+
+        .chevron-down {
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            transform: scale(var(--ggs, 1));
+            width: 22px;
+            height: 22px;
+            border: 2px solid transparent;
+            border-radius: 100px
+        }
+
+        .chevron-down::after {
+            content: "";
+            display: block;
+            box-sizing: border-box;
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-bottom: 2px solid;
+            border-right: 2px solid;
+            transform: rotate(45deg);
+            left: 4px;
+            top: 2px
+        }
+    }
+
+    .options {
+        position: absolute;
+        overflow-y: auto;
+        padding: 12px 0;
+        margin-top: 10px;
+        border-radius: 8px;
+        animation-name: fadeInDown;
+        -webkit-animation-name: fadeInDown;
+        animation-duration: 0.35s;
+        animation-fill-mode: both;
+        -webkit-animation-duration: 0.35s;
+        -webkit-animation-fill-mode: both;
+
+        .option {
+            display: flex;
+            height: 45px;
+            cursor: pointer;
+            padding: 0 10px;
+            align-items: center;
+            background: var(--bg-color);
+
+            i {
+                font-size: 25px;
+                margin-right: 12px;
+            }
+
+            .option-text {
+                font-size: 18px;
+                color: var(--text-menu);
+                margin-left: 5px;
+            }
+        }
+    }
+
+}
+
+.select-menu.active .select-btn i {
+    transform: rotate(-180deg);
+}
+
+.select-menu.active .options {
+    display: block;
+    opacity: 0;
+    z-index: 10;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0, 30px, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+    to {
+        transform: translate3d(0, 20px, 0);
+        opacity: 0;
+    }
+}
+
 .full-menu {
     display: none;
     position: fixed;
@@ -210,6 +332,7 @@
     z-index: 99999;
     box-shadow: var(--nav-shadow);
     border-top: var(--text-gold) solid 2px;
+
     &.active {
         display: block;
     }
@@ -217,8 +340,10 @@
     .full-menu-row {
         display: flex;
         width: 100%;
+
         .full-menu-col {
             width: 25%;
+
             .full-menu-ul {
                 .full-menu-li {
                     margin-left: 10px;
@@ -258,6 +383,7 @@
                             width: auto;
                             margin-top: 10px;
                             margin-bottom: 10px;
+
                             &:after {
                                 margin: -1px 0 !important;
                             }
@@ -280,11 +406,14 @@
         left: 0;
         top: 64px;
         border-top: var(--text-gold) solid 2px;
+
         .full-menu-row {
             width: 100%;
             display: block;
+
             .full-menu-col {
                 width: 100%;
+
                 .full-menu-li {
                     margin-left: 0 !important;
 
@@ -293,8 +422,9 @@
                         height: 0;
                         border-style: solid;
                         border-width: 10px 5px 0 5px;
-                        border-color: var(--text-color) transparent transparent  transparent;
+                        border-color: var(--text-color) transparent transparent transparent;
                     }
+
                     .mobile-submenu {
                     }
                 }
