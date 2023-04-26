@@ -10,10 +10,6 @@
             </div>
             <div class="accessibility-header-close" id="accessibility-window-close">
                 <span class="icon-close-icon"></span>
-                {{--                <img class="block dark:hidden" src="{{Vite::asset('resources/images/icons/icons-light/close-light.svg')}}"--}}
-                {{--                     alt="close">--}}
-                {{--                <img class="hidden dark:block" src="{{Vite::asset('resources/images/icons/icons-dark/close-dark.svg')}}"--}}
-                {{--                     alt="close">--}}
             </div>
         </div>
 
@@ -32,18 +28,6 @@
                 <p id="grayscaleTheme" class="theme-icon grayscale text-2xl font-extrabold">A</p>
                 <p id="invertTheme" class="theme-icon invert text-2xl font-extrabold">A</p>
             </div>
-
-{{--            <div style="height: 40px" class="lang-list flex justify-between items-center my-4">--}}
-{{--                <a href="/locale/uz">--}}
-{{--                    <p class="lang-icon text-2xl {{(app()->getLocale() === 'uz') ? 'active' : ''}}">UZ</p>--}}
-{{--                </a>--}}
-{{--                <a href="/locale/ru">--}}
-{{--                    <p class="lang-icon text-2xl {{(app()->getLocale() === 'ru') ? 'active': ''}}">RU</p>--}}
-{{--                </a>--}}
-{{--                <a href="/locale/en">--}}
-{{--                    <p class="lang-icon text-2xl {{(app()->getLocale() === 'en') ? 'active': ''}}">EN</p>--}}
-{{--                </a>--}}
-{{--            </div>--}}
 
             <div style="height: 40px" class="flex justify-between items-center my-4">
                 <span class="accessibility-icon icon-mute-icon"></span>

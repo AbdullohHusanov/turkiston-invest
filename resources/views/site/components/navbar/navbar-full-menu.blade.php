@@ -1,4 +1,5 @@
 <div class="full-menu" id="full-menu">
+    <div class="full-menu-bg"></div>
     <div class="container">
         <div class="full-menu-row">
             <div class="full-menu-col">

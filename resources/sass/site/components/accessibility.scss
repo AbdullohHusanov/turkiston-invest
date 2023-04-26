@@ -180,8 +180,6 @@
         }
 
     }
-
-
 }
 
 .theme-icon {
@@ -205,7 +203,6 @@
     background-color: #ffffff;
     color: #000000;
 }
-
 .lang-icon {
     font-weight: 900;
     cursor: pointer;
@@ -216,14 +213,12 @@
 
 }
 
-
 .accessibility-icon:before {
     color: var(--accessibility-icon);
     background-color: var(--accessibility-bg-icon);
     border-radius: 50%;
     padding: 10px;
 }
-
 .icon-light-icon:before {
     content: "\e908";
 }

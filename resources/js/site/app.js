@@ -144,13 +144,11 @@ function toggleFullMenu() {
         fullMenuWindow.classList.remove('active');
     }
 }
-
 function openFullMenu() {
     stateBurger = true;
     burger.classList.add('active')
     fullMenuWindow.classList.add('active');
 }
-
 function closeFullMenu() {
     stateBurger = false;
     burger.classList.remove('active')
@@ -329,7 +327,9 @@ const optionMenu = document.querySelector(".select-menu"),
 
 document.addEventListener("click", (e) => {
     if(selectBtn.contains(e.target)) {
-      optionMenu.classList.toggle("active")
+        optionMenu.classList.toggle("active")
+        fullMenuWindow.classList.remove('active')
+        burger.classList.remove('active')
     }
     else optionMenu.classList.remove("active")
 });
