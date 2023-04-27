@@ -5,7 +5,8 @@
 @section('content')
     <section>
         <div class="bg-img">
-            <img src="{{Vite::asset('resources/images/icons/background/simple-bg.png')}}" alt="">
+            <img src="{{Vite::asset('resources/images/icons/background/78.jpg')}}" alt="">
+            <div class="bg-layer"></div>
             <div class="container px-3 flex justify-center items-center h-full">
                 <p class="size8 w-full  text-center text-white">
                     TUKRISTON INVEST AKSIONERLIK JAMIYATINING 2021-yil uchun yillik hisoboti
