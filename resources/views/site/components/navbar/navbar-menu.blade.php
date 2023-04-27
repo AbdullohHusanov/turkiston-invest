@@ -18,7 +18,7 @@
                             <div class="submenu-col">
                                 <ul class="submenu-ul">
                                     <li class="submenu-li">
-                                        <a class="submenu-link " href="">test</a>
+                                        <a class="submenu-link " href="">Jamiyat haqida</a>
                                     </li>
                                     <li class="submenu-li">
                                         <a class="submenu-link " href="">test</a>

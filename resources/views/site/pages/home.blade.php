@@ -3,7 +3,7 @@
 
 @section('content')
     <div class="home-bg">
-        <img src="{{Vite::asset('resources/images/icons/background/Fon.svg')}}" alt="">
+        <img src="{{Vite::asset('resources/images/icons/background/3.jpg')}}" alt="">
         <div class="container p-3 flex items-center">
             <p class="size9 md:w-1/2 text-white leading-9">
                 Bugun investitsiya qiling va millionga sayohatingizni boshlang
@@ -168,8 +168,11 @@
             <div class="section-title w-full md:w-1/2">BIZ BILAN BOG'LANISH</div>
         </div>
         <div class="container-fluid" style="height: 500px; position: relative">
-                    <div id="map" style="width: 100%; height: 500px;"></div>
+                    <div class="map" id="map"></div>
                     <div class="contactUs-map-contact-bg"></div>
+                    <div class="contactUs-map-btn">
+                        <button id="map-btn">Открыть в Яндекс карту</button>
+                    </div>
                     <div class="contactUs-map-contact-text">
                         <div class="container">
                             <div class="text-layer">
@@ -601,7 +604,7 @@
     <script src="https://api-maps.yandex.ru/2.1/?apikey=21af990e-8fb4-47ce-be00-45508c871884&lang=ru_RU"></script>
     <script>
         ymaps.ready(init)
-
+        let yandexURL = 'https://yandex.uz/maps/10335/tashkent/stops/1543141649/?ll=69.182982%2C41.267897&tab=overview&z=19.72'
         function init() {
             let map = new ymaps.Map('map', {
                 zoom: 18,
@@ -609,8 +612,15 @@
                 controls: [],
             })
         }
-    </script>
-    <script>
+
+        const mapBtn = document.getElementById('map-btn');
+        const map = document.getElementById('map');
+            console.log(mapBtn)
+
+        mapBtn.addEventListener('click', (e) => {
+            window.open(yandexURL, '_blank')
+        })
+
         function onClick(e) {
             e.preventDefault();
             grecaptcha.ready(function () {
@@ -631,5 +641,6 @@
         prevButton.addEventListener("click", () => {
             slidesContainer.scrollLeft -= slideWidth;
         });
+
     </script>
 @endsection

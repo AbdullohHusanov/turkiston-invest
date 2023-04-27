@@ -1,9 +1,12 @@
 .tab {
     display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
     .tablinks {
         padding: 5px 15px;
         border: 1px solid var(--text-gold);
-        margin-right: 10px;
+        margin: 5px;
+        margin-left: 0;
         border-radius: 5px;
         font-size: var(--font-size3);
         &:hover {

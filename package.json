@@ -1,7 +1,7 @@
 {
     "private": true,
     "scripts": {
-        "dev": "vite --host=192.168.5.108",
+        "dev": "vite",
         "dev_host": "vite",
         "build": "vite build"
     },

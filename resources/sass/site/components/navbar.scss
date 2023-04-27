@@ -42,11 +42,11 @@
                     margin-right: 10px;
 
                     .navbar-menu-link {
-                        font-size: var(--font-size4);
+                        font-size: var(--font-size3);
                         line-height: 24px;
                         position: relative;
                         color: var(--text-menu);
-                        font-weight: bold;
+                        font-weight: 500;
 
                         &:after {
                             content: "";
@@ -109,9 +109,9 @@
 
                                             .submenu-link {
                                                 position: relative;
-                                                font-size: var(--font-size4);
+                                                font-size: var(--font-size3);
                                                 color: var(--text-color);
-                                                font-weight: bold;
+                                                font-weight: 500;
 
                                                 &:after {
                                                     content: "";
