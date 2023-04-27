@@ -168,51 +168,48 @@
             <div class="section-title w-full md:w-1/2">BIZ BILAN BOG'LANISH</div>
         </div>
         <div class="container-fluid" style="height: 500px; position: relative">
-            <div class="flex flex-col md:flex-row">
-{{--                <div class="w-full h-48  md:h-96" style="width: 100%; height: 500px" id="googleMap"></div>--}}
-                <div id="map" style="width: 100%; height: 500px;"></div>
-            </div>
+                    <div id="map" style="width: 100%; height: 500px;"></div>
+                    <div class="contactUs-map-contact-bg"></div>
+                    <div class="contactUs-map-contact-text">
+                        <div class="container">
+                            <div class="text-layer">
+                                <p class="size5 font-bold mb-10">Biz bilan bog'lanish</p>
+                                <div class="flex items-center my-2">
+                                    <span class="icon-phone-icon"></span>
+                                    <p class="ml-2 size2">+99899 999 99 99</p>
+                                </div>
 
-            <div class="contactUs-map-contact-bg"></div>
-            <div class="contactUs-map-contact-text">
-                <div class="container">
-                    <div class="text-layer">
-                        <p class="size5 font-bold mb-10">Biz bilan bog'lanish</p>
-                        <div class="flex items-center my-2">
-                            <span class="icon-phone-icon"></span>
-                            <p class="ml-2 size2">+99899 999 99 99</p>
-                        </div>
+                                <div class="flex items-center my-2">
+                                    <span class="icon-email-icon"></span>
+                                    <p class="ml-2 size2">turkiston.invest@mail.ru</p>
+                                </div>
 
-                        <div class="flex items-center my-2">
-                            <span class="icon-email-icon"></span>
-                            <p class="ml-2 size2">turkiston.invest@mail.ru</p>
-                        </div>
+                                <div class="flex items-center my-2">
+                                    <span class="icon-map-icon"></span>
+                                    <p class="ml-2 size2">28 Hawthorn Lane, Braidwood, AUSTRALIA</p>
+                                </div>
 
-                        <div class="flex items-center my-2">
-                            <span class="icon-map-icon"></span>
-                            <p class="ml-2 size2">28 Hawthorn Lane, Braidwood, AUSTRALIA</p>
-                        </div>
-
-                        <div class="flex items-center my-2">
-                            <span class="icon-map-icon"></span>
-                            <p class="ml-2 size2">28 Hawthorn Lane, Braidwood, AUSTRALIA</p>
-                        </div>
-                        <div class="flex items-center my-2">
-                            <span class="icon-map-icon"></span>
-                            <p class="ml-2 size2">28 Hawthorn Lane, Braidwood, AUSTRALIA</p>
+                                <div class="flex items-center my-2">
+                                    <span class="icon-map-icon"></span>
+                                    <p class="ml-2 size2">28 Hawthorn Lane, Braidwood, AUSTRALIA</p>
+                                </div>
+                                <div class="flex items-center my-2">
+                                    <span class="icon-map-icon"></span>
+                                    <p class="ml-2 size2">28 Hawthorn Lane, Braidwood, AUSTRALIA</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-
         <div class="container px-3">
             <div class="size6 section-title w-full md:w-1/2">QAYTA ALOQA</div>
             <div class="contact-form md:flex justify-start items-center mb-10">
                 <div class="call-back text-note text-center md:text-left size3 w-full md:w-1/3 call-back">
                     <div class="call-back-title">
-                        Bizning telefon raqamlarimizga bo’lana olmasangiz noqulayliklar uchun uzur so’raymiz ush formani
-                        to’ldirin va jo’nating biz sizga qayta aloqaga chiqamiz. Dam olish kunlari va bayram kunlaridan
+                        Bizning telefon raqamlarimizga bo’lana olmasangiz noqulayliklar uchun uzur so’raymiz ush
+                        formani
+                        to’ldirin va jo’nating biz sizga qayta aloqaga chiqamiz. Dam olish kunlari va bayram
+                        kunlaridan
                         tashqari mutaxassislarimiz siz bilan tez orada bog’lanishadi !
                     </div>
                 </div>
@@ -635,20 +632,4 @@
             slidesContainer.scrollLeft -= slideWidth;
         });
     </script>
-
-{{--    <script>--}}
-{{--        var initMap = function () {--}}
-{{--            var options = {--}}
-{{--                zoom: 18,--}}
-{{--                center: {lat: 41.267586786380264, lng: 69.18045942512036}--}}
-{{--            }--}}
-{{--            var map = new google.maps.Map(document.getElementById('googleMap'), options);--}}
-{{--            var marker = new google.maps.Marker({--}}
-{{--                position: {lat: 41.26787306286429, lng: 69.18286699979},--}}
-{{--                map: map--}}
-{{--            });--}}
-{{--        }--}}
-{{--    </script>--}}
-{{--    <script--}}
-{{--        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiIRV4Lkcqz-GxYGkFUZ-wHhrJXXdHj4I&callback=initMap"></script>--}}
 @endsection
