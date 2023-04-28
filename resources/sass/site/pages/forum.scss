@@ -1,0 +1,68 @@
+.forum-wrapper {
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .articles {
+        width: 20%;
+    }
+
+    .forums-list {
+        width: 80%;
+        .forum-item {
+            a {
+                display: flex;
+                margin: 0 0 15px 0;
+                .avatar {
+                    width: 50px;
+                    height: 50px;
+                    background-color: var(--text-gold);
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    span {
+                        color: #ffffff;
+                    }
+                }
+                .forum-content {
+                    padding: 0 20px 0 20px;
+                    width: 100%;
+                    .forum-title {
+                        font-size: var(--font-size4);
+                        font-weight: bold;
+                    }
+
+                    .forum-text {
+                        font-size: var(--font-size2);
+                        display: -webkit-box;
+                        width: 100%;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        overflow: hidden;
+                    }
+                    .icon-comment {
+                        width: 19px;
+                        height: 15px;
+                        background-color: var(--text-gold);
+                        border-radius: 4px;
+                        position: relative;
+                    }
+                    .icon-comment:after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        right: 0;
+                        bottom: -4px;
+                        border-left: 10px solid transparent;
+                        border-right: 4px solid transparent;
+                        border-top: 9px solid var(--text-gold);
+                    }
+                }
+            }
+        }
+    }
+}

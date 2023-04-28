@@ -22,6 +22,7 @@ Route::get('/clients', [App\Http\Controllers\HomeController::class, 'index'])->n
 Route::get('/simple', [\App\Http\Controllers\SimpleController::class, 'index']);
 Route::get('/repost', [\App\Http\Controllers\SimpleController::class,'repost']);
 Route::get('/blog', [\App\Http\Controllers\SimpleController::class,'blog']);
+Route::get('/forum', [\App\Http\Controllers\SimpleController::class,'forum']);
 
 Route::get('/{locale?}', [\App\Http\Controllers\MainController::class, 'indexSetLocale']);
 

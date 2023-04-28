@@ -13,17 +13,17 @@
                         </div>
                         <p class="font-bold text-xl">Popular Articles</p>
                         <div class="article-item">
-                            <a href="#">
+                            <a class="size3" href="#">
                                 A small river named Duden flows by their place and supplies it with the necessary
                                 regelialia.
                                 <div class="flex justify-between w-fit">
                                     <div class="flex items-center">
                                         <span class="icon-news-user flex items-center"></span>
-                                        <p class="size2 text-mute ml-1">Admin Admin</p>
+                                        <p class="size1 text-mute ml-1">Admin Admin</p>
                                     </div>
                                     <div class="flex items-center mx-3">
                                         <span class="icon-news-calendar flex"></span>
-                                        <p class="size2 text-mute ml-1">01-01-2021</p>
+                                        <p class="size1 text-mute ml-1">01-01-2021</p>
                                     </div>
                                 </div>
                             </a>
@@ -31,17 +31,17 @@
                         </div>
 
                         <div class="article-item">
-                            <a href="#">
+                            <a class="size3" href="#">
                                 A small river named Duden flows by their place and supplies it with the necessary
                                 regelialia.
                                 <div class="flex justify-between w-fit">
                                     <div class="flex items-center">
                                         <span class="icon-news-user flex items-center"></span>
-                                        <p class="size2 text-mute ml-1">Admin Admin</p>
+                                        <p class="size1 text-mute ml-1">Admin Admin</p>
                                     </div>
                                     <div class="flex items-center mx-3">
                                         <span class="icon-news-calendar flex"></span>
-                                        <p class="size2 text-mute ml-1">01-01-2021</p>
+                                        <p class="size1 text-mute ml-1">01-01-2021</p>
                                     </div>
                                 </div>
                             </a>
@@ -49,17 +49,17 @@
                         </div>
 
                         <div class="article-item">
-                            <a href="#">
+                            <a class="size3" href="#">
                                 A small river named Duden flows by their place and supplies it with the necessary
                                 regelialia.
                                 <div class="flex justify-between w-fit">
                                     <div class="flex items-center">
                                         <span class="icon-news-user flex items-center"></span>
-                                        <p class="size2 text-mute ml-1">Admin Admin</p>
+                                        <p class="size1 text-mute ml-1">Admin Admin</p>
                                     </div>
                                     <div class="flex items-center mx-3">
                                         <span class="icon-news-calendar flex"></span>
-                                        <p class="size2 text-mute ml-1">01-01-2021</p>
+                                        <p class="size1 text-mute ml-1">01-01-2021</p>
                                     </div>
                                 </div>
                             </a>
@@ -67,17 +67,17 @@
                         </div>
 
                         <div class="article-item">
-                            <a href="#">
+                            <a class="size3" href="#">
                                 A small river named Duden flows by their place and supplies it with the necessary
                                 regelialia.
                                 <div class="flex justify-between w-fit">
                                     <div class="flex items-center">
                                         <span class="icon-news-user flex items-center"></span>
-                                        <p class="size2 text-mute ml-1">Admin Admin</p>
+                                        <p class="size1 text-mute ml-1">Admin Admin</p>
                                     </div>
                                     <div class="flex items-center mx-3">
                                         <span class="icon-news-calendar flex"></span>
-                                        <p class="size2 text-mute ml-1">01-01-2021</p>
+                                        <p class="size1 text-mute ml-1">01-01-2021</p>
                                     </div>
                                 </div>
                             </a>
@@ -85,17 +85,17 @@
                         </div>
 
                         <div class="article-item">
-                            <a href="#">
+                            <a class="size3" href="#">
                                 A small river named Duden flows by their place and supplies it with the necessary
                                 regelialia.
                                 <div class="flex justify-between w-fit">
                                     <div class="flex items-center">
                                         <span class="icon-news-user flex items-center"></span>
-                                        <p class="size2 text-mute ml-1">Admin Admin</p>
+                                        <p class="size1 text-mute ml-1">Admin Admin</p>
                                     </div>
                                     <div class="flex items-center mx-3">
                                         <span class="icon-news-calendar flex"></span>
-                                        <p class="size2 text-mute ml-1">01-01-2021</p>
+                                        <p class="size1 text-mute ml-1">01-01-2021</p>
                                     </div>
                                 </div>
                             </a>
@@ -103,17 +103,17 @@
                         </div>
 
                         <div class="article-item">
-                            <a href="#">
+                            <a class="size3" href="#">
                                 A small river named Duden flows by their place and supplies it with the necessary
                                 regelialia.
                                 <div class="flex justify-between w-fit">
                                     <div class="flex items-center">
                                         <span class="icon-news-user flex items-center"></span>
-                                        <p class="size2 text-mute ml-1">Admin Admin</p>
+                                        <p class="size1 text-mute ml-1">Admin Admin</p>
                                     </div>
                                     <div class="flex items-center mx-3">
                                         <span class="icon-news-calendar flex"></span>
-                                        <p class="size2 text-mute ml-1">01-01-2021</p>
+                                        <p class="size1 text-mute ml-1">01-01-2021</p>
                                     </div>
                                 </div>
                             </a>
@@ -121,17 +121,17 @@
                         </div>
 
                         <div class="article-item">
-                            <a href="#">
+                            <a class="size3" href="#">
                                 A small river named Duden flows by their place and supplies it with the necessary
                                 regelialia.
                                 <div class="flex justify-between w-fit">
                                     <div class="flex items-center">
                                         <span class="icon-news-user flex items-center"></span>
-                                        <p class="size2 text-mute ml-1">Admin Admin</p>
+                                        <p class="size1 text-mute ml-1">Admin Admin</p>
                                     </div>
                                     <div class="flex items-center mx-3">
                                         <span class="icon-news-calendar flex"></span>
-                                        <p class="size2 text-mute ml-1">01-01-2021</p>
+                                        <p class="size1 text-mute ml-1">01-01-2021</p>
                                     </div>
                                 </div>
                             </a>
@@ -148,7 +148,7 @@
                                         place
                                         and supplies it with the necessary
                                         regelialia.</p>
-                                    <p class="hidden md:block">
+                                    <p class="hidden md:block post-text">
                                         A small river named Duden flows by their place and supplies it with the
                                         necessary
                                         regelialia.
@@ -163,11 +163,11 @@
                                 <img src="{{Vite::asset('resources/images/icons/background/video-back.svg')}}" alt=""
                                      width="200">
                                 <div class="post-content">
-                                    <p class="post-title font-bold text-lg">A small river named Duden flows by their
+                                    <p class="post-title">A small river named Duden flows by their
                                         place
                                         and supplies it with the necessary
                                         regelialia.</p>
-                                    <p class="hidden md:block">
+                                    <p class="hidden md:block post-text">
                                         A small river named Duden flows by their place and supplies it with the
                                         necessary
                                         regelialia.
@@ -182,11 +182,11 @@
                                 <img src="{{Vite::asset('resources/images/icons/background/video-back.svg')}}" alt=""
                                      width="200">
                                 <div class="post-content">
-                                    <p class="post-title font-bold text-lg">A small river named Duden flows by their
+                                    <p class="post-title">A small river named Duden flows by their
                                         place
                                         and supplies it with the necessary
                                         regelialia.</p>
-                                    <p class="hidden md:block">
+                                    <p class="hidden md:block post-text">
                                         A small river named Duden flows by their place and supplies it with the
                                         necessary
                                         regelialia.
@@ -198,17 +198,16 @@
                                 </div>
                             </div>
                         </div>
-
                         <div id="Invest" class="tabcontent">
                             <div class="post-item">
                                 <img src="{{Vite::asset('resources/images/icons/background/video-back.svg')}}" alt=""
                                      width="200">
                                 <div class="post-content">
-                                    <p class="post-title font-bold text-lg">A small river named Duden flows by their
+                                    <p class="post-title">A small river named Duden flows by their
                                         place
                                         and supplies it with the necessary
                                         regelialia.</p>
-                                    <p class="hidden md:block">
+                                    <p class="hidden md:block post-text">
                                         A small river named Duden flows by their place and supplies it with the
                                         necessary
                                         regelialia.
@@ -223,11 +222,11 @@
                                 <img src="{{Vite::asset('resources/images/icons/background/video-back.svg')}}" alt=""
                                      width="200">
                                 <div class="post-content">
-                                    <p class="post-title font-bold text-lg">A small river named Duden flows by their
+                                    <p class="post-title">A small river named Duden flows by their
                                         place
                                         and supplies it with the necessary
                                         regelialia.</p>
-                                    <p class="hidden md:block">
+                                    <p class="hidden md:block post-text">
                                         A small river named Duden flows by their place and supplies it with the
                                         necessary
                                         regelialia.
@@ -239,17 +238,16 @@
                                 </div>
                             </div>
                         </div>
-
                         <div id="News" class="tabcontent">
                             <div class="post-item">
                                 <img src="{{Vite::asset('resources/images/icons/background/video-back.svg')}}" alt=""
                                      width="200">
                                 <div class="post-content">
-                                    <p class="post-title font-bold text-lg">A small river named Duden flows by their
+                                    <p class="post-title">A small river named Duden flows by their
                                         place
                                         and supplies it with the necessary
                                         regelialia.</p>
-                                    <p class="hidden md:block">
+                                    <p class="hidden md:block post-text">
                                         A small river named Duden flows by their place and supplies it with the
                                         necessary
                                         regelialia.
@@ -260,6 +258,9 @@
                                     <a class="read-more" href="#"><span>Read more</span></a>
                                 </div>
                             </div>
+                        </div>
+                        <div class="flex justify-center mt-10">
+                          @include('site.components.pagination')
                         </div>
                     </div>
                 </div>

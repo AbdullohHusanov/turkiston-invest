@@ -1,0 +1,21 @@
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: var(--text-menu);
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .2s;
+}
+
+.pagination a.active {
+    background-color: var(--text-gold);
+    color: #ffffff;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: var(--text-gold);
+    color: #ffffff;
+}
