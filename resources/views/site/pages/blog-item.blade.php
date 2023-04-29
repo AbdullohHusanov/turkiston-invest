@@ -153,7 +153,9 @@
                     </div>
                 </div>
             </div>
-            @include('site.components.pagination')
+            <div class="mt-10">
+                @include('site.components.pagination')
+            </div>
         </div>
     </div>
 
