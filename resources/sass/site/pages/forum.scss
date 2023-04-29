@@ -14,20 +14,8 @@
             a {
                 display: flex;
                 margin: 0 0 15px 0;
-                .avatar {
-                    width: 50px;
-                    height: 50px;
-                    background-color: var(--text-gold);
-                    border-radius: 50%;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    span {
-                        color: #ffffff;
-                    }
-                }
+
                 .forum-content {
-                    padding: 0 20px 0 20px;
                     width: 100%;
                     .forum-title {
                         font-size: var(--font-size4);
@@ -64,5 +52,19 @@
                 }
             }
         }
+    }
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    background-color: var(--text-gold);
+    border-radius: 50%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+        color: #ffffff;
     }
 }
