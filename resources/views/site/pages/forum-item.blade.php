@@ -21,12 +21,11 @@
 
         <div class="comments">
             <div class="flex justify-between">
-                <p>2 Комментариев</p>
-                <a href="#">Войти</a>
+                <p>2 ответы</p>
             </div>
         </div>
 
-        <div class="flex ">
+        <div class="flex mt-5">
             <div class="avatar"><span>A</span></div>
             <textarea class="w-full" placeholder="Присоединиться к обсуждению..."></textarea>
         </div>
@@ -116,7 +115,7 @@
                     </div>
                 </div>
             </div>
-            <div class="mt-10">
+            <div class="flex justify-center mt-10">
                 @include('site.components.pagination')
             </div>
         </div>
