@@ -243,17 +243,11 @@
                             <img src="{{Vite::asset('resources/images/icons/background/video-back.svg')}}" alt=""
                                  width="200">
                             <div class="post-content">
-                                <p class="post-title">A small river named Duden flows by their
-                                    place
-                                    and supplies it with the necessary
-                                    regelialia.</p>
+                                <p class="post-title">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                                 <p class="hidden md:block post-text">
-                                    A small river named Duden flows by their place and supplies it with the
-                                    necessary
-                                    regelialia.
-                                    A small river named Duden flows by their place and supplies it with the
-                                    necessary
-                                    regelialia.
+                                    A small river named Duden flows by their place and supplies it with the necessary regelialia. A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                                    A small river named Duden flows by their place and supplies it with the necessary regelialia. A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                                    A small river named Duden flows by their place and supplies it with the necessary regelialia. A small river named Duden flows by their place and supplies it with the necessary regelialia.
                                 </p>
                                 <a class="read-more" href="#"><span>Read more</span></a>
                             </div>
