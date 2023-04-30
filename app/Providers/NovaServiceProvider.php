@@ -3,6 +3,12 @@
 namespace App\Providers;
 
 use App\Nova\Dashboards\Main;
+use App\Nova\MainPageConfig;
+use App\Nova\Page;
+use App\Nova\PagesCategories;
+use App\Nova\Post;
+use App\Nova\PostComments;
+use App\Nova\PostsCategories;
 use App\Nova\Role;
 use App\Nova\User;
 use Illuminate\Support\Facades\App;
@@ -14,6 +20,7 @@ use Laravel\Nova\Menu\MenuSection;
 use Laravel\Nova\Nova;
 use Laravel\Nova\NovaApplicationServiceProvider;
 use Illuminate\Http\Request;
+use Oneduo\NovaFileManager\NovaFileManager;
 
 class NovaServiceProvider extends NovaApplicationServiceProvider
 {
@@ -26,10 +33,11 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     {
         parent::boot();
         $this->initFooter();
-        $this->initMenu();
+//        $this->initMenu();
     }
 
-    public function initMenu(){
+    public function initMenu()
+    {
 
         Nova::mainMenu(function (Request $request) {
             return [
@@ -38,6 +46,12 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                 MenuSection::make('Resources', [
                     MenuItem::resource(User::class),
                     MenuItem::resource(Role::class),
+                    MenuItem::resource(Post::class),
+                    MenuItem::resource(Page::class),
+                    MenuItem::resource(PagesCategories::class),
+                    MenuItem::resource(PostsCategories::class),
+                    MenuItem::resource(PostComments::class),
+                    MenuItem::resource(MainPageConfig::class),
                 ])->icon('user')
                     ->collapsable(),
 
@@ -46,16 +60,17 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                     ->icon('adjustments'),
 
                 MenuItem::
-                externalLink('< clients area','/clients'),
+                externalLink('< clients area', '/clients'),
 
                 MenuItem::
-                externalLink('< website','/')
+                externalLink('< website', '/')
             ];
         });
     }
 
 
-    public function initFooter(){
+    public function initFooter()
+    {
         Nova::footer(function ($request) {
             return view('admin.footer')->render();
         });
@@ -70,9 +85,9 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     protected function routes()
     {
         Nova::routes()
-                ->withAuthenticationRoutes()
-                ->withPasswordResetRoutes()
-                ->register();
+            ->withAuthenticationRoutes()
+            ->withPasswordResetRoutes()
+            ->register();
     }
 
     /**
@@ -85,7 +100,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     protected function gate(): void
     {
         Gate::define('viewNova', function ($user) {
-            return ( $user->hasPermissionTo('view admin') );
+            return ($user->hasPermissionTo('view admin'));
         });
     }
 
@@ -111,8 +126,8 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
         return [
             new \Badinansoft\LanguageSwitch\LanguageSwitch(),
             \Pktharindu\NovaPermissions\NovaPermissions::make()->roleResource(Role::class),
-            \Outl1ne\MenuBuilder\MenuBuilder::make()
-
+            \Outl1ne\MenuBuilder\MenuBuilder::make(),
+            NovaFileManager::make(),
         ];
     }
 
@@ -124,5 +139,13 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
     public function register()
     {
         //
+    }
+
+    protected function authorization()
+    {
+        Nova::auth(function ($request) {
+            return app()->environment('local') ||
+                Gate::check('viewNova', [Nova::user($request)]);
+        });
     }
 }

@@ -24,7 +24,7 @@ return [
         'toolbar' => 'undo redo | styleselect | bold italic forecolor backcolor | alignleft aligncenter alignright alignjustify | image | bullist numlist outdent indent | link',
         'relative_urls' => false,
         'use_dark' => true,
-        'use_lfm' => false,
-        'lfm_url' => base_path('./storage/app/public'),
+        'use_lfm' => true,
+        'lfm_url' => 'laravel-filemanager'
     ],
 ];

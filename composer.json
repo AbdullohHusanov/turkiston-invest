@@ -17,8 +17,10 @@
         "laravel/telescope": "^4.14",
         "laravel/tinker": "^2.8",
         "laravel/ui": "^4.2",
+        "oneduo/nova-file-manager": "^0.9.1",
         "outl1ne/nova-menu-builder": "^7.1",
-        "pktharindu/nova-permissions": "^3.0"
+        "pktharindu/nova-permissions": "^3.0",
+        "unisharp/laravel-filemanager": "dev-master"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
