@@ -325,6 +325,9 @@
                     width: auto;
                     margin-top: 10px;
                     margin-bottom: 10px;
+                    .chevron-down {
+                        display: none;
+                    }
 
                     .full-menu-link {
                         position: relative;
@@ -424,8 +427,12 @@
 
                 .full-menu-li {
                     margin-left: 0 !important;
+                    .chevron-down {
+                        display: block;
+                    }
                 }
             }
         }
+
     }
 }

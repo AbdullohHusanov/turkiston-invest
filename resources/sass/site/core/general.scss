@@ -75,7 +75,7 @@ label {
     color: var(--text-color)
 }
 
-input[type='text'] {
+input[type='text'], textarea {
     border-color: var(--border-color-9) !important;
     border-radius: 5px !important;
     background-color: var(--bg-color) !important;

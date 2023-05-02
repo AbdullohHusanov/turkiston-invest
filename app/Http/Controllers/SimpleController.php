@@ -21,8 +21,18 @@ class SimpleController extends Controller
         return view('site.pages.blog');
     }
 
+    public function blogItem(Request $request): \Illuminate\Contracts\View\View|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application
+    {
+        return view('site.pages.blog-item');
+    }
+
     public function forum(Request $request): \Illuminate\Contracts\View\View|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application
     {
         return view('site.pages.forum');
+    }
+
+    public function forumItem(Request $request): \Illuminate\Contracts\View\View|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application
+    {
+        return view('site.pages.forum-item');
     }
 }
