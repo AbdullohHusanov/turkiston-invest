@@ -100,8 +100,7 @@
                                     .submenu-ul {
 
                                         .submenu-li {
-                                            display: flex;
-                                            margin-left: 10px;
+                                            margin-left: 20px;
                                             padding-left: 0;
                                             width: auto;
                                             margin-top: 10px;
@@ -120,7 +119,7 @@
                                                     width: 0;
                                                     bottom: 0;
                                                     height: 2px;
-                                                    margin: 1px 0;
+                                                    margin: -1px 0;
                                                     left: 0;
                                                     background-color: #DCBF85;
                                                     transition: all 0.4s ease-in 0s;
@@ -314,11 +313,13 @@
     .full-menu-row {
         display: flex;
         width: 100%;
+        border-left: var(--text-gold) 2px solid;
 
         .full-menu-col {
             width: 25%;
 
             .full-menu-ul {
+                margin-left: 10px;
                 .full-menu-li {
                     margin-left: 10px;
                     padding-left: 0;
@@ -332,8 +333,8 @@
                     .full-menu-link {
                         position: relative;
                         color: var(--text-color);
-                        font-size: var(--font-size4);
-                        font-weight: bold;
+                        font-size: var(--font-size3);
+                        font-weight: 400;
 
                         &:after {
                             content: "";
@@ -342,7 +343,7 @@
                             width: 0;
                             bottom: 0;
                             height: 2px;
-                            margin: 1px 0;
+                            margin: -1px 0;
                             left: 0;
                             background-color: #DCBF85;
                             transition: all 0.4s ease-in 0s;

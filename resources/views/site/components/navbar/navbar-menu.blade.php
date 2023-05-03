@@ -19,6 +19,18 @@
                                 <ul class="submenu-ul">
                                     <li class="submenu-li">
                                         <a class="submenu-link " href="">Jamiyat haqida</a>
+                                        <ul class="submenu-ul">
+                                            <li class="submenu-li">
+                                                <a class="submenu-link " href="">Submenu</a>
+
+                                            </li>
+                                            <li class="submenu-li">
+                                                <a class="submenu-link " href="">Submenu</a>
+                                            </li>
+                                            <li class="submenu-li">
+                                                <a class="submenu-link " href="">Submenu</a>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li class="submenu-li">
                                         <a class="submenu-link " href="">test</a>

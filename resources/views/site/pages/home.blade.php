@@ -617,7 +617,6 @@
 
         const mapBtn = document.getElementById('map-btn');
         const map = document.getElementById('map');
-            console.log(mapBtn)
 
         mapBtn.addEventListener('click', (e) => {
             window.open(yandexURL, '_blank')
