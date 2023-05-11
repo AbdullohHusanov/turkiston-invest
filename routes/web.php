@@ -15,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Illuminate\Support\Facades\Auth::routes([]);
 
+Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
+    \UniSharp\LaravelFilemanager\Lfm::routes();
+});
+
 Route::get('/', [\App\Http\Controllers\MainController::class, 'index']);
 
 Route::get('/clients', [App\Http\Controllers\HomeController::class, 'index'])->name('clients');
@@ -22,10 +26,16 @@ Route::get('/clients', [App\Http\Controllers\HomeController::class, 'index'])->n
 Route::get('/simple', [\App\Http\Controllers\SimpleController::class, 'index']);
 Route::get('/repost', [\App\Http\Controllers\SimpleController::class,'repost']);
 Route::get('/blog', [\App\Http\Controllers\SimpleController::class,'blog']);
-Route::get('/blog-item', [\App\Http\Controllers\SimpleController::class,'blogItem']);
+Route::get('/blog/{slug?}', [\App\Http\Controllers\SimpleController::class,'blogItem']);
 Route::get('/forum', [\App\Http\Controllers\SimpleController::class,'forum']);
-Route::get('/forum-item', [\App\Http\Controllers\SimpleController::class,'forumItem']);
+Route::get('/forum/{slug?}', [\App\Http\Controllers\SimpleController::class,'forumItem']);
 
 Route::get('/{locale?}', [\App\Http\Controllers\MainController::class, 'indexSetLocale']);
 
 Route::get('locale/{locale}', [\App\Http\Controllers\MainController::class, 'indexChangeLocale']);
+Route::resource('/blog-comment', \App\Http\Controllers\PostCommentsController::class);
+
+Route::post('/forum-comment', [\App\Http\Controllers\ForumCommentController::class, 'store'])->name('forum-comment');
+
+Route::post('/blog-comment/like', [\App\Http\Controllers\PostCommentsController::class, 'like']);
+Route::post('/blog-comment/dislike', [\App\Http\Controllers\PostCommentsController::class, 'dislike']);

@@ -11,7 +11,9 @@ class MainPageConfig extends Model
 
     protected $fillable = [
         'key',
-        'value'
+        'value',
+        'type',
+        'deletable'
     ];
     protected $table = 'main_page_config';
 }

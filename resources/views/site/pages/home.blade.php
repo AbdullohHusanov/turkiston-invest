@@ -11,388 +11,400 @@
             </p>
         </div>
     </div>
-
-    <section class="news">
-        <div class="container px-3">
-            <div class="section-title w-full md:w-1/2">YANGILIKLAR</div>
-            <div class="news-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-                <div class="news-item">
-                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="news-title">
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        kuzating !
-                    </p>
-                    <p class="news-text">
-                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                    </p>
-                    <a class="read-more" href="#"><span>Read more</span></a>
-                    <div class="flex">
+    @if($contents[4]['value'] == true)
+        <section class="news">
+            <div class="container px-3">
+                <div class="section-title w-full md:w-1/2">YANGILIKLAR</div>
+                <div class="news-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+                    <div class="news-item">
+                        <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
+                        <p class="news-title">
+                            Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                            Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                            kuzating !
+                        </p>
+                        <p class="news-text">
+                            Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                        <a class="read-more" href="#"><span>Read more</span></a>
                         <div class="flex">
-                            <span class="icon-news-user flex items-center"></span>
-                            <p class="text-note ml-1 size2">Admin Admin</p>
-                        </div>
-                        <div class="flex mx-5">
-                            <span class="icon-news-calendar flex items-center"></span>
-                            <p class="text-note ml-1 size2">01-01-2021</p>
-                        </div>
-                        <div class="flex">
-                            <span class="icon-news-eye flex items-center"></span>
-                            <p class="text-note ml-1 size2">1200</p>
+                            <div class="flex">
+                                <span class="icon-news-user flex items-center"></span>
+                                <p class="text-note ml-1 size2">Admin Admin</p>
+                            </div>
+                            <div class="flex mx-5">
+                                <span class="icon-news-calendar flex items-center"></span>
+                                <p class="text-note ml-1 size2">01-01-2021</p>
+                            </div>
+                            <div class="flex">
+                                <span class="icon-news-eye flex items-center"></span>
+                                <p class="text-note ml-1 size2">1200</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="news-item">
-                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="news-title">
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        kuzating !
-                    </p>
-                    <p class="news-text">
-                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                    </p>
-                    <a class="read-more" href="#"><span>Read more</span></a>
-                    <div class="flex">
+                    <div class="news-item">
+                        <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
+                        <p class="news-title">
+                            Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                            Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                            kuzating !
+                        </p>
+                        <p class="news-text">
+                            Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                        <a class="read-more" href="#"><span>Read more</span></a>
                         <div class="flex">
-                            <span class="icon-news-user flex items-center"></span>
-                            <p class="text-note ml-1 size2">Admin Admin</p>
-                        </div>
-                        <div class="flex mx-5">
-                            <span class="icon-news-calendar flex items-center"></span>
-                            <p class="text-note ml-1 size2">01-01-2021</p>
-                        </div>
-                        <div class="flex">
-                            <span class="icon-news-eye flex items-center"></span>
-                            <p class="text-note ml-1 size2">1200</p>
+                            <div class="flex">
+                                <span class="icon-news-user flex items-center"></span>
+                                <p class="text-note ml-1 size2">Admin Admin</p>
+                            </div>
+                            <div class="flex mx-5">
+                                <span class="icon-news-calendar flex items-center"></span>
+                                <p class="text-note ml-1 size2">01-01-2021</p>
+                            </div>
+                            <div class="flex">
+                                <span class="icon-news-eye flex items-center"></span>
+                                <p class="text-note ml-1 size2">1200</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="news-item">
-                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="news-title">
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        kuzating !
-                    </p>
-                    <p class="news-text">
-                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                    </p>
-                    <a class="read-more" href="#"><span>Read more</span></a>
-                    <div class="flex">
+                    <div class="news-item">
+                        <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
+                        <p class="news-title">
+                            Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                            Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                            kuzating !
+                        </p>
+                        <p class="news-text">
+                            Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                        <a class="read-more" href="#"><span>Read more</span></a>
                         <div class="flex">
-                            <span class="icon-news-user flex items-center"></span>
-                            <p class="text-note ml-1 size2">Admin Admin</p>
-                        </div>
-                        <div class="flex mx-5">
-                            <span class="icon-news-calendar flex items-center"></span>
-                            <p class="text-note ml-1 size2">01-01-2021</p>
-                        </div>
-                        <div class="flex">
-                            <span class="icon-news-eye flex items-center"></span>
-                            <p class="text-note ml-1 size2">1200</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="news">
-        <div class="container px-3">
-            <div class="section-title w-full md:w-1/2">ENG KO’P KO’RILGANLARI</div>
-            <div class="news-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-                <div class="news-item">
-                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="news-title">
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        kuzating !
-                    </p>
-                    <p class="news-text">
-                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                    </p>
-                    <a class="read-more" href="#"><span>Read more</span></a>
-                    <div class="flex">
-                        <div class="flex">
-                            <span class="icon-news-user flex items-center"></span>
-                            <p class="text-note ml-1 size2">Admin Admin</p>
-                        </div>
-                        <div class="flex mx-5">
-                            <span class="icon-news-calendar flex items-center"></span>
-                            <p class="text-note ml-1 size2">01-01-2021</p>
-                        </div>
-                        <div class="flex">
-                            <span class="icon-news-eye flex items-center"></span>
-                            <p class="text-note ml-1 size2">1200</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="news-item">
-                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="news-title">
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        kuzating !
-                    </p>
-                    <p class="news-text">
-                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                    </p>
-                    <a class="read-more" href="#"><span>Read more</span></a>
-                    <div class="flex">
-                        <div class="flex">
-                            <span class="icon-news-user flex items-center"></span>
-                            <p class="text-note ml-1 size2">Admin Admin</p>
-                        </div>
-                        <div class="flex mx-5">
-                            <span class="icon-news-calendar flex items-center"></span>
-                            <p class="text-note ml-1 size2">01-01-2021</p>
-                        </div>
-                        <div class="flex">
-                            <span class="icon-news-eye flex items-center"></span>
-                            <p class="text-note ml-1 size2">1200</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="news-item">
-                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="news-title">
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        kuzating !
-                    </p>
-                    <p class="news-text">
-                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                    </p>
-                    <a class="read-more" href="#"><span>Read more</span></a>
-                    <div class="flex">
-                        <div class="flex">
-                            <span class="icon-news-user flex items-center"></span>
-                            <p class="text-note ml-1 size2">Admin Admin</p>
-                        </div>
-                        <div class="flex mx-5">
-                            <span class="icon-news-calendar flex items-center"></span>
-                            <p class="text-note ml-1 size2">01-01-2021</p>
-                        </div>
-                        <div class="flex">
-                            <span class="icon-news-eye flex items-center"></span>
-                            <p class="text-note ml-1 size2">1200</p>
+                            <div class="flex">
+                                <span class="icon-news-user flex items-center"></span>
+                                <p class="text-note ml-1 size2">Admin Admin</p>
+                            </div>
+                            <div class="flex mx-5">
+                                <span class="icon-news-calendar flex items-center"></span>
+                                <p class="text-note ml-1 size2">01-01-2021</p>
+                            </div>
+                            <div class="flex">
+                                <span class="icon-news-eye flex items-center"></span>
+                                <p class="text-note ml-1 size2">1200</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    @else
 
-    <section class="news">
-        <div class="container px-3">
-            <div class="section-title w-full md:w-1/2">BLOG</div>
-            <div class="news-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-                <div class="news-item">
-                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="news-title">
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        kuzating !
-                    </p>
-                    <p class="news-text">
-                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                    </p>
-                    <a class="read-more" href="#"><span>Read more</span></a>
-                    <div class="flex">
+    @endif
+    @if($contents[3]['value'] == true)
+        <section class="news">
+            <div class="container px-3">
+                <div class="section-title w-full md:w-1/2">ENG KO’P KO’RILGANLARI</div>
+                <div class="news-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+                    <div class="news-item">
+                        <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
+                        <p class="news-title">
+                            Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                            Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                            kuzating !
+                        </p>
+                        <p class="news-text">
+                            Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                        <a class="read-more" href="#"><span>Read more</span></a>
                         <div class="flex">
-                            <span class="icon-news-user flex items-center"></span>
-                            <p class="text-note ml-1 size2">Admin Admin</p>
-                        </div>
-                        <div class="flex mx-5">
-                            <span class="icon-news-calendar flex items-center"></span>
-                            <p class="text-note ml-1 size2">01-01-2021</p>
-                        </div>
-                        <div class="flex">
-                            <span class="icon-news-eye flex items-center"></span>
-                            <p class="text-note ml-1 size2">1200</p>
+                            <div class="flex">
+                                <span class="icon-news-user flex items-center"></span>
+                                <p class="text-note ml-1 size2">Admin Admin</p>
+                            </div>
+                            <div class="flex mx-5">
+                                <span class="icon-news-calendar flex items-center"></span>
+                                <p class="text-note ml-1 size2">01-01-2021</p>
+                            </div>
+                            <div class="flex">
+                                <span class="icon-news-eye flex items-center"></span>
+                                <p class="text-note ml-1 size2">1200</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="news-item">
-                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="news-title">
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        kuzating !
-                    </p>
-                    <p class="news-text">
-                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                    </p>
-                    <a class="read-more" href="#"><span>Read more</span></a>
-                    <div class="flex">
+                    <div class="news-item">
+                        <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
+                        <p class="news-title">
+                            Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                            Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                            kuzating !
+                        </p>
+                        <p class="news-text">
+                            Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                        <a class="read-more" href="#"><span>Read more</span></a>
                         <div class="flex">
-                            <span class="icon-news-user flex items-center"></span>
-                            <p class="text-note ml-1 size2">Admin Admin</p>
-                        </div>
-                        <div class="flex mx-5">
-                            <span class="icon-news-calendar flex items-center"></span>
-                            <p class="text-note ml-1 size2">01-01-2021</p>
-                        </div>
-                        <div class="flex">
-                            <span class="icon-news-eye flex items-center"></span>
-                            <p class="text-note ml-1 size2">1200</p>
+                            <div class="flex">
+                                <span class="icon-news-user flex items-center"></span>
+                                <p class="text-note ml-1 size2">Admin Admin</p>
+                            </div>
+                            <div class="flex mx-5">
+                                <span class="icon-news-calendar flex items-center"></span>
+                                <p class="text-note ml-1 size2">01-01-2021</p>
+                            </div>
+                            <div class="flex">
+                                <span class="icon-news-eye flex items-center"></span>
+                                <p class="text-note ml-1 size2">1200</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="news-item">
-                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="news-title">
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        kuzating !
-                    </p>
-                    <p class="news-text">
-                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                    </p>
-                    <a class="read-more" href="#"><span>Read more</span></a>
-                    <div class="flex">
+                    <div class="news-item">
+                        <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
+                        <p class="news-title">
+                            Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                            Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                            kuzating !
+                        </p>
+                        <p class="news-text">
+                            Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                        <a class="read-more" href="#"><span>Read more</span></a>
                         <div class="flex">
-                            <span class="icon-news-user flex items-center"></span>
-                            <p class="text-note ml-1 size2">Admin Admin</p>
-                        </div>
-                        <div class="flex mx-5">
-                            <span class="icon-news-calendar flex items-center"></span>
-                            <p class="text-note ml-1 size2">01-01-2021</p>
-                        </div>
-                        <div class="flex">
-                            <span class="icon-news-eye flex items-center"></span>
-                            <p class="text-note ml-1 size2">1200</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contactUs  relative z-0 mt-20">
-        <div class="container px-3">
-            <div class="section-title w-full md:w-1/2">BIZ BILAN BOG'LANISH</div>
-        </div>
-        <div class="container-fluid" style="height: 500px; position: relative">
-            <div class="map" id="map"></div>
-            <div class="contactUs-map-contact-bg"></div>
-            <div class="contactUs-map-btn">
-                <button id="map-btn">Открыть в Яндекс карту</button>
-            </div>
-            <div class="contactUs-map-contact-text">
-                <div class="container">
-                    <div class="text-layer">
-                        <p class="size5 font-bold mb-10">Biz bilan bog'lanish</p>
-                        <div class="flex items-center my-2">
-                            <span class="icon-phone-icon"></span>
-                            <p class="ml-2 size2">+99899 999 99 99</p>
-                        </div>
-
-                        <div class="flex items-center my-2">
-                            <span class="icon-email-icon"></span>
-                            <p class="ml-2 size2">turkiston.invest@mail.ru</p>
-                        </div>
-
-                        <div class="flex items-center my-2">
-                            <span class="icon-map-icon"></span>
-                            <p class="ml-2 size2">28 Hawthorn Lane, Braidwood, AUSTRALIA</p>
-                        </div>
-
-                        <div class="flex items-center my-2">
-                            <span class="icon-map-icon"></span>
-                            <p class="ml-2 size2">28 Hawthorn Lane, Braidwood, AUSTRALIA</p>
-                        </div>
-                        <div class="flex items-center my-2">
-                            <span class="icon-map-icon"></span>
-                            <p class="ml-2 size2">28 Hawthorn Lane, Braidwood, AUSTRALIA</p>
+                            <div class="flex">
+                                <span class="icon-news-user flex items-center"></span>
+                                <p class="text-note ml-1 size2">Admin Admin</p>
+                            </div>
+                            <div class="flex mx-5">
+                                <span class="icon-news-calendar flex items-center"></span>
+                                <p class="text-note ml-1 size2">01-01-2021</p>
+                            </div>
+                            <div class="flex">
+                                <span class="icon-news-eye flex items-center"></span>
+                                <p class="text-note ml-1 size2">1200</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container px-3">
-            <div class="size6 section-title w-full md:w-1/2">QAYTA ALOQA</div>
-            <div class="contact-form md:flex justify-start items-center mb-10">
-                <div class="call-back text-note text-center md:text-left size3 w-full md:w-1/3 call-back">
-                    <div class="call-back-title">
-                        Bizning telefon raqamlarimizga bo’lana olmasangiz noqulayliklar uchun uzur so’raymiz ush
-                        formani
-                        to’ldirin va jo’nating biz sizga qayta aloqaga chiqamiz. Dam olish kunlari va bayram
-                        kunlaridan
-                        tashqari mutaxassislarimiz siz bilan tez orada bog’lanishadi !
+        </section>
+    @else
+
+    @endif
+    @if($contents[2]['value'] == true)
+        <section class="news">
+            <div class="container px-3">
+                <div class="section-title w-full md:w-1/2">BLOG</div>
+                <div class="news-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+                    <div class="news-item">
+                        <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
+                        <p class="news-title">
+                            Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                            Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                            kuzating !
+                        </p>
+                        <p class="news-text">
+                            Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                        <a class="read-more" href="#"><span>Read more</span></a>
+                        <div class="flex">
+                            <div class="flex">
+                                <span class="icon-news-user flex items-center"></span>
+                                <p class="text-note ml-1 size2">Admin Admin</p>
+                            </div>
+                            <div class="flex mx-5">
+                                <span class="icon-news-calendar flex items-center"></span>
+                                <p class="text-note ml-1 size2">01-01-2021</p>
+                            </div>
+                            <div class="flex">
+                                <span class="icon-news-eye flex items-center"></span>
+                                <p class="text-note ml-1 size2">1200</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
+                        <p class="news-title">
+                            Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                            Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                            kuzating !
+                        </p>
+                        <p class="news-text">
+                            Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                        <a class="read-more" href="#"><span>Read more</span></a>
+                        <div class="flex">
+                            <div class="flex">
+                                <span class="icon-news-user flex items-center"></span>
+                                <p class="text-note ml-1 size2">Admin Admin</p>
+                            </div>
+                            <div class="flex mx-5">
+                                <span class="icon-news-calendar flex items-center"></span>
+                                <p class="text-note ml-1 size2">01-01-2021</p>
+                            </div>
+                            <div class="flex">
+                                <span class="icon-news-eye flex items-center"></span>
+                                <p class="text-note ml-1 size2">1200</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
+                        <p class="news-title">
+                            Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                            Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
+                            kuzating !
+                        </p>
+                        <p class="news-text">
+                            Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                            consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
+                        </p>
+                        <a class="read-more" href="#"><span>Read more</span></a>
+                        <div class="flex">
+                            <div class="flex">
+                                <span class="icon-news-user flex items-center"></span>
+                                <p class="text-note ml-1 size2">Admin Admin</p>
+                            </div>
+                            <div class="flex mx-5">
+                                <span class="icon-news-calendar flex items-center"></span>
+                                <p class="text-note ml-1 size2">01-01-2021</p>
+                            </div>
+                            <div class="flex">
+                                <span class="icon-news-eye flex items-center"></span>
+                                <p class="text-note ml-1 size2">1200</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="w-full md:w-1/2">
-                    <div class="flex flex-col my-3">
-                        <label class="size2" for="">Ism:</label>
-                        <input type="text">
-                    </div>
-
-                    <div class="flex flex-col my-3">
-                        <label class="size2" for="">Familya:</label>
-                        <input type="text">
-                    </div>
-
-                    <div class="flex flex-col my-3">
-                        <label class="size2" for="">Elektron pochta: </label>
-                        <input type="text">
-                    </div>
-
-                    <div class="flex flex-col my-3">
-                        <label class="size2" for="">Telefon raqam:</label>
-                        <input type="text">
-                    </div>
-
-                    <div class="flex flex-col my-3">
-                        <label class="size2" for="">Mavzu:</label>
-                        <input type="text">
-                    </div>
-
-                    <button class="w-full button">Yuborish</button>
-                </div>
-
             </div>
-        </div>
-    </section>
+        </section>
+    @else
 
+    @endif
+    @if($contents[5]['value'] == true)
+        <section class="contactUs  relative z-0 mt-20">
+            <div class="container px-3">
+                <div class="section-title w-full md:w-1/2">BIZ BILAN BOG'LANISH</div>
+            </div>
+            <div class="container-fluid" style="height: 500px; position: relative">
+                <div class="map" id="map"></div>
+                <div class="contactUs-map-contact-bg"></div>
+                <div class="contactUs-map-btn">
+                    <button id="map-btn">Открыть в Яндекс карту</button>
+                </div>
+                <div class="contactUs-map-contact-text">
+                    <div class="container">
+                        <div class="text-layer">
+                            <p class="size5 font-bold mb-10">Biz bilan bog'lanish</p>
+                            <div class="flex items-center my-2">
+                                <span class="icon-phone-icon"></span>
+                                <p class="ml-2 size2">+99899 999 99 99</p>
+                            </div>
+
+                            <div class="flex items-center my-2">
+                                <span class="icon-email-icon"></span>
+                                <p class="ml-2 size2">turkiston.invest@mail.ru</p>
+                            </div>
+
+                            <div class="flex items-center my-2">
+                                <span class="icon-map-icon"></span>
+                                <p class="ml-2 size2">28 Hawthorn Lane, Braidwood, AUSTRALIA</p>
+                            </div>
+
+                            <div class="flex items-center my-2">
+                                <span class="icon-map-icon"></span>
+                                <p class="ml-2 size2">28 Hawthorn Lane, Braidwood, AUSTRALIA</p>
+                            </div>
+                            <div class="flex items-center my-2">
+                                <span class="icon-map-icon"></span>
+                                <p class="ml-2 size2">28 Hawthorn Lane, Braidwood, AUSTRALIA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-3">
+                <div class="size6 section-title w-full md:w-1/2">QAYTA ALOQA</div>
+                <div class="contact-form md:flex justify-start items-center mb-10">
+                    <div class="call-back text-note text-center md:text-left size3 w-full md:w-1/3 call-back">
+                        <div class="call-back-title">
+                            Bizning telefon raqamlarimizga bo’lana olmasangiz noqulayliklar uchun uzur so’raymiz ush
+                            formani
+                            to’ldirin va jo’nating biz sizga qayta aloqaga chiqamiz. Dam olish kunlari va bayram
+                            kunlaridan
+                            tashqari mutaxassislarimiz siz bilan tez orada bog’lanishadi !
+                        </div>
+                    </div>
+
+                    <div class="w-full md:w-1/2">
+                        <div class="flex flex-col my-3">
+                            <label class="size2" for="">Ism:</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="flex flex-col my-3">
+                            <label class="size2" for="">Familya:</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="flex flex-col my-3">
+                            <label class="size2" for="">Elektron pochta: </label>
+                            <input type="text">
+                        </div>
+
+                        <div class="flex flex-col my-3">
+                            <label class="size2" for="">Telefon raqam:</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="flex flex-col my-3">
+                            <label class="size2" for="">Mavzu:</label>
+                            <input type="text">
+                        </div>
+
+                        <button class="w-full button">Yuborish</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    @else
+
+    @endif
+    {{--    @if($contents->) @endif--}}
     <section class="mission">
         <div class="container px-3">
 
@@ -461,62 +473,70 @@
             <div class="relative">
                 <div
                     class="slides-container h-72 flex snap-x snap-mandatory overflow-hidden overflow-x-auto space-x-2 rounded scroll-smooth before:w-[45vw] before:shrink-0 after:w-[45vw] after:shrink-0 md:before:w-0 md:after:w-0">
-                    <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
-                        <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <img src="{{Vite::asset('resources/images/icons/team1.png')}}" alt="">
-                            <p class="size4 mt-2">IVETTIK ALEKSAN</p>
-                            <p class="size2 text-note">MOLIYA DIREKTOR</p>
+
+                    @foreach($team as $worker)
+
+                        <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
+                            <div class="w-full h-full object-cover flex flex-col justify-center items-center">
+                                <img
+                                    src="{{'/storage'. $worker->icon ?? Vite::asset('resources/images/icons/team1.png')}}"
+                                    alt="">
+                                <p class="size4 mt-2">{{ $worker->full_name }}</p>
+                                <p class="size2 text-note">{{ $worker->position }}</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
-                        <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <img src="{{Vite::asset('resources/images/icons/team2.png')}}" alt="">
-                            <p class="size4 mt-2">ALI CHOKLI</p>
-                            <p class="text-note size2">TEXNIK DIREKTOR</p>
-                        </div>
-                    </div>
-                    <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
-                        <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <img src="{{Vite::asset('resources/images/icons/team1.png')}}" alt="">
-                            <p class="size4 mt-2">IVETTIK ALEKSAN</p>
-                            <p class="text-note size2">MOLIYA DIREKTOR</p>
-                        </div>
-                    </div>
-                    <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
-                        <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <img src="{{Vite::asset('resources/images/icons/team3.png')}}" alt="">
-                            <p class="size4 mt-2">AISHA FERIDE</p>
-                            <p class="text-note size2">BOSH DIREKTOR</p>
-                        </div>
-                    </div>
-                    <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
-                        <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <img src="{{Vite::asset('resources/images/icons/team1.png')}}" alt="">
-                            <p class="size4 mt-2">IVETTIK ALEKSAN</p>
-                            <p class="text-note size2">MOLIYA DIREKTOR</p>
-                        </div>
-                    </div>
-                    <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
-                        <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <img src="{{Vite::asset('resources/images/icons/team1.png')}}" alt="">
-                            <p class="size4 mt-2">IVETTIK ALEKSAN</p>
-                            <p class="text-note size2">MOLIYA DIREKTOR</p>
-                        </div>
-                    </div>
-                    <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
-                        <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <img src="{{Vite::asset('resources/images/icons/team3.png')}}" alt="">
-                            <p class="size4 mt-2">SASHA SUNAME</p>
-                            <p class="text-note size2">YURDIK DIREKTOR</p>
-                        </div>
-                    </div>
-                    <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
-                        <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <img src="{{Vite::asset('resources/images/icons/team1.png')}}" alt="">
-                            <p class="size4 mt-2">IVETTIK ALEKSAN</p>
-                            <p class="text-note size2">MOLIYA DIREKTOR</p>
-                        </div>
-                    </div>
+
+                    @endforeach
+
+                    {{--                    <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">--}}
+                    {{--                        <div class="w-full h-full object-cover flex flex-col justify-center items-center">--}}
+                    {{--                            <img src="{{Vite::asset('resources/images/icons/team2.png')}}" alt="">--}}
+                    {{--                            <p class="size4 mt-2">ALI CHOKLI</p>--}}
+                    {{--                            <p class="text-note size2">TEXNIK DIREKTOR</p>--}}
+                    {{--                        </div>--}}
+                    {{--                    </div>--}}
+                    {{--                    <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">--}}
+                    {{--                        <div class="w-full h-full object-cover flex flex-col justify-center items-center">--}}
+                    {{--                            <img src="{{Vite::asset('resources/images/icons/team1.png')}}" alt="">--}}
+                    {{--                            <p class="size4 mt-2">IVETTIK ALEKSAN</p>--}}
+                    {{--                            <p class="text-note size2">MOLIYA DIREKTOR</p>--}}
+                    {{--                        </div>--}}
+                    {{--                    </div>--}}
+                    {{--                    <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">--}}
+                    {{--                        <div class="w-full h-full object-cover flex flex-col justify-center items-center">--}}
+                    {{--                            <img src="{{Vite::asset('resources/images/icons/team3.png')}}" alt="">--}}
+                    {{--                            <p class="size4 mt-2">AISHA FERIDE</p>--}}
+                    {{--                            <p class="text-note size2">BOSH DIREKTOR</p>--}}
+                    {{--                        </div>--}}
+                    {{--                    </div>--}}
+                    {{--                    <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">--}}
+                    {{--                        <div class="w-full h-full object-cover flex flex-col justify-center items-center">--}}
+                    {{--                            <img src="{{Vite::asset('resources/images/icons/team1.png')}}" alt="">--}}
+                    {{--                            <p class="size4 mt-2">IVETTIK ALEKSAN</p>--}}
+                    {{--                            <p class="text-note size2">MOLIYA DIREKTOR</p>--}}
+                    {{--                        </div>--}}
+                    {{--                    </div>--}}
+                    {{--                    <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">--}}
+                    {{--                        <div class="w-full h-full object-cover flex flex-col justify-center items-center">--}}
+                    {{--                            <img src="{{Vite::asset('resources/images/icons/team1.png')}}" alt="">--}}
+                    {{--                            <p class="size4 mt-2">IVETTIK ALEKSAN</p>--}}
+                    {{--                            <p class="text-note size2">MOLIYA DIREKTOR</p>--}}
+                    {{--                        </div>--}}
+                    {{--                    </div>--}}
+                    {{--                    <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">--}}
+                    {{--                        <div class="w-full h-full object-cover flex flex-col justify-center items-center">--}}
+                    {{--                            <img src="{{Vite::asset('resources/images/icons/team3.png')}}" alt="">--}}
+                    {{--                            <p class="size4 mt-2">SASHA SUNAME</p>--}}
+                    {{--                            <p class="text-note size2">YURDIK DIREKTOR</p>--}}
+                    {{--                        </div>--}}
+                    {{--                    </div>--}}
+                    {{--                    <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">--}}
+                    {{--                        <div class="w-full h-full object-cover flex flex-col justify-center items-center">--}}
+                    {{--                            <img src="{{Vite::asset('resources/images/icons/team1.png')}}" alt="">--}}
+                    {{--                            <p class="size4 mt-2">IVETTIK ALEKSAN</p>--}}
+                    {{--                            <p class="text-note size2">MOLIYA DIREKTOR</p>--}}
+                    {{--                        </div>--}}
+                    {{--                    </div>--}}
                 </div>
 
                 <div class="absolute top-0 -left-4 h-full items-center hidden md:flex">
@@ -542,7 +562,6 @@
                 </div>
             </div>
         </div>
-
     </section>
 
     <section class="heroes mt-20">
@@ -607,6 +626,7 @@
     <script>
         ymaps.ready(init)
         let yandexURL = 'https://yandex.uz/maps/10335/tashkent/stops/1543141649/?ll=69.182982%2C41.267897&tab=overview&z=19.72'
+
         function init() {
             let map = new ymaps.Map('map', {
                 zoom: 18,

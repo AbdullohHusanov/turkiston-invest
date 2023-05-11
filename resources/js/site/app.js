@@ -144,11 +144,13 @@ function toggleFullMenu() {
         fullMenuWindow.classList.remove('active');
     }
 }
+
 function openFullMenu() {
     stateBurger = true;
     burger.classList.add('active')
     fullMenuWindow.classList.add('active');
 }
+
 function closeFullMenu() {
     stateBurger = false;
     burger.classList.remove('active')
@@ -228,6 +230,7 @@ slider.addEventListener('change', (event) => {
         font_size_set('small');
     }
 });
+
 function font_size_set(new_size) {
     let body = document.getElementById('body');
     body.classList.remove('small');
@@ -297,27 +300,18 @@ mute.addEventListener('click', (e) => {
         });
 
     } else {
-        window.removeEventListener('keyup','')
+        window.removeEventListener('keyup', '')
 
         btnSpeak.style.display = 'none'
     }
 })
 
 
-const mobileSubmenu = document.getElementById('mobileSubmenu')
-const menuItem = document.getElementById('menuItem');
-const arrowMenu = document.getElementById('arrowMenu');
-arrowMenu.addEventListener('click',  () => {
-    if (arrowMenu.style.transform === '') {
-        arrowMenu.style.transform = 'rotate(180deg)'
-        mobileSubmenu.style.display = 'block'
-    } else if (arrowMenu.style.transform === 'rotate(180deg)') {
-        arrowMenu.style.transform = 'rotate(0deg)'
-        mobileSubmenu.style.display = 'none'
-    } else if (arrowMenu.style.transform === 'rotate(0deg)') {
-        arrowMenu.style.transform = 'rotate(180deg)'
-        mobileSubmenu.style.display = 'block'
-    }
+const menuItem = document.querySelectorAll('#menuItem');
+menuItem.forEach((el, i) => {
+    el.addEventListener('click', () => {
+        el.classList.toggle('active')
+    })
 })
 
 const selectBtn = document.getElementById("selectBtn");
@@ -326,12 +320,11 @@ const optionMenu = document.querySelector(".select-menu"),
     sBtn_text = optionMenu.querySelector(".sBtn-text");
 
 document.addEventListener("click", (e) => {
-    if(selectBtn.contains(e.target)) {
+    if (selectBtn.contains(e.target)) {
         optionMenu.classList.toggle("active")
         fullMenuWindow.classList.remove('active')
         burger.classList.remove('active')
-    }
-    else optionMenu.classList.remove("active")
+    } else optionMenu.classList.remove("active")
 });
 
 options.forEach((option) => {

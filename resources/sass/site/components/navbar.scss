@@ -203,6 +203,7 @@
 }
 
 .select-menu {
+    font-family: Montserrat, sans-serif;
     .select-btn {
         display: flex;
         height: 20px;
@@ -319,6 +320,14 @@
             width: 25%;
 
             .full-menu-ul {
+                .active {
+                    .mobile-submenu-ul {
+                        display: block !important;
+                    }
+                    .chevron-down {
+                        transform: rotate(180deg) !important;
+                    }
+                }
                 margin-left: 10px;
                 .full-menu-li {
                     margin-left: 10px;
@@ -398,7 +407,7 @@
     color: var(--text-menu);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .full-menu {
         overflow: auto;
         display: none;
@@ -429,7 +438,7 @@
                 .full-menu-li {
                     margin-left: 0 !important;
                     .chevron-down {
-                        display: block;
+                        display: block !important;
                     }
                 }
             }

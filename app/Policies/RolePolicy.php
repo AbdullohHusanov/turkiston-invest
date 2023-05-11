@@ -38,7 +38,7 @@ class RolePolicy
      */
     public function create(User $user): bool
     {
-        return true;
+        return $user->hasAnyPermission(['create roles', 'create own roles']);
     }
 
     /**
@@ -46,7 +46,11 @@ class RolePolicy
      */
     public function update(User $user, \Pktharindu\NovaPermissions\Role $role): bool
     {
-        return true;
+        if ($user->hasPermissionTo('edit own roles')) {
+            return $user->id == $role->user_id;
+        }
+        return $user->hasPermissionTo('edit roles');
+
     }
 
     /**
@@ -54,7 +58,11 @@ class RolePolicy
      */
     public function delete(User $user, \Pktharindu\NovaPermissions\Role $role): bool
     {
-        return true;
+        if ($user->hasPermissionTo('delete own roles')) {
+            return $user->id === $role->user_id;
+        }
+
+        return $user->hasPermissionTo('delete roles');
     }
 
     /**

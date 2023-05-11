@@ -2,31 +2,29 @@
 
 namespace App\Nova;
 
-use Illuminate\Http\Request;
-use Laravel\Nova\Fields\Badge;
-use Laravel\Nova\Fields\Boolean;
-use Laravel\Nova\Fields\Code;
+use Laravel\Nova\Fields\BelongsTo;
+use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
-use Laravel\Nova\Fields\KeyValue;
-use Laravel\Nova\Fields\Select;
+use Laravel\Nova\Fields\Number;
+use Laravel\Nova\Fields\Slug;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
-class MainPageConfig extends Resource
+class Forum extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
-     * @var class-string<\App\Models\MainPageConfig>
+     * @var class-string<\App\Models\Forum>
      */
-    public static $model = \App\Models\MainPageConfig::class;
+    public static $model = \App\Models\Forum::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string
      */
-    public static $title = 'key';
+    public static $title = 'title_question';
 
     /**
      * The columns that should be searched.
@@ -34,7 +32,7 @@ class MainPageConfig extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'key'
+        'id', 'title_question'
     ];
 
     /**
@@ -48,20 +46,26 @@ class MainPageConfig extends Resource
         return [
             ID::make()->sortable(),
 
-            Text::make('Key', 'key')
-                ->sortable()
-                ->rules('required', 'max:255'),
-            Text::make('Value')
+            Text::make('Title Question', 'title_question')
+                ->rules('required', 'max:255')
+                ->sortable(),
+
+            Text::make('Description Question', 'description_question')
                 ->rules('required'),
 
-            Select::make('Type','type')->options([
-                'string' => 'string',
-                'file' => 'file',
-                'boolean' => 'boolean',
-                'number' => 'number',
-            ]),
+            Slug::make('Slug', 'slug')
+                ->from('title_question')
+                ->separator('_')
+                ->rules('required'),
 
-            Boolean::make('Deletable', 'deletable')
+            Number::make('View', 'view')
+                ->hideWhenCreating()
+                ->hideWhenUpdating(),
+
+            BelongsTo::make('Client', 'user', User::class)
+                ->hideWhenCreating()
+                ->hideWhenUpdating(),
+            HasMany::make('Comments', 'comments', ForumComment::class)
         ];
     }
 

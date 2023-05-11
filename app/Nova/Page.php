@@ -16,6 +16,13 @@ use Laravel\Nova\Http\Requests\NovaRequest;
 
 class Page extends Resource
 {
+    public function __construct($resource = null)
+    {
+        parent::__construct($resource);
+
+        self::$title = 'title_' . app()->getLocale();
+    }
+
     /**
      * The model the resource corresponds to.
      *
@@ -28,7 +35,7 @@ class Page extends Resource
      *
      * @var string
      */
-    public static $title = 'name';
+    public static $title = 'title_en';
 
     /**
      * The columns that should be searched.
@@ -36,7 +43,7 @@ class Page extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'name', 'template_id'
+        'id', 'title_uz', 'title_en', 'title_ru'
     ];
 
     /**
@@ -75,11 +82,11 @@ class Page extends Resource
                 ->hideWhenCreating()
                 ->hideWhenUpdating(),
 
-            BelongsTo::make('Created By', 'user', User::class)
+            BelongsTo::make('Created By', 'createdBy', User::class)
                 ->hideWhenCreating()
                 ->hideWhenUpdating(),
 
-            BelongsTo::make('Updated By', 'user', User::class)
+            BelongsTo::make('Updated By', 'updatedBy', User::class)
                 ->hideWhenCreating()
                 ->hideWhenUpdating(),
 

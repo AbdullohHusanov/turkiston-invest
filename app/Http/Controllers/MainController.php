@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\MainPageConfig;
+use App\Models\MainPageTeamSection;
 use Illuminate\Support\Facades\Cache;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
@@ -10,15 +11,16 @@ class MainController extends Controller
 {
     public function index()
     {
-        $menusResponse = nova_get_menu_by_slug('site_main_menu', 'ru');
-
-        return view('site.pages.home',['menusItems' => $menusResponse['menuItems'], 'full_menu_elements' => $menusResponse['menuItems']]);
+        $team = MainPageTeamSection::all();
+        $contents = MainPageConfig::query()->get();
+//        dd($contents[4]['value'] === "false");
+        return view('site.pages.home', ['contents' => $contents, 'team' => $team]);
     }
 
     public function indexSetLocale($locale = null): \Illuminate\Contracts\View\View|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application|NotFoundHttpException
     {
         if (isset($locale) && in_array($locale, config('app.available_locales'))) {
-            $key = auth()->guard(config('nova.guard'))->id().'.locale';
+            $key = auth()->guard(config('nova.guard'))->id() . '.locale';
             app()->setLocale($locale);
             session()->put('locale', $locale);
             cookie()->queue('locale', $locale, 120);
@@ -33,7 +35,7 @@ class MainController extends Controller
 
     public function indexChangeLocale($locale): \Illuminate\Http\RedirectResponse|NotFoundHttpException
     {
-        $key = auth()->guard(config('nova.guard'))->id().'.locale';
+        $key = auth()->guard(config('nova.guard'))->id() . '.locale';
         app()->setLocale($locale);
         session()->put('locale', $locale);
         cookie()->queue('locale', $locale, 120);

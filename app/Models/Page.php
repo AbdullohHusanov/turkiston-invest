@@ -12,10 +12,14 @@ class Page extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name',
+        'title_uz',
+        'title_ru',
+        'title_en',
         'slug',
         'view',
-        'content',
+        'content_uz',
+        'content_ru',
+        'content_en',
         'img'
     ];
     protected $table = 'pages';
@@ -25,8 +29,13 @@ class Page extends Model
         return $this->belongsToMany(PagesCategories::class, 'page_categories', 'page_id', 'category_id');
     }
 
-    public function user(): BelongsTo
+    public function createdBy(): BelongsTo
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'created_by', 'id');
+    }
+
+    public function updatedBy(): BelongsTo
+    {
+        return $this->belongsTo(User::class, 'updated_by', 'id');
     }
 }

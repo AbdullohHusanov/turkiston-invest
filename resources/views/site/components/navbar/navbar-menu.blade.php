@@ -1,16 +1,22 @@
+<?php
+$menusItems = nova_get_menu_by_slug('site_main_menu', app()->getLocale()) ;
+?>
+
+
 <div class="navbar-menu">
     <ul class="navbar-menu-ul" id="navbar-menu">
-        @foreach($menusItems as $menu_item)
+        @if($menusItems)
+            @foreach($menusItems['menuItems'] as $menu_item)
             @if(!count($menu_item['children']))
                 <li class="navbar-menu-li">
                     <a class="navbar-menu-link" href="{{ $menu_item['value'] }}">
-                        {{ $menu_item['name'] }}{{--Jamiyat haqida--}}
+                        {{ $menu_item['name'] }}
                     </a>
                 </li>
             @else
                 <li class="navbar-menu-li">
                     <a class="navbar-menu-link" href="#">
-                        {{ $menu_item['name'] }}{{--Biz bila aloqa--}}
+                        {{ $menu_item['name'] }}
                     </a>
 
                     <div class="submenu">
@@ -53,5 +59,6 @@
                 </li>
             @endif
         @endforeach
+        @endif
     </ul>
 </div>
