@@ -25,6 +25,7 @@ Route::get('/blog', [\App\Http\Controllers\SimpleController::class,'blog']);
 Route::get('/blog-item', [\App\Http\Controllers\SimpleController::class,'blogItem']);
 Route::get('/forum', [\App\Http\Controllers\SimpleController::class,'forum']);
 Route::get('/forum-item', [\App\Http\Controllers\SimpleController::class,'forumItem']);
+Route::get('/add-forum', [\App\Http\Controllers\SimpleController::class,'addForum']);
 
 Route::get('/{locale?}', [\App\Http\Controllers\MainController::class, 'indexSetLocale']);
 

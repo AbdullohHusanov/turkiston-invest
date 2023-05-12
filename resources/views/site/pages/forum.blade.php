@@ -5,7 +5,7 @@
     <div class="forum-wrapper mt-10">
         <div class="container">
             <div class="articles hidden md:block">
-                <p class="font-bold text-xl">Popular Articles</p>
+                <p class="size6 font-bold">Popular Articles</p>
                 <div class="article-item">
                     <a class="size3" href="#">
                         A small river named Duden flows by their place and supplies it with the necessary
@@ -134,6 +134,11 @@
             </div>
 
             <div class="forums-list pl-0 md:pl-5">
+                <div class="forum-header">
+                    <p class="size6 font-bold">Recently questions</p>
+                    <a href="add-forum" class="comment-btn hover:text-white">Ask question</a>
+                </div>
+
                 <div class="forum-item">
                     <a href="#">
                         <div class="avatar"><span>A</span></div>

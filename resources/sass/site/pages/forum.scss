@@ -10,6 +10,11 @@
 
     .forums-list {
         width: 80%;
+        .forum-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
         .forum-item {
             a {
                 display: flex;
