@@ -8,18 +8,24 @@ use Illuminate\Support\Facades\Cache;
 
 class ForumCommentController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
+    public function like(Request $request)
     {
-        //
+        dd($request);
+        return 'ok';
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function dislike(Request $request)
+    {
+        dd($request);
+    }
+
+    /**
+     * Display a listing of the resource.
+     */
+    public function index()
     {
         //
     }
@@ -36,6 +42,29 @@ class ForumCommentController extends Controller
             'message' => $request->get('message'),
             'question_id' => Cache::get('view_forums' . $request->userAgent()),
             'client_id' => auth()->user()->id,
+        ]);
+
+        return redirect(url()->previous())->with('success', 'comment create');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function create(Request $request)
+    {
+        $data = $request->validate([
+            '_id' => 'required|string',
+            'message' => 'required|string'
+        ]);
+
+        $parentCommentId = $data['_id'];
+        $message = $data['message'];
+
+        ForumComment::query()->create([
+            'message' => $message,
+            'question_id' => Cache::get('view_forums' . $request->userAgent()),
+            'client_id' => auth()->user()->id,
+            'parent_id' => $parentCommentId
         ]);
 
         return redirect(url()->previous())->with('success', 'comment create');

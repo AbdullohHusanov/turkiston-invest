@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\MainPageConfig;
 use App\Models\MainPageTeamSection;
+use App\Models\Post;
+use App\Models\PostsCategories;
 use Illuminate\Support\Facades\Cache;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
@@ -13,8 +15,12 @@ class MainController extends Controller
     {
         $team = MainPageTeamSection::all();
         $contents = MainPageConfig::query()->get();
-//        dd($contents[4]['value'] === "false");
-        return view('site.pages.home', ['contents' => $contents, 'team' => $team]);
+        $blog = Post::query()->orderBy('created_at', 'desc')->get()->take(3);
+        $news = PostsCategories::query()->where('name_en','=','News')->with('posts')->get()->first();
+        $news = $news->posts->take(3);
+        $mostViewed = Post::query()->orderBy('view', 'desc')->get()->take(3);
+//        dd($news);
+        return view('site.pages.home', ['contents' => $contents, 'team' => $team, 'mostViewed' => $mostViewed, 'news' => $news, 'blog' => $blog]);
     }
 
     public function indexSetLocale($locale = null): \Illuminate\Contracts\View\View|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application|NotFoundHttpException

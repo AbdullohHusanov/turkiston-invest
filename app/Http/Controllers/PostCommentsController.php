@@ -21,7 +21,7 @@ class PostCommentsController extends Controller
      */
     public function dislike(Request $request)
     {
-
+        dd('no');
     }
 
     /**

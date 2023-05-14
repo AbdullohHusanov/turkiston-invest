@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Forum;
 use App\Models\ForumComment;
+use App\Models\Page;
 use App\Models\Post;
 use App\Models\PostComments;
 use App\Models\PostsCategories;
@@ -20,9 +21,20 @@ class SimpleController extends Controller
         return view('site.pages.simple');
     }
 
-    public function repost(Request $request): \Illuminate\Contracts\View\View|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application
+    public function repost(Request $request, $slug = null): \Illuminate\Contracts\View\View|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application
     {
-        return view('site.pages.repost');
+        $page = Page::query()->where('slug',$slug)->get()->first();
+        $allPages = Page::all();
+//        dd($page->createdBy->name);
+        return view('site.pages.repost', ['currentPage' => $page, 'allPages' => $allPages]);
+    }
+    public function repostFilter(Request $request, $year)
+    {
+        dd('ok');
+//        $page = Page::query()->where('created_at', '>=',$year)->get();
+//        $allPages = Page::all();
+//        dd($page);
+//        return view('site.pages.repost', ['currentPage' => $page, 'allPages' => $allPages]);
     }
 
     public function blog(Request $request)

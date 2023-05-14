@@ -9,9 +9,9 @@ class ForumCommentObserver
     /**
      * Handle the ForumComment "created" event.
      */
-    public function created(ForumComment $forumComment): void
+    public function creating(ForumComment $forumComment): void
     {
-        //
+        $forumComment->client_id = auth()->user()->id;
     }
 
     /**
@@ -19,7 +19,7 @@ class ForumCommentObserver
      */
     public function updated(ForumComment $forumComment): void
     {
-        //
+        $forumComment->client_id = auth()->user()->id;
     }
 
     /**

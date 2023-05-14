@@ -15,7 +15,8 @@ class ForumComment extends Model
     protected $fillable = [
         'message',
         'question_id',
-        'client_id'
+        'client_id',
+        'parent_id'
     ];
 
     public function question(): BelongsTo
@@ -26,5 +27,10 @@ class ForumComment extends Model
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class, 'client_id', 'id');
+    }
+
+    public function children()
+    {
+        return $this::query()->where('parent_id', $this->id)->get();
     }
 }

@@ -23,13 +23,11 @@ return new class extends Migration {
             $table->string('img')->nullable()->default('/logo-social.png');
             $table->bigInteger('created_by')->unsigned()->nullable()->default(null);
             $table->bigInteger('updated_by')->unsigned()->nullable()->default(null);
-//            $table->bigInteger('template_id')->unsigned()->nullable()->default(null);
             $table->timestamps();
         });
         Schema::table('pages', function (Blueprint $table) {
             $table->foreign('created_by')->references('id')->on('users');
             $table->foreign('updated_by')->references('id')->on('users');
-//            $table->foreign('template_id')->references('id')->on('templates');
         });
     }
 

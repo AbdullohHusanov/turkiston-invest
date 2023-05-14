@@ -18,6 +18,28 @@ return new class extends Migration
             $table->string('position');
             $table->timestamps();
         });
+
+        \App\Models\MainPageTeamSection::insert([
+            [
+                'full_name' => 'oasdngo isdnon',
+                'position' => 'kksndo'
+            ],[
+                'full_name' => 'oasdngo isdnon',
+                'position' => 'kksndo'
+            ],[
+                'full_name' => 'oasdngo isdnon',
+                'position' => 'kksndo'
+            ],[
+                'full_name' => 'oasdngo isdnon',
+                'position' => 'kksndo'
+            ],[
+                'full_name' => 'oasdngo isdnon',
+                'position' => 'kksndo'
+            ],[
+                'full_name' => 'oasdngo isdnon',
+                'position' => 'kksndo'
+            ]
+        ]);
     }
 
     /**

@@ -17,6 +17,8 @@ return new class extends Migration
             $table->bigInteger('question_id')->unsigned();
             $table->bigInteger('client_id')->unsigned();
             $table->integer('parent_id')->nullable();
+            $table->integer('like')->nullable()->default(0);
+            $table->integer('dislike')->nullable()->default(0);
             $table->timestamps();
         });
         Schema::table('forum_comments', function (Blueprint $table) {
