@@ -3,6 +3,14 @@
 namespace App\Providers;
 
 use App\Models\User;
+use App\Nova\Page;
+use App\Nova\PagesCategories;
+use App\Nova\Post;
+use App\Nova\PostsCategories;
+use App\Policies\PagePolicy;
+use App\Policies\PagesCategoriesPolicy;
+use App\Policies\PostPolicy;
+use App\Policies\PostsCategoriesPolicy;
 use Illuminate\Support\Facades\Gate;
 use Pktharindu\NovaPermissions\Traits\ValidatesPermissions;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -19,6 +27,11 @@ class AuthServiceProvider extends ServiceProvider
      */
     protected $policies = [
 //         'App\Models\Model' => 'App\Policies\ModelPolicy',
+        \Pktharindu\NovaPermissions\Role::class => \App\Policies\RolePolicy::class,
+        Post::class => PostPolicy::class,
+        Page::class => PagePolicy::class,
+        PagesCategories::class => PagesCategoriesPolicy::class,
+        PostsCategories::class => PostsCategoriesPolicy::class,
     ];
 
     /**

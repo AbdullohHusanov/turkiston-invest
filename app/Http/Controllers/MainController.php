@@ -10,9 +10,9 @@ class MainController extends Controller
 {
     public function index()
     {
+        $menusResponse = nova_get_menu_by_slug('site_main_menu', 'ru');
 
-        return view('site.pages.home');
-
+        return view('site.pages.home',['menusItems' => $menusResponse['menuItems'], 'full_menu_elements' => $menusResponse['menuItems']]);
     }
 
     public function indexSetLocale($locale = null): \Illuminate\Contracts\View\View|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application|NotFoundHttpException

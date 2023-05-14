@@ -14,6 +14,9 @@ return new class extends Migration {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('surname')->nullable()->default('client');
+            $table->string('family_name')->nullable()->default('client');
+            $table->string('phone')->unique();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
@@ -26,6 +29,7 @@ return new class extends Migration {
                 [
                     'name' => 'admin',
                     'email' => 'admin@example.com',
+                    'phone' => '998999999999',
                     'email_verified_at' => now(),
                     'password' => \Illuminate\Support\Facades\Hash::make('admin'),
                     'created_at' => now(),
@@ -34,6 +38,7 @@ return new class extends Migration {
                 [
                     'name' => 'guest',
                     'email' => 'guest@example.com',
+                    'phone' => '998999999998',
                     'email_verified_at' => now(),
                     'password' => \Illuminate\Support\Facades\Hash::make('guest'),
                     'created_at' => now(),

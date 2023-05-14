@@ -1,95 +1,57 @@
 <div class="navbar-menu">
     <ul class="navbar-menu-ul" id="navbar-menu">
-        <li class="navbar-menu-li">
-            <a class="navbar-menu-link" href="#">
-                Jamiyat haqida
-            </a>
-        </li>
+        @foreach($menusItems as $menu_item)
+            @if(!count($menu_item['children']))
+                <li class="navbar-menu-li">
+                    <a class="navbar-menu-link" href="{{ $menu_item['value'] }}">
+                        {{ $menu_item['name'] }}{{--Jamiyat haqida--}}
+                    </a>
+                </li>
+            @else
+                <li class="navbar-menu-li">
+                    <a class="navbar-menu-link" href="#">
+                        {{ $menu_item['name'] }}{{--Biz bila aloqa--}}
+                    </a>
 
-        <li class="navbar-menu-li">
-            <a class="navbar-menu-link" href="#">
-                Biz bila aloqa
-            </a>
-
-            <div class="submenu">
-                <div class="container">
-                    <div class="submenu-menu">
-                        <div class="submenu-row">
-                            <div class="submenu-col">
-                                <ul class="submenu-ul">
-                                    <li class="submenu-li">
-                                        <a class="submenu-link " href="">Jamiyat haqida</a>
-                                        <ul class="submenu-ul">
-                                            <li class="submenu-li">
-                                                <a class="submenu-link " href="">Submenu</a>
-
-                                            </li>
-                                            <li class="submenu-li">
-                                                <a class="submenu-link " href="">Submenu</a>
-                                            </li>
-                                            <li class="submenu-li">
-                                                <a class="submenu-link " href="">Submenu</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="submenu-li">
-                                        <a class="submenu-link " href="">test</a>
-                                    </li>
-                                    <li class="submenu-li">
-                                        <a class="submenu-link " href="">test</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="submenu-col">
-                                <ul class="submenu-ul">
-                                    <li class="submenu-li">
-                                        <a class="submenu-link " href="">test</a>
-                                    </li>
-                                    <li class="submenu-li">
-                                        <a class="submenu-link " href="">test</a>
-                                    </li>
-                                    <li class="submenu-li">
-                                        <a class="submenu-link " href="">test</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="submenu-col">
-                                <ul class="submenu-ul">
-                                    <li class="submenu-li">
-                                        <a class="submenu-link " href="">test</a>
-                                    </li>
-                                    <li class="submenu-li">
-                                        <a class="submenu-link " href="">test</a>
-                                    </li>
-                                    <li class="submenu-li">
-                                        <a class="submenu-link " href="">test</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="submenu-col">
-                                <ul class="submenu-ul">
-                                    <li class="submenu-li">
-                                        <a class="submenu-link " href="">test</a>
-                                    </li>
-                                    <li class="submenu-li">
-                                        <a class="submenu-link " href="">test</a>
-                                    </li>
-                                    <li class="submenu-li">
-                                        <a class="submenu-link " href="">test</a>
-                                    </li>
-                                </ul>
+                    <div class="submenu">
+                        <div class="container">
+                            <div class="submenu-menu">
+                                <div class="submenu-row">
+                                    @foreach($menu_item['children'] as $menu_column)
+                                        @if(!count($menu_column['children']))
+                                            <div class="submenu-col">
+                                                <ul class="submenu-ul">
+                                                    <li class="submenu-li">
+                                                        <a class="submenu-link "
+                                                           href="{{ $menu_column['value'] }}">{{ $menu_column['name'] }}</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        @else
+                                            <div class="submenu-col">
+                                                <ul class="submenu-ul">
+                                                    <li class="submenu-li">
+                                                        <a class="submenu-link "
+                                                           href="{{ $menu_column['value'] }}">{{ $menu_column['name'] }}</a>
+                                                        <ul class="submenu-ul">
+                                                            @foreach($menu_column['children'] as $menu_i)
+                                                                <li class="submenu-li">
+                                                                    <a class="submenu-link "
+                                                                       href="{{ $menu_i['value'] }}">{{ $menu_i['name'] }}</a>
+                                                                </li>
+                                                            @endforeach
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        @endif
+                                    @endforeach
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </li>
-
-        <li class="navbar-menu-li">
-            <a class="navbar-menu-link " href="#">
-                Kunlik teg'ilishlar rejasi
-            </a>
-
-        </li>
+                </li>
+            @endif
+        @endforeach
     </ul>
 </div>
