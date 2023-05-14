@@ -2,31 +2,26 @@
 
 namespace App\Nova;
 
-use Illuminate\Http\Request;
-use Laravel\Nova\Fields\Badge;
-use Laravel\Nova\Fields\Boolean;
-use Laravel\Nova\Fields\Code;
+use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\ID;
-use Laravel\Nova\Fields\KeyValue;
-use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
-class MainPageConfig extends Resource
+class ForumComment extends Resource
 {
     /**
      * The model the resource corresponds to.
      *
-     * @var class-string<\App\Models\MainPageConfig>
+     * @var class-string<\App\Models\ForumComment>
      */
-    public static $model = \App\Models\MainPageConfig::class;
+    public static $model = \App\Models\ForumComment::class;
 
     /**
      * The single value that should be used to represent the resource when being displayed.
      *
      * @var string
      */
-    public static $title = 'key';
+    public static $title = 'id';
 
     /**
      * The columns that should be searched.
@@ -34,7 +29,7 @@ class MainPageConfig extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'key'
+        'id',
     ];
 
     /**
@@ -47,21 +42,14 @@ class MainPageConfig extends Resource
     {
         return [
             ID::make()->sortable(),
+            Text::make('Message', 'message')
+                ->rules('required')
+                ->sortable(),
 
-            Text::make('Key', 'key')
-                ->sortable()
-                ->rules('required', 'max:255'),
-            Text::make('Value')
-                ->rules('required'),
-
-            Select::make('Type','type')->options([
-                'string' => 'string',
-                'file' => 'file',
-                'boolean' => 'boolean',
-                'number' => 'number',
-            ]),
-
-            Boolean::make('Deletable', 'deletable')
+            BelongsTo::make('Forum', 'question', Forum::class),
+            BelongsTo::make('Client', 'user', User::class)
+                ->hideWhenCreating()
+                ->hideWhenUpdating(),
         ];
     }
 

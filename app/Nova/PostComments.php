@@ -3,7 +3,9 @@
 namespace App\Nova;
 
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class PostComments extends Resource
@@ -20,7 +22,7 @@ class PostComments extends Resource
      *
      * @var string
      */
-    public static $title = 'id';
+    public static $title = 'message';
 
     /**
      * The columns that should be searched.
@@ -28,7 +30,7 @@ class PostComments extends Resource
      * @var array
      */
     public static $search = [
-        'id',
+        'id', 'post_id', 'client_id'
     ];
 
     /**
@@ -41,6 +43,10 @@ class PostComments extends Resource
     {
         return [
             ID::make()->sortable(),
+            Text::make('message')
+                ->rules(['required', 'max:255']),
+            BelongsTo::make('Post', 'post', Post::class),
+            BelongsTo::make('Client', 'client', User::class)
         ];
     }
 

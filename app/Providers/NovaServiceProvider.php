@@ -3,7 +3,10 @@
 namespace App\Providers;
 
 use App\Nova\Dashboards\Main;
+use App\Nova\Forum;
+use App\Nova\ForumComment;
 use App\Nova\MainPageConfig;
+use App\Nova\MainPageTeamSection;
 use App\Nova\Page;
 use App\Nova\PagesCategories;
 use App\Nova\Post;
@@ -11,6 +14,12 @@ use App\Nova\PostComments;
 use App\Nova\PostsCategories;
 use App\Nova\Role;
 use App\Nova\User;
+use App\Observers\ForumCommentObserver;
+use App\Observers\ForumObserver;
+use App\Observers\PageObserver;
+use App\Observers\PagesCategoriesObserver;
+use App\Observers\PostObserver;
+use App\Observers\PostsCategoriesObserver;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Cache;
@@ -20,6 +29,7 @@ use Laravel\Nova\Menu\MenuSection;
 use Laravel\Nova\Nova;
 use Laravel\Nova\NovaApplicationServiceProvider;
 use Illuminate\Http\Request;
+use Laravel\Nova\Observable;
 use Oneduo\NovaFileManager\NovaFileManager;
 
 class NovaServiceProvider extends NovaApplicationServiceProvider
@@ -34,6 +44,12 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
         parent::boot();
         $this->initFooter();
 //        $this->initMenu();
+        Observable::make(\App\Models\Post::class, PostObserver::class);
+        Observable::make(\App\Models\Page::class, PageObserver::class);
+        Observable::make(\App\Models\Forum::class, ForumObserver::class);
+        Observable::make(\App\Models\ForumComment::class, ForumCommentObserver::class);
+        Observable::make(\App\Models\PostsCategories::class, PostsCategoriesObserver::class);
+        Observable::make(\App\Models\PagesCategories::class, PagesCategoriesObserver::class);
     }
 
     public function initMenu()
@@ -48,10 +64,13 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                     MenuItem::resource(Role::class),
                     MenuItem::resource(Post::class),
                     MenuItem::resource(Page::class),
+                    MenuItem::resource(Forum::class),
                     MenuItem::resource(PagesCategories::class),
                     MenuItem::resource(PostsCategories::class),
                     MenuItem::resource(PostComments::class),
+                    MenuItem::resource(ForumComment::class),
                     MenuItem::resource(MainPageConfig::class),
+                    MenuItem::resource(MainPageTeamSection::class),
                 ])->icon('user')
                     ->collapsable(),
 

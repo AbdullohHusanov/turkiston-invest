@@ -8,6 +8,7 @@ use Eminiarts\Tabs\Tabs;
 use Eminiarts\Tabs\Traits\HasTabs;
 use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\BelongsToMany;
+use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Image;
 use Laravel\Nova\Fields\Number;
@@ -32,7 +33,7 @@ class Post extends Resource
      *
      * @var string
      */
-    public static $title = 'name';
+    public static $title = 'title_uz';
 
     /**
      * The columns that should be searched.
@@ -40,7 +41,7 @@ class Post extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'name', 'template_id'
+        'id', 'title_uz', 'title_en', 'title_ru'
     ];
 
     /**
@@ -78,28 +79,40 @@ class Post extends Resource
             Number::make('View', 'view')
                 ->hideWhenCreating()
                 ->hideWhenUpdating(),
-            BelongsTo::make('Created By', 'user', User::class)
+            BelongsTo::make('Created By', 'createdBy', User::class)
                 ->hideWhenCreating()
                 ->hideWhenUpdating(),
-            BelongsTo::make('Updated By', 'user', User::class)
+            BelongsTo::make('Updated By', 'updatedBy', User::class)
                 ->hideWhenCreating()
                 ->hideWhenUpdating(),
             Tabs::make('Content', [
                 Tab::make('uz', [
                     NovaTinyMCE::make('Content', 'content_uz')
                         ->rules('required'),
+                    Slug::make('Description Uz', 'description_uz')
+                        ->from('title_uz')
+                        ->separator(' ')
+                        ->rules( 'max:255'),
                 ]),
                 Tab::make('ru', [
                     NovaTinyMCE::make('Content', 'content_ru')
                         ->rules('required'),
+                    Slug::make('Description Ru', 'description_ru')
+                        ->from('title_ru')
+                        ->separator(' ')
+                        ->rules('max:255'),
                 ]),
                 Tab::make('en', [
                     NovaTinyMCE::make('Content', 'content_en')
                         ->rules('required'),
+                    Slug::make('Description En', 'description_en')
+                        ->from('title_en')
+                        ->separator(' ')
+                        ->rules('max:255'),
                 ]),
             ]),
-            BelongsToMany::make('Post Category', 'categories', PostsCategories::class)
-        ];
+            BelongsToMany::make('Post Category', 'categories', PostsCategories::class),
+            HasMany::make('Comments', 'comments', PostComments::class)        ];
     }
 
     /**

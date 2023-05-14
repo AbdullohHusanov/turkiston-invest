@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Validation\Rules;
 use Laravel\Nova\Fields\BelongsToMany;
 use Laravel\Nova\Fields\Gravatar;
+use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Password;
 use Laravel\Nova\Fields\Text;
@@ -44,6 +45,7 @@ class User extends Resource
      */
     public function fields(NovaRequest $request)
     {
+
         return [
             ID::make()->sortable(),
 
@@ -65,6 +67,7 @@ class User extends Resource
                 ->updateRules('nullable', Rules\Password::defaults()),
 
             BelongsToMany::make('Roles', 'roles', \Pktharindu\NovaPermissions\Nova\Role::class),
+            HasMany::make('Posts','posts',Post::class)
         ];
     }
 

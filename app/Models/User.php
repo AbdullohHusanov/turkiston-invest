@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
@@ -43,23 +44,38 @@ class User extends Authenticatable implements MustVerifyEmail
         'email_verified_at' => 'datetime',
     ];
 
-    public function posts()
+    public function posts():HasMany
     {
-        return $this->hasMany(Post::class);
+        return $this->hasMany(Post::class, 'created_by', 'id');
     }
 
-    public function pages()
+    public function pages():HasMany
     {
-        return $this->hasMany(Page::class);
+        return $this->hasMany(Page::class, 'created_by', 'id');
     }
 
-    public function posts_categories()
+    public function posts_categories():HasMany
     {
         return $this->hasMany(PostsCategories::class);
     }
 
-    public function pages_categories()
+    public function pages_categories():HasMany
     {
         return $this->hasMany(PagesCategories::class);
+    }
+
+    public function comments():HasMany
+    {
+        return $this->hasMany(PostComments::class);
+    }
+
+    public function forums():HasMany
+    {
+        return $this->hasMany(Forum::class, 'client_id','id');
+    }
+
+    public function forumComments():HasMany
+    {
+        return $this->hasMany(ForumComment::class, 'client_id','id');
     }
 }

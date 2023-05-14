@@ -45,19 +45,30 @@ class PagesCategories extends Resource
     public function fields(NovaRequest $request)
     {
         return [
-            ID::make()->sortable(),
-            Text::make('Name')
+            ID::make()->sortable(),Text::make('Name Uz', 'name_uz')
+                ->sortable()
+                ->rules(['required', 'max:120']),
+            Text::make('Name Ru', 'name_ru')
+                ->sortable()
+                ->rules(['required', 'max:120']),
+            Text::make('Name En', 'name_en')
                 ->sortable()
                 ->rules(['required', 'max:120']),
             Image::make('Image', 'img'),
-            Slug::make('Description')
-                ->from('Name')
+            Slug::make('Description Uz', 'description_uz')
+                ->from('Name Uz')
                 ->required(),
-            BelongsTo::make('Created By', 'user', User::class)
+            Slug::make('Description Ru', 'description_ru')
+                ->from('Name Ru')
+                ->required(),
+            Slug::make('Description En', 'description_en')
+                ->from('Name En')
+                ->required(),
+            BelongsTo::make('Created By', 'createdBy', User::class)
                 ->hideWhenCreating()
                 ->hideWhenUpdating(),
 
-            BelongsTo::make('Updated By', 'user', User::class)
+            BelongsTo::make('Updated By', 'updatedBy', User::class)
                 ->hideWhenCreating()
                 ->hideWhenUpdating(),
 

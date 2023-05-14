@@ -11,388 +11,209 @@
             </p>
         </div>
     </div>
+    @if($contents[0]['value'] === "true")
+        <section class="news">
+            <div class="container px-3">
+                <div class="section-title w-full md:w-1/2">YANGILIKLAR</div>
+                <div class="news-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+                    @foreach($news as $post)
+                        <div class="news-item">
+                            <img src="{{ 'storage/'.$post->img ?? Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
+                            <p class="news-title">
+                                {{ $post['title_' . app()->getLocale()] }}
+                            </p>
+                            <p class="news-text">
+                                {{ $post['description_' . app()->getLocale()] }}
+                            </p>
+                            <a class="read-more" href="{{ 'blog/'.$post->slug }}"><span>Read more</span></a>
+                            <div class="flex">
+                                <div class="flex">
+                                    <span class="icon-news-user flex items-center"></span>
+                                    <p class="text-note ml-1 size2">{{ $post->createdBy->name }}</p>
+                                </div>
+                                <div class="flex mx-5">
+                                    <span class="icon-news-calendar flex items-center"></span>
+                                    <p class="text-note ml-1 size2">{{ substr($post->created_at, 0, 10) }}</p>
+                                </div>
+                                <div class="flex">
+                                    <span class="icon-news-eye flex items-center"></span>
+                                    <p class="text-note ml-1 size2">{{ $post->view }}</p>
+                                </div>
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
+            </div>
+        </section>
+    @else
 
-    <section class="news">
-        <div class="container px-3">
-            <div class="section-title w-full md:w-1/2">YANGILIKLAR</div>
-            <div class="news-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-                <div class="news-item">
-                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="news-title">
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        kuzating !
-                    </p>
-                    <p class="news-text">
-                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                    </p>
-                    <a class="read-more" href="#"><span>Read more</span></a>
-                    <div class="flex">
+    @endif
+    @if($contents[1]['value'] === "true")
+        <section class="news">
+            <div class="container px-3">
+                <div class="section-title w-full md:w-1/2">ENG KO’P KO’RILGANLARI</div>
+                <div class="news-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+                    @foreach($mostViewed as $post)
+                    <div class="news-item">
+                        <img src="{{ 'storage/'.$post->img ?? Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
+                        <p class="news-title">
+                            {{ $post['title_' . app()->getLocale()] }}
+                        </p>
+                        <p class="news-text">
+                            {{ $post['description_' . app()->getLocale()] }}
+                        </p>
+                        <a class="read-more" href="{{ 'blog/'.$post->slug }}"><span>Read more</span></a>
                         <div class="flex">
-                            <span class="icon-news-user flex items-center"></span>
-                            <p class="text-note ml-1 size2">Admin Admin</p>
-                        </div>
-                        <div class="flex mx-5">
-                            <span class="icon-news-calendar flex items-center"></span>
-                            <p class="text-note ml-1 size2">01-01-2021</p>
-                        </div>
-                        <div class="flex">
-                            <span class="icon-news-eye flex items-center"></span>
-                            <p class="text-note ml-1 size2">1200</p>
+                            <div class="flex">
+                                <span class="icon-news-user flex items-center"></span>
+                                <p class="text-note ml-1 size2">{{ $post->createdBy->name }}</p>
+                            </div>
+                            <div class="flex mx-5">
+                                <span class="icon-news-calendar flex items-center"></span>
+                                <p class="text-note ml-1 size2">{{ substr($post->created_at, 0, 10) }}</p>
+                            </div>
+                            <div class="flex">
+                                <span class="icon-news-eye flex items-center"></span>
+                                <p class="text-note ml-1 size2">{{ $post->view }}</p>
+                            </div>
                         </div>
                     </div>
+                    @endforeach
                 </div>
-                <div class="news-item">
-                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="news-title">
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        kuzating !
-                    </p>
-                    <p class="news-text">
-                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                    </p>
-                    <a class="read-more" href="#"><span>Read more</span></a>
-                    <div class="flex">
-                        <div class="flex">
-                            <span class="icon-news-user flex items-center"></span>
-                            <p class="text-note ml-1 size2">Admin Admin</p>
+            </div>
+        </section>
+    @else
+
+    @endif
+    @if($contents[2]['value'] === "true")
+        <section class="news">
+            <div class="container px-3">
+                <div class="section-title w-full md:w-1/2">BLOG</div>
+                <div class="news-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+                    @foreach($blog as $post)
+                        <div class="news-item">
+                            <img src="{{ 'storage/'.$post->img ?? Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
+                            <p class="news-title">
+                                {{ $post['title_' . app()->getLocale()] }}
+                            </p>
+                            <p class="news-text">
+                                {{ $post['description_' . app()->getLocale()] }}
+                            </p>
+                            <a class="read-more" href="{{ 'blog/'.$post->slug }}"><span>Read more</span></a>
+                            <div class="flex">
+                                <div class="flex">
+                                    <span class="icon-news-user flex items-center"></span>
+                                    <p class="text-note ml-1 size2">{{ $post->createdBy->name }}</p>
+                                </div>
+                                <div class="flex mx-5">
+                                    <span class="icon-news-calendar flex items-center"></span>
+                                    <p class="text-note ml-1 size2">{{ substr($post->created_at, 0, 10) }}</p>
+                                </div>
+                                <div class="flex">
+                                    <span class="icon-news-eye flex items-center"></span>
+                                    <p class="text-note ml-1 size2">{{ $post->view }}</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="flex mx-5">
-                            <span class="icon-news-calendar flex items-center"></span>
-                            <p class="text-note ml-1 size2">01-01-2021</p>
-                        </div>
-                        <div class="flex">
-                            <span class="icon-news-eye flex items-center"></span>
-                            <p class="text-note ml-1 size2">1200</p>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
-                <div class="news-item">
-                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="news-title">
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        kuzating !
-                    </p>
-                    <p class="news-text">
-                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                    </p>
-                    <a class="read-more" href="#"><span>Read more</span></a>
-                    <div class="flex">
-                        <div class="flex">
-                            <span class="icon-news-user flex items-center"></span>
-                            <p class="text-note ml-1 size2">Admin Admin</p>
-                        </div>
-                        <div class="flex mx-5">
-                            <span class="icon-news-calendar flex items-center"></span>
-                            <p class="text-note ml-1 size2">01-01-2021</p>
-                        </div>
-                        <div class="flex">
-                            <span class="icon-news-eye flex items-center"></span>
-                            <p class="text-note ml-1 size2">1200</p>
+            </div>
+        </section>
+    @else
+
+    @endif
+    @if($contents[4]['value'] === "true")
+        <section class="contactUs  relative z-0 mt-20">
+            <div class="container px-3">
+                <div class="section-title w-full md:w-1/2">BIZ BILAN BOG'LANISH</div>
+            </div>
+            <div class="container-fluid" style="height: 500px; position: relative">
+                <div class="map" id="map"></div>
+                <div class="contactUs-map-contact-bg"></div>
+                <div class="contactUs-map-btn">
+                    <button id="map-btn">Открыть в Яндекс карту</button>
+                </div>
+                <div class="contactUs-map-contact-text">
+                    <div class="container">
+                        <div class="text-layer">
+                            <p class="size5 font-bold mb-10">Biz bilan bog'lanish</p>
+                            <div class="flex items-center my-2">
+                                <span class="icon-phone-icon"></span>
+                                <p class="ml-2 size2">{{ $contents[15]->value }}</p>
+                            </div>
+
+                            <div class="flex items-center my-2">
+                                <span class="icon-email-icon"></span>
+                                <p class="ml-2 size2">{{ $contents[16]->value }}</p>
+                            </div>
+
+                            <div class="flex items-center my-2">
+                                <span class="icon-map-icon"></span>
+                                <p class="ml-2 size2">{{ $contents[17]->value }}</p>
+                            </div>
+
+                            <div class="flex items-center my-2">
+                                <span class="icon-map-icon"></span>
+                                <p class="ml-2 size2">{{ $contents[17]->value }}</p>
+                            </div>
+                            <div class="flex items-center my-2">
+                                <span class="icon-map-icon"></span>
+                                <p class="ml-2 size2">{{ $contents[17]->value }}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+            @if($contents[6]->value === "true") @endif
+            <div class="container px-3">
+                <div class="size6 section-title w-full md:w-1/2">QAYTA ALOQA</div>
+                <div class="contact-form md:flex justify-start items-center mb-10">
+                    <div class="call-back text-note text-center md:text-left size3 w-full md:w-1/3 call-back">
+                        <div class="call-back-title">
+                            Bizning telefon raqamlarimizga bo’lana olmasangiz noqulayliklar uchun uzur so’raymiz ush
+                            formani
+                            to’ldirin va jo’nating biz sizga qayta aloqaga chiqamiz. Dam olish kunlari va bayram
+                            kunlaridan
+                            tashqari mutaxassislarimiz siz bilan tez orada bog’lanishadi !
+                        </div>
+                    </div>
 
-    <section class="news">
-        <div class="container px-3">
-            <div class="section-title w-full md:w-1/2">ENG KO’P KO’RILGANLARI</div>
-            <div class="news-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-                <div class="news-item">
-                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="news-title">
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        kuzating !
-                    </p>
-                    <p class="news-text">
-                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                    </p>
-                    <a class="read-more" href="#"><span>Read more</span></a>
-                    <div class="flex">
-                        <div class="flex">
-                            <span class="icon-news-user flex items-center"></span>
-                            <p class="text-note ml-1 size2">Admin Admin</p>
+                    <div class="w-full md:w-1/2">
+                        <div class="flex flex-col my-3">
+                            <label class="size2" for="">Ism:</label>
+                            <input type="text">
                         </div>
-                        <div class="flex mx-5">
-                            <span class="icon-news-calendar flex items-center"></span>
-                            <p class="text-note ml-1 size2">01-01-2021</p>
+
+                        <div class="flex flex-col my-3">
+                            <label class="size2" for="">Familya:</label>
+                            <input type="text">
                         </div>
-                        <div class="flex">
-                            <span class="icon-news-eye flex items-center"></span>
-                            <p class="text-note ml-1 size2">1200</p>
+
+                        <div class="flex flex-col my-3">
+                            <label class="size2" for="">Elektron pochta: </label>
+                            <input type="text">
                         </div>
+
+                        <div class="flex flex-col my-3">
+                            <label class="size2" for="">Telefon raqam:</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="flex flex-col my-3">
+                            <label class="size2" for="">Mavzu:</label>
+                            <input type="text">
+                        </div>
+
+                        <button class="w-full button">Yuborish</button>
                     </div>
-                </div>
-                <div class="news-item">
-                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="news-title">
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        kuzating !
-                    </p>
-                    <p class="news-text">
-                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                    </p>
-                    <a class="read-more" href="#"><span>Read more</span></a>
-                    <div class="flex">
-                        <div class="flex">
-                            <span class="icon-news-user flex items-center"></span>
-                            <p class="text-note ml-1 size2">Admin Admin</p>
-                        </div>
-                        <div class="flex mx-5">
-                            <span class="icon-news-calendar flex items-center"></span>
-                            <p class="text-note ml-1 size2">01-01-2021</p>
-                        </div>
-                        <div class="flex">
-                            <span class="icon-news-eye flex items-center"></span>
-                            <p class="text-note ml-1 size2">1200</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="news-item">
-                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="news-title">
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        kuzating !
-                    </p>
-                    <p class="news-text">
-                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                    </p>
-                    <a class="read-more" href="#"><span>Read more</span></a>
-                    <div class="flex">
-                        <div class="flex">
-                            <span class="icon-news-user flex items-center"></span>
-                            <p class="text-note ml-1 size2">Admin Admin</p>
-                        </div>
-                        <div class="flex mx-5">
-                            <span class="icon-news-calendar flex items-center"></span>
-                            <p class="text-note ml-1 size2">01-01-2021</p>
-                        </div>
-                        <div class="flex">
-                            <span class="icon-news-eye flex items-center"></span>
-                            <p class="text-note ml-1 size2">1200</p>
-                        </div>
-                    </div>
+
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    @else
 
-    <section class="news">
-        <div class="container px-3">
-            <div class="section-title w-full md:w-1/2">BLOG</div>
-            <div class="news-list grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-                <div class="news-item">
-                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="news-title">
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        kuzating !
-                    </p>
-                    <p class="news-text">
-                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                    </p>
-                    <a class="read-more" href="#"><span>Read more</span></a>
-                    <div class="flex">
-                        <div class="flex">
-                            <span class="icon-news-user flex items-center"></span>
-                            <p class="text-note ml-1 size2">Admin Admin</p>
-                        </div>
-                        <div class="flex mx-5">
-                            <span class="icon-news-calendar flex items-center"></span>
-                            <p class="text-note ml-1 size2">01-01-2021</p>
-                        </div>
-                        <div class="flex">
-                            <span class="icon-news-eye flex items-center"></span>
-                            <p class="text-note ml-1 size2">1200</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="news-item">
-                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="news-title">
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        kuzating !
-                    </p>
-                    <p class="news-text">
-                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                    </p>
-                    <a class="read-more" href="#"><span>Read more</span></a>
-                    <div class="flex">
-                        <div class="flex">
-                            <span class="icon-news-user flex items-center"></span>
-                            <p class="text-note ml-1 size2">Admin Admin</p>
-                        </div>
-                        <div class="flex mx-5">
-                            <span class="icon-news-calendar flex items-center"></span>
-                            <p class="text-note ml-1 size2">01-01-2021</p>
-                        </div>
-                        <div class="flex">
-                            <span class="icon-news-eye flex items-center"></span>
-                            <p class="text-note ml-1 size2">1200</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="news-item">
-                    <img src="{{Vite::asset("resources/images/icons/background/video-back.svg")}}" alt="">
-                    <p class="news-title">
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        Endi “Tukiston invest”yangiliklarini turkistoninvest.uz sayti orqali
-                        kuzating !
-                    </p>
-                    <p class="news-text">
-                        Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                        consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.
-                    </p>
-                    <a class="read-more" href="#"><span>Read more</span></a>
-                    <div class="flex">
-                        <div class="flex">
-                            <span class="icon-news-user flex items-center"></span>
-                            <p class="text-note ml-1 size2">Admin Admin</p>
-                        </div>
-                        <div class="flex mx-5">
-                            <span class="icon-news-calendar flex items-center"></span>
-                            <p class="text-note ml-1 size2">01-01-2021</p>
-                        </div>
-                        <div class="flex">
-                            <span class="icon-news-eye flex items-center"></span>
-                            <p class="text-note ml-1 size2">1200</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contactUs  relative z-0 mt-20">
-        <div class="container px-3">
-            <div class="section-title w-full md:w-1/2">BIZ BILAN BOG'LANISH</div>
-        </div>
-        <div class="container-fluid" style="height: 500px; position: relative">
-            <div class="map" id="map"></div>
-            <div class="contactUs-map-contact-bg"></div>
-            <div class="contactUs-map-btn">
-                <button id="map-btn">Открыть в Яндекс карту</button>
-            </div>
-            <div class="contactUs-map-contact-text">
-                <div class="container">
-                    <div class="text-layer">
-                        <p class="size5 font-bold mb-10">Biz bilan bog'lanish</p>
-                        <div class="flex items-center my-2">
-                            <span class="icon-phone-icon"></span>
-                            <p class="ml-2 size2">+99899 999 99 99</p>
-                        </div>
-
-                        <div class="flex items-center my-2">
-                            <span class="icon-email-icon"></span>
-                            <p class="ml-2 size2">turkiston.invest@mail.ru</p>
-                        </div>
-
-                        <div class="flex items-center my-2">
-                            <span class="icon-map-icon"></span>
-                            <p class="ml-2 size2">28 Hawthorn Lane, Braidwood, AUSTRALIA</p>
-                        </div>
-
-                        <div class="flex items-center my-2">
-                            <span class="icon-map-icon"></span>
-                            <p class="ml-2 size2">28 Hawthorn Lane, Braidwood, AUSTRALIA</p>
-                        </div>
-                        <div class="flex items-center my-2">
-                            <span class="icon-map-icon"></span>
-                            <p class="ml-2 size2">28 Hawthorn Lane, Braidwood, AUSTRALIA</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container px-3">
-            <div class="size6 section-title w-full md:w-1/2">QAYTA ALOQA</div>
-            <div class="contact-form md:flex justify-start items-center mb-10">
-                <div class="call-back text-note text-center md:text-left size3 w-full md:w-1/3 call-back">
-                    <div class="call-back-title">
-                        Bizning telefon raqamlarimizga bo’lana olmasangiz noqulayliklar uchun uzur so’raymiz ush
-                        formani
-                        to’ldirin va jo’nating biz sizga qayta aloqaga chiqamiz. Dam olish kunlari va bayram
-                        kunlaridan
-                        tashqari mutaxassislarimiz siz bilan tez orada bog’lanishadi !
-                    </div>
-                </div>
-
-                <div class="w-full md:w-1/2">
-                    <div class="flex flex-col my-3">
-                        <label class="size2" for="">Ism:</label>
-                        <input type="text">
-                    </div>
-
-                    <div class="flex flex-col my-3">
-                        <label class="size2" for="">Familya:</label>
-                        <input type="text">
-                    </div>
-
-                    <div class="flex flex-col my-3">
-                        <label class="size2" for="">Elektron pochta: </label>
-                        <input type="text">
-                    </div>
-
-                    <div class="flex flex-col my-3">
-                        <label class="size2" for="">Telefon raqam:</label>
-                        <input type="text">
-                    </div>
-
-                    <div class="flex flex-col my-3">
-                        <label class="size2" for="">Mavzu:</label>
-                        <input type="text">
-                    </div>
-
-                    <button class="w-full button">Yuborish</button>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
+    @endif
+    @if($contents[3]->value === "true")
     <section class="mission">
         <div class="container px-3">
 
@@ -400,23 +221,19 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 items-center">
                 <div class="mb-5 mx-auto md:mb-0 md:mx-0">
-                    <img class="inline-block dark:hidden" src="{{Vite::asset('resources/logos/logo-big-light.svg')}}"
+                    <img class="inline-block dark:hidden" src="{{ $contents[12]->value ?? Vite::asset('resources/logos/logo-big-light.svg')}}"
                          alt="Logo" width="282">
-                    <img class="hidden dark:block" src="{{Vite::asset('resources/logos/logo-big-dark.svg')}}" alt="Logo"
+                    <img class="hidden dark:block" src="{{ $contents[13]->value ?? Vite::asset('resources/logos/logo-big-dark.svg')}}" alt="Logo"
                          width="282">
                 </div>
                 <div class="size3 text-note">
-                    Lorem ipsum dolor sit amet consectetur. Sed ac facilisi velit nisi. Mauris cum in integer commodo
-                    mattis. Cursus nulla in at ultricies posuere cursus id. At donec volutpat enim morbi donec et a nunc
-                    urna. Rhoncus arcu euismod pellentesque mauris. Amet sit egestas eleifend odio. Odio nunc viverra
-                    risus eget aliquam in.Cursus nulla in at ultricies posuere cursus id. At donec volutpat enim morbi
-                    donec et a nunc urna. Rhoncus arcu euismod pellentesque mauris. Amet sit egestas eleifend odio. Odio
-                    nunc viverra risus eget aliquam in.
+                    {{ $contents[14]->value }}
                 </div>
             </div>
         </div>
     </section>
-
+    @endif
+    @if($contents[5]->value === "true")
     <section class="about">
         <div class="container px-3">
             <div class="section-title w-full md:w-1/2">JAMIYAT HAQIDA</div>
@@ -425,7 +242,8 @@
             </div>
         </div>
     </section>
-
+    @endif
+    @if($contents[7]->value === "true")
     <section class="specification">
         <div class="container px-3">
             <div class="section-title w-full md:w-1/2">
@@ -435,114 +253,76 @@
 
                 <div class="specification-item">
                     <div class="icon-specification-1 flex justify-center mb-5"></div>
-                    <p class="specification-text">15+</p>
+                    <p class="specification-text">{{ $contents[9]->value }}+</p>
                     <p class="specification-text">yillik tajriba</p>
                 </div>
 
                 <div class="specification-item">
                     <div class="icon-specification-2 flex justify-center mb-5"></div>
-                    <p class="specification-text">2000+</p>
+                    <p class="specification-text">{{ $contents[10]->value }}+</p>
                     <p class="specification-text">aksionerlar</p>
                 </div>
 
                 <div class="specification-item">
                     <div class="icon-specification-3 flex justify-center mb-5"></div>
-                    <p class="specification-text">15000+ </p>
+                    <p class="specification-text">{{ $contents[11]->value }}+ </p>
                     <p class="specification-text">abligatsiyalar</p>
                 </div>
 
             </div>
         </div>
     </section>
-
+    @endif
+    @if($contents[8]->value === "true") @endif
     <section class="team">
         <div class="section-title w-full md:w-1/2">JAMOA</div>
         <div id="app" class="container transition-all duration-500 ease-linear">
             <div class="relative">
                 <div
                     class="slides-container h-72 flex snap-x snap-mandatory overflow-hidden overflow-x-auto space-x-2 rounded scroll-smooth before:w-[45vw] before:shrink-0 after:w-[45vw] after:shrink-0 md:before:w-0 md:after:w-0">
-                    <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
-                        <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <img src="{{Vite::asset('resources/images/icons/team1.png')}}" alt="">
-                            <p class="size4 mt-2">IVETTIK ALEKSAN</p>
-                            <p class="size2 text-note">MOLIYA DIREKTOR</p>
-                        </div>
-                    </div>
-                    <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
-                        <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <img src="{{Vite::asset('resources/images/icons/team2.png')}}" alt="">
-                            <p class="size4 mt-2">ALI CHOKLI</p>
-                            <p class="text-note size2">TEXNIK DIREKTOR</p>
-                        </div>
-                    </div>
-                    <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
-                        <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <img src="{{Vite::asset('resources/images/icons/team1.png')}}" alt="">
-                            <p class="size4 mt-2">IVETTIK ALEKSAN</p>
-                            <p class="text-note size2">MOLIYA DIREKTOR</p>
-                        </div>
-                    </div>
-                    <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
-                        <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <img src="{{Vite::asset('resources/images/icons/team3.png')}}" alt="">
-                            <p class="size4 mt-2">AISHA FERIDE</p>
-                            <p class="text-note size2">BOSH DIREKTOR</p>
-                        </div>
-                    </div>
-                    <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
-                        <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <img src="{{Vite::asset('resources/images/icons/team1.png')}}" alt="">
-                            <p class="size4 mt-2">IVETTIK ALEKSAN</p>
-                            <p class="text-note size2">MOLIYA DIREKTOR</p>
-                        </div>
-                    </div>
-                    <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
-                        <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <img src="{{Vite::asset('resources/images/icons/team1.png')}}" alt="">
-                            <p class="size4 mt-2">IVETTIK ALEKSAN</p>
-                            <p class="text-note size2">MOLIYA DIREKTOR</p>
-                        </div>
-                    </div>
-                    <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
-                        <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <img src="{{Vite::asset('resources/images/icons/team3.png')}}" alt="">
-                            <p class="size4 mt-2">SASHA SUNAME</p>
-                            <p class="text-note size2">YURDIK DIREKTOR</p>
-                        </div>
-                    </div>
-                    <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
-                        <div class="w-full h-full object-cover flex flex-col justify-center items-center">
-                            <img src="{{Vite::asset('resources/images/icons/team1.png')}}" alt="">
-                            <p class="size4 mt-2">IVETTIK ALEKSAN</p>
-                            <p class="text-note size2">MOLIYA DIREKTOR</p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="absolute top-0 -left-4 h-full items-center hidden md:flex">
-                    <button role="button" class="prev px-2 py-2 rounded-full bg-neutral-100 text-neutral-900 group"
-                            aria-label="prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                             stroke="currentColor"
-                             class="w-5 h-5 group-active:-translate-x-2 transition-all duration-200 ease-linear">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/>
-                        </svg>
+                    @foreach($team as $worker)
 
-                    </button>
+                        <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
+                            <div class="w-full h-full object-cover flex flex-col justify-center items-center">
+                                <img class="w"
+                                    src="{{'/storage'. $worker->icon ?? Vite::asset('resources/images/icons/team1.png')}}"
+                                    alt="">
+                                <p class="size4 mt-2">{{ $worker->full_name }}</p>
+                                <p class="size2 text-note">{{ $worker->position }}</p>
+                            </div>
+                        </div>
+
+                    @endforeach
+
                 </div>
-                <div class="absolute top-0 -right-4 h-full items-center hidden md:flex">
-                    <button role="button" class="next px-2 py-2 rounded-full bg-neutral-100 text-neutral-900 group"
-                            aria-label="next">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                             stroke="currentColor"
-                             class="w-5 h-5 group-active:translate-x-2 transition-all duration-200 ease-linear">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/>
-                        </svg>
-                    </button>
-                </div>
+                @if(count($team) > 5)
+                    <div class="absolute top-0 -left-4 h-full items-center hidden md:flex">
+                        <button role="button" class="prev px-2 py-2 rounded-full bg-neutral-100 text-neutral-900 group"
+                                aria-label="prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                 stroke="currentColor"
+                                 class="w-5 h-5 group-active:-translate-x-2 transition-all duration-200 ease-linear">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/>
+                            </svg>
+
+                        </button>
+                    </div>
+                    <div class="absolute top-0 -right-4 h-full items-center hidden md:flex">
+                        <button role="button" class="next px-2 py-2 rounded-full bg-neutral-100 text-neutral-900 group"
+                                aria-label="next">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                 stroke="currentColor"
+                                 class="w-5 h-5 group-active:translate-x-2 transition-all duration-200 ease-linear">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/>
+                            </svg>
+                        </button>
+                    </div>
+                @else
+
+                @endif
             </div>
         </div>
-
     </section>
 
     <section class="heroes mt-20">
@@ -607,6 +387,7 @@
     <script>
         ymaps.ready(init)
         let yandexURL = 'https://yandex.uz/maps/10335/tashkent/stops/1543141649/?ll=69.182982%2C41.267897&tab=overview&z=19.72'
+
         function init() {
             let map = new ymaps.Map('map', {
                 zoom: 18,

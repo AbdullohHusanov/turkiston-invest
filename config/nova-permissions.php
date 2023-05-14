@@ -259,5 +259,64 @@ return [
             'description' => 'Can delete main page config',
             'group' => 'Main Page Config',
         ],
+        'view forum' => [
+            'display_name' => 'View forum',
+            'description' => 'Can view forum',
+            'group' => 'Forum',
+        ],
+
+        'view all forum' => [
+            'display_name' => 'View all forum',
+            'description' => 'Can all view forum',
+            'group' => 'Forum',
+        ],
+
+        'create forum' => [
+            'display_name' => 'Create forum',
+            'description' => 'Can create forum',
+            'group' => 'Forum',
+        ],
+
+        'edit forum' => [
+            'display_name' => 'Edit forum',
+            'description' => 'Can edit forum',
+            'group' => 'Forum',
+        ],
+
+        'delete forum' => [
+            'display_name' => 'Delete forum',
+            'description' => 'Can delete forum',
+            'group' => 'Forum',
+        ],
+
+        'view forum comments' => [
+            'display_name' => 'View forum comments',
+            'description' => 'Can view forum comments',
+            'group' => 'Forum Comment',
+        ],
+
+        'view all forum comments' => [
+            'display_name' => 'View all forum comments',
+            'description' => 'Can all view forum comments',
+            'group' => 'Forum Comment',
+        ],
+
+        'create forum comments' => [
+            'display_name' => 'Create forum comments',
+            'description' => 'Can create forum comments',
+            'group' => 'Forum Comment',
+        ],
+
+        'edit forum comments' => [
+            'display_name' => 'Edit forum comments',
+            'description' => 'Can edit forum comments',
+            'group' => 'Forum Comment',
+        ],
+
+        'delete forum comments' => [
+            'display_name' => 'Delete forum comments',
+            'description' => 'Can delete forum comments',
+            'group' => 'Forum Comment',
+        ],
     ],
 ];
