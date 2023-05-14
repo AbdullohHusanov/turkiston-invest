@@ -13,13 +13,17 @@ class MainController extends Controller
 {
     public function index()
     {
+        $configs = [];
         $team = MainPageTeamSection::all();
-        $contents = MainPageConfig::query()->get();
         $blog = Post::query()->orderBy('created_at', 'desc')->get()->take(3);
         $news = PostsCategories::query()->where('name_en','=','News')->with('posts')->get()->first();
         $news = $news->posts->take(3);
         $mostViewed = Post::query()->orderBy('view', 'desc')->get()->take(3);
+        $contents = MainPageConfig::query()->get();
 //        dd($news);
+        foreach ($contents as $content) {
+            array_push($configs,  $content['key'] = $content['value']);
+        }
         return view('site.pages.home', ['contents' => $contents, 'team' => $team, 'mostViewed' => $mostViewed, 'news' => $news, 'blog' => $blog]);
     }
 
