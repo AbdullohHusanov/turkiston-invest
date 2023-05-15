@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Illuminate\Support\Facades\Auth::routes([]);
 
-Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
-    \UniSharp\LaravelFilemanager\Lfm::routes();
-});
+//Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {
+//    \UniSharp\LaravelFilemanager\Lfm::routes();
+//});
 
 Route::get('/', [\App\Http\Controllers\MainController::class, 'index']);
 

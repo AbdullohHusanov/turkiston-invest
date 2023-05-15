@@ -43,7 +43,6 @@ class ForumCommentController extends Controller
             'question_id' => Cache::get('view_forums' . $request->userAgent()),
             'client_id' => auth()->user()->id,
         ]);
-
         return redirect(url()->previous())->with('success', 'comment create');
     }
 
@@ -59,7 +58,6 @@ class ForumCommentController extends Controller
 
         $parentCommentId = $data['_id'];
         $message = $data['message'];
-
         ForumComment::query()->create([
             'message' => $message,
             'question_id' => Cache::get('view_forums' . $request->userAgent()),

@@ -44,6 +44,7 @@ $lang = app()->getLocale();
 
 
         @if(auth()->check())
+
             <form action="{{ route('blog-comment.store') }}" method="POST">
                 @csrf
                 <div class="flex mt-5">
@@ -103,7 +104,7 @@ $lang = app()->getLocale();
                 </div>
             @endif
             <div class="flex justify-center mt-10">
-                @include('site.components.pagination', ['pagesCount' => $pagesCount])
+                @include('site.components.pagination', [1])
             </div>
         </div>
     </div>

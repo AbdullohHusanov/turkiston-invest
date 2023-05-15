@@ -1,11 +1,10 @@
 @extends('site.layouts.main')
 @section('title', __('Forum page'))
-
 @section('content')
     <div class="container mt-10">
         <p class="size5 font-bold">{{ $forum->title_question }}</p>
         <br>
-        <p class="size4 ml-3">{{ $forum->description_question }}</p>
+        <p class="size4">{{ $forum->description_question }}</p>
         <div class="flex justify-between w-fit">
             <div class="flex items-center">
                 <span class="icon-news-user flex items-center"></span>
@@ -30,21 +29,34 @@
         @if(auth()->check())
             <form action="{{ route('forum-comment') }}" method="POST">
                 @csrf
+                <div class="flex items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                         class="bi bi-reply" viewBox="0 0 16 16" id="IconChangeColor" transform="scale(-1, 1)">
+                        <path
+                            d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z"
+                            id="mainIconPathAttribute" stroke="#dcbf85"></path>
+                    </svg>
+                    <div class="flex justify-between w-full mx-2">
+                        <div class="flex flex-col mx-2">
+                            <p class="size1">Author comment</p>
+                            <p class="size1" style="white-space: nowrap; width: calc(100% - 50px);overflow: hidden;text-overflow: ellipsis;">Comment Comment Comment Comment Comment Comment Comment Comment Comment Comment Comment Comment </p>
+                        </div>
+                        <p class="size1 icon-close-icon cursor-pointer"></p>
+                    </div>
+                </div>
+
                 <div class="flex mt-5">
                     <div class="avatar"><span>{{ strtoupper(auth()->user()->name[0]) }}</span></div>
                     <textarea class="w-full" name="message" placeholder="Присоединиться к обсуждению..."></textarea>
                 </div>
+
                 <div class="flex justify-between float-right mt-3">
                     <button type="submit" class="comment-btn">Comment</button>
                 </div>
             </form>
         @else
             <div style="text-align: center; padding: 15px;">
-                <h3>
-                    Iltimos avval <a href="/register">ro'yxatdan o'ting</a> yoki <a href="/login">kiring</a>
-
-                </h3>
-
+                <h3>Iltimos avval <a href="/register">ro'yxatdan o'ting</a> yoki <a href="/login">kiring</a></h3>
             </div>
             <hr style="border-bottom: 2px solid #DCBF85">
         @endif
@@ -81,17 +93,16 @@
                                         <p>{{ $comment->dislike ?? 18 }}</p>
                                     </span>
                                     </form>
-                                    {{--                                <p>Ответить</p>--}}
-
                                     @if(auth()->check())
                                         <form action="{{ route('forum-comment-to-comment') }}" method="POST">
-                                            @csrf
-                                            <div class="flex mt-5 ml-3 ">
-                                                <input class="hidden" name="_id" value="{{$comment->id}}">
-                                                <textarea class="w-1/2" name="message"
-                                                          placeholder="Присоединиться к обсуждению..."></textarea>
-                                                <button type="submit" class="comment-btn">Ответить</button>
-                                            </div>
+                                        @csrf
+                                        <button id="comment-btn" value="{{$comment->id}}">Ответить</button>
+                                            {{--                                            <div class="flex mt-5 ml-3 ">--}}
+                                            {{--                                                <input class="hidden" name="_id" value="{{$comment->id}}">--}}
+                                            {{--                                                <textarea class="w-1/2" name="message"--}}
+                                            {{--                                                          placeholder="Присоединиться к обсуждению..."></textarea>--}}
+                                            {{--                                                <button type="submit" class="comment-btn">Ответить</button>--}}
+                                            {{--                                            </div>--}}
                                         </form>
                                     @else
                                         <div style="text-align: center; padding: 15px;">
@@ -143,16 +154,17 @@
                                 </div>
                             </div>
                         </div>
+
                     @endif
                 @endforeach
+                <div class="flex justify-center mt-10">
+                    @include('site.components.pagination')
+                </div>
             @else
-                <p>
+                <p class="text-center">
                     Comment Not Found
                 </p>
             @endif
-            <div class="flex justify-center mt-10">
-                @include('site.components.pagination')
-            </div>
         </div>
     </div>
 @endsection
