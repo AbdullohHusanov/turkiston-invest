@@ -23,6 +23,9 @@ class User extends Authenticatable implements MustVerifyEmail
         'name',
         'email',
         'password',
+        'surname',
+        'family_name',
+        'phone'
     ];
 
     /**
@@ -44,38 +47,38 @@ class User extends Authenticatable implements MustVerifyEmail
         'email_verified_at' => 'datetime',
     ];
 
-    public function posts():HasMany
+    public function posts(): HasMany
     {
         return $this->hasMany(Post::class, 'created_by', 'id');
     }
 
-    public function pages():HasMany
+    public function pages(): HasMany
     {
         return $this->hasMany(Page::class, 'created_by', 'id');
     }
 
-    public function posts_categories():HasMany
+    public function posts_categories(): HasMany
     {
         return $this->hasMany(PostsCategories::class);
     }
 
-    public function pages_categories():HasMany
+    public function pages_categories(): HasMany
     {
         return $this->hasMany(PagesCategories::class);
     }
 
-    public function comments():HasMany
+    public function comments(): HasMany
     {
         return $this->hasMany(PostComments::class);
     }
 
-    public function forums():HasMany
+    public function forums(): HasMany
     {
-        return $this->hasMany(Forum::class, 'client_id','id');
+        return $this->hasMany(Forum::class, 'client_id', 'id');
     }
 
-    public function forumComments():HasMany
+    public function forumComments(): HasMany
     {
-        return $this->hasMany(ForumComment::class, 'client_id','id');
+        return $this->hasMany(ForumComment::class, 'client_id', 'id');
     }
 }

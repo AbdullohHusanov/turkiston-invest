@@ -23,18 +23,14 @@ class SimpleController extends Controller
 
     public function repost(Request $request, $slug = null): \Illuminate\Contracts\View\View|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application
     {
-        $page = Page::query()->where('slug',$slug)->get()->first();
+        $page = $slug === null ? null : Page::query()->where('slug',$slug)->get()->first();
         $allPages = Page::all();
-//        dd($page->createdBy->name);
         return view('site.pages.repost', ['currentPage' => $page, 'allPages' => $allPages]);
     }
+
     public function repostFilter(Request $request, $year)
     {
         dd('ok');
-//        $page = Page::query()->where('created_at', '>=',$year)->get();
-//        $allPages = Page::all();
-//        dd($page);
-//        return view('site.pages.repost', ['currentPage' => $page, 'allPages' => $allPages]);
     }
 
     public function blog(Request $request)
@@ -54,7 +50,6 @@ class SimpleController extends Controller
         }
 
         $posts = $category->posts;
-//        $allPost = Post::query()->paginate(10, ['*'], 'page', $request['page'] ?? 1);
         $categories = PostsCategories::all();
 
         return view('site.pages.blog', ['categories' => $categories, 'posts' => $posts, 'pagesCount' => 3/*$allPost->lastPage()*/]);
@@ -94,11 +89,11 @@ class SimpleController extends Controller
 
     public function forum(Request $request): \Illuminate\Contracts\View\View|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application
     {
-        $forums = Forum::query()->paginate(10,['*'],'forum',$request->get('page') ?? 1);
+        $forums = Forum::query()->paginate(10, ['*'], 'forum', $request->get('page') ?? 1);
         $topForums = Forum::query()->orderBy('view', 'desc')->get()->take(5);
         $lastPage = $forums->lastPage();
         $forums = $forums->items() == [] ? null : $forums;
-        return view('site.pages.forum', ['topForums' => $topForums,'forums' => $forums, 'pageCount'=> $lastPage]);
+        return view('site.pages.forum', ['topForums' => $topForums, 'forums' => $forums, 'pageCount' => $lastPage]);
     }
 
     public function forumItem(Request $request, $slug): \Illuminate\Contracts\View\View|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application
@@ -125,8 +120,10 @@ class SimpleController extends Controller
 
         return view('site.pages.forum-item', ['forum' => $forum, 'comments' => $comments, 'pageCount' => $comments->lastPage()]);
     }
+
     public function addForum(Request $request): \Illuminate\Contracts\View\View|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application
     {
+        dd('onponoibuoda');
         return view('site.pages.add-forum');
     }
 

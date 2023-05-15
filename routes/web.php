@@ -36,6 +36,7 @@ Route::get('/{locale?}', [\App\Http\Controllers\MainController::class, 'indexSet
 Route::get('locale/{locale}', [\App\Http\Controllers\MainController::class, 'indexChangeLocale']);
 Route::resource('/blog-comment', \App\Http\Controllers\PostCommentsController::class);
 
+Route::get('/add-forum', [\App\Http\Controllers\SimpleController::class, 'addForum']);
 Route::post('/forum-comment', [\App\Http\Controllers\ForumCommentController::class, 'store'])->name('forum-comment');
 Route::post('/forum-comment-to-comment', [\App\Http\Controllers\ForumCommentController::class, 'create'])->name('forum-comment-to-comment');
 

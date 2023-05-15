@@ -55,8 +55,8 @@ RUN docker-php-ext-install -j$(nproc) ftp
 RUN docker-php-ext-install -j$(nproc) pdo
 RUN docker-php-ext-install -j$(nproc) pdo_mysql
 
-RUN pecl install xdebug
-RUN docker-php-ext-enable xdebug
+#RUN pecl install xdebug
+#RUN docker-php-ext-enable xdebug
 
 RUN pecl install redis
 RUN docker-php-ext-enable redis

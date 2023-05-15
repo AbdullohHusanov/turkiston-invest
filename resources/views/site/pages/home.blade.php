@@ -11,7 +11,7 @@
             </p>
         </div>
     </div>
-    @if($contents[0]['value'] === "true")
+    @if($contents['news_enable'] === "true")
         <section class="news">
             <div class="container px-3">
                 <div class="section-title w-full md:w-1/2">YANGILIKLAR</div>
@@ -48,7 +48,7 @@
     @else
 
     @endif
-    @if($contents[1]['value'] === "true")
+    @if($contents['most_viewed_enable'] === "true")
         <section class="news">
             <div class="container px-3">
                 <div class="section-title w-full md:w-1/2">ENG KO’P KO’RILGANLARI</div>
@@ -85,7 +85,7 @@
     @else
 
     @endif
-    @if($contents[2]['value'] === "true")
+    @if($contents['blog_enable'] === "true")
         <section class="news">
             <div class="container px-3">
                 <div class="section-title w-full md:w-1/2">BLOG</div>
@@ -122,7 +122,7 @@
     @else
 
     @endif
-    @if($contents[4]['value'] === "true")
+    @if($contents['contact_us_enable'] === "true")
         <section class="contactUs  relative z-0 mt-20">
             <div class="container px-3">
                 <div class="section-title w-full md:w-1/2">BIZ BILAN BOG'LANISH</div>
@@ -139,32 +139,32 @@
                             <p class="size5 font-bold mb-10">Biz bilan bog'lanish</p>
                             <div class="flex items-center my-2">
                                 <span class="icon-phone-icon"></span>
-                                <p class="ml-2 size2">{{ $contents[15]->value }}</p>
+                                <p class="ml-2 size2">{{ $contents['call_back_phone'] }}</p>
                             </div>
 
                             <div class="flex items-center my-2">
                                 <span class="icon-email-icon"></span>
-                                <p class="ml-2 size2">{{ $contents[16]->value }}</p>
+                                <p class="ml-2 size2">{{ $contents['call_back_email'] }}</p>
                             </div>
 
                             <div class="flex items-center my-2">
                                 <span class="icon-map-icon"></span>
-                                <p class="ml-2 size2">{{ $contents[17]->value }}</p>
+                                <p class="ml-2 size2">{{ $contents['call_back_location'] }}</p>
                             </div>
 
                             <div class="flex items-center my-2">
                                 <span class="icon-map-icon"></span>
-                                <p class="ml-2 size2">{{ $contents[17]->value }}</p>
+                                <p class="ml-2 size2">{{ $contents['call_back_location'] }}</p>
                             </div>
                             <div class="flex items-center my-2">
                                 <span class="icon-map-icon"></span>
-                                <p class="ml-2 size2">{{ $contents[17]->value }}</p>
+                                <p class="ml-2 size2">{{ $contents['call_back_location'] }}</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            @if($contents[6]->value === "true") @endif
+            @if($contents['call_back_enable'] === "true") @endif
             <div class="container px-3">
                 <div class="size6 section-title w-full md:w-1/2">QAYTA ALOQA</div>
                 <div class="contact-form md:flex justify-start items-center mb-10">
@@ -213,7 +213,7 @@
     @else
 
     @endif
-    @if($contents[3]->value === "true")
+    @if($contents['mission_enable'] === "true")
     <section class="mission">
         <div class="container px-3">
 
@@ -221,19 +221,19 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 items-center">
                 <div class="mb-5 mx-auto md:mb-0 md:mx-0">
-                    <img class="inline-block dark:hidden" src="{{ $contents[12]->value ?? Vite::asset('resources/logos/logo-big-light.svg')}}"
+                    <img class="inline-block dark:hidden" src="{{ $contents['mission_img_light'] ?? Vite::asset('resources/logos/logo-big-light.svg')}}"
                          alt="Logo" width="282">
-                    <img class="hidden dark:block" src="{{ $contents[13]->value ?? Vite::asset('resources/logos/logo-big-dark.svg')}}" alt="Logo"
+                    <img class="hidden dark:block" src="{{ $contents['mission_img_dark'] ?? Vite::asset('resources/logos/logo-big-dark.svg')}}" alt="Logo"
                          width="282">
                 </div>
                 <div class="size3 text-note">
-                    {{ $contents[14]->value }}
+                    {{ $contents['mission_text'] }}
                 </div>
             </div>
         </div>
     </section>
     @endif
-    @if($contents[5]->value === "true")
+    @if($contents['about_us_enable'] === "true")
     <section class="about">
         <div class="container px-3">
             <div class="section-title w-full md:w-1/2">JAMIYAT HAQIDA</div>
@@ -243,7 +243,7 @@
         </div>
     </section>
     @endif
-    @if($contents[7]->value === "true")
+    @if($contents['results_enable'] === "true")
     <section class="specification">
         <div class="container px-3">
             <div class="section-title w-full md:w-1/2">
@@ -253,19 +253,19 @@
 
                 <div class="specification-item">
                     <div class="icon-specification-1 flex justify-center mb-5"></div>
-                    <p class="specification-text">{{ $contents[9]->value }}+</p>
+                    <p class="specification-text">{{ $contents['result_year_experience'] }}+</p>
                     <p class="specification-text">yillik tajriba</p>
                 </div>
 
                 <div class="specification-item">
                     <div class="icon-specification-2 flex justify-center mb-5"></div>
-                    <p class="specification-text">{{ $contents[10]->value }}+</p>
+                    <p class="specification-text">{{ $contents['result_shareholders'] }}+</p>
                     <p class="specification-text">aksionerlar</p>
                 </div>
 
                 <div class="specification-item">
                     <div class="icon-specification-3 flex justify-center mb-5"></div>
-                    <p class="specification-text">{{ $contents[11]->value }}+ </p>
+                    <p class="specification-text">{{ $contents['result_bonds'] }}+ </p>
                     <p class="specification-text">abligatsiyalar</p>
                 </div>
 
@@ -273,7 +273,7 @@
         </div>
     </section>
     @endif
-    @if($contents[8]->value === "true") @endif
+    @if($contents['team_enable'] === "true")
     <section class="team">
         <div class="section-title w-full md:w-1/2">JAMOA</div>
         <div id="app" class="container transition-all duration-500 ease-linear">
@@ -324,6 +324,8 @@
             </div>
         </div>
     </section>
+    @else
+    @endif
 
     <section class="heroes mt-20">
         <div class="container px-3">

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\MainPageConfig;
 use App\Models\MainPageTeamSection;
+use App\Models\Menu;
 use App\Models\Post;
 use App\Models\PostsCategories;
 use Illuminate\Support\Facades\Cache;
@@ -13,6 +14,9 @@ class MainController extends Controller
 {
     public function index()
     {
+        $menusItems = nova_get_menu_by_slug('site_main_menu', 'ru'/*,app()->getLocale()*/);
+        Menu::all();
+        dd($menusItems);
         $configs = [];
         $team = MainPageTeamSection::all();
         $blog = Post::query()->orderBy('created_at', 'desc')->get()->take(3);
@@ -20,11 +24,11 @@ class MainController extends Controller
         $news = $news->posts->take(3);
         $mostViewed = Post::query()->orderBy('view', 'desc')->get()->take(3);
         $contents = MainPageConfig::query()->get();
-//        dd($news);
         foreach ($contents as $content) {
-            array_push($configs,  $content['key'] = $content['value']);
+            $configs["{$content['key']}"] = "{$content['value']}";
         }
-        return view('site.pages.home', ['contents' => $contents, 'team' => $team, 'mostViewed' => $mostViewed, 'news' => $news, 'blog' => $blog]);
+//        dd($configs['news_enable']);
+        return view('site.pages.home', ['contents' => $configs, 'team' => $team, 'mostViewed' => $mostViewed, 'news' => $news, 'blog' => $blog]);
     }
 
     public function indexSetLocale($locale = null): \Illuminate\Contracts\View\View|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application|NotFoundHttpException
