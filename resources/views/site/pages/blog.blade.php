@@ -17,18 +17,18 @@
                         @endforeach
                     </div>
                     <p class="font-bold text-xl">Popular Articles</p>
-                    @foreach($posts as $post)
+                    @foreach($topPosts as $topPost)
                         <div class="article-item">
-                            <a href="{{ $post->slug }}">
-                                {{ $post['title_' . $lang] }}
+                            <a href="{{ $topPost->slug }}">
+                                {{ $topPost['title_' . $lang] }}
                                 <div class="flex justify-between w-fit">
                                     <div class="flex items-center">
                                         <span class="icon-news-user flex items-center"></span>
-                                        <p class="size2 text-mute ml-1"> {{ $post->createdBy->name }}</p>
+                                        <p class="size2 text-mute ml-1"> {{ $topPost->createdBy->name }}</p>
                                     </div>
                                     <div class="flex items-center mx-3">
                                         <span class="icon-news-calendar flex"></span>
-                                        <p class="size2 text-mute ml-1">{{ $post->created_at }}{{--01-01-2021--}}</p>
+                                        <p class="size2 text-mute ml-1">{{ $topPost->created_at }}{{--01-01-2021--}}</p>
                                     </div>
                                 </div>
                             </a>
@@ -39,7 +39,7 @@
                     @foreach($posts as $post)
                         <div id="{{ $category['name_'.$lang] }}" class="tab-content">
                             <div class="post-item">
-                                <img src="{{ '/storage'.$post->img ?? Vite::asset('resources/images/icons/background/video-back.svg')}}"
+                                <img src="{{ '/storage/'.$post->img ?? Vite::asset('resources/images/icons/background/video-back.svg')}}"
                                      alt=""
                                      width="200">
                                 <div class="post-content">

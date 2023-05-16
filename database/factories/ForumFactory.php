@@ -20,7 +20,8 @@ class ForumFactory extends Factory
             'title_question' => fake()->text(30),
             'description_question' => fake()->text(190),
             'slug' => fake()->slug,
-            'view' => fake()->numerify()
+            'view' => fake()->numerify(),
+            'client_id' => fake()->randomElement([1,2])
         ];
     }
 }

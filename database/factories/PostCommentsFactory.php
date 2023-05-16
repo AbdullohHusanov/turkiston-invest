@@ -22,8 +22,8 @@ class PostCommentsFactory extends Factory
             'message' => fake()->text(60),
             'like' => fake()->numerify(),
             'dislike' => fake()->numerify(),
-            'client_id' => $this->for(User::factory()->create()),
-            'post_id' => $this->for(Post::factory()->create())
+            'client_id' => fake()->randomElement([1,2]),
+            'post_id' => fake()->randomElement([1,2,3,4,5])
         ];
     }
 }

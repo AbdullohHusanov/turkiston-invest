@@ -2,20 +2,19 @@
 
 namespace Database\Seeders;
 
-use App\Models\PostComments;
+use App\Models\Forum;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class Post extends Seeder
+class ForumSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        \App\Models\Post::factory()
+        Forum::factory()
             ->count(5)
-            ->has(PostComments::factory()->count(4)->create())
             ->create();
     }
 }

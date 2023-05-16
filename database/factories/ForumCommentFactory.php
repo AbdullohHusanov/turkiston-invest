@@ -20,9 +20,11 @@ class ForumCommentFactory extends Factory
     {
         return [
             'message' => fake()->text(70),
-            'question_id' => $this->for(Forum::factory(), 'question'),
-            'client_id' => $this->has(User::factory()),
-            'parent_id' => null
+            'question_id' => fake()->randomElement([1,2,3,4,5]),
+            'like' => fake()->numerify(),
+            'dislike' => fake()->numerify(),
+            'client_id' => fake()->randomElement([1,2]),
+            'parent_id' => fake()->randomElement([null, fake()->numberBetween(1,15)])
         ];
     }
 }

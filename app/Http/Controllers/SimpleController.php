@@ -51,8 +51,10 @@ class SimpleController extends Controller
 
         $posts = $category->posts;
         $categories = PostsCategories::all();
-
-        return view('site.pages.blog', ['categories' => $categories, 'posts' => $posts, 'pagesCount' => 3/*$allPost->lastPage()*/]);
+        $topPosts = Post::query()->orderBy('view', 'desc')->get()->take(5);
+//        $posts = Post::query()->where('category')
+        dd($posts[10]);
+        return view('site.pages.blog', ['categories' => $categories, 'posts' => $posts, 'pagesCount' => 3, 'topPosts' => $topPosts]);
     }
 
     public function blogItem(Request $request, $slug)//: \Illuminate\Contracts\View\View|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application
@@ -84,7 +86,7 @@ class SimpleController extends Controller
         }
 
         $commentsPage = PostComments::query()->where('post_id', $post->id)->paginate(10, '*', '', $request->get('page') ?? 1);
-        return view('site.pages.blog-item', ['post' => $post, 'comments' => $commentsPage ?? null, 'pageCount' => $commentsPage->lastPage()]);
+        return view('site.pages.blog-item', ['post' => $post, 'comments' => $commentsPage ?? null, 'pagesCount' => $commentsPage->lastPage()]);
     }
 
     public function forum(Request $request): \Illuminate\Contracts\View\View|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application

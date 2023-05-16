@@ -23,15 +23,15 @@ class PostFactory extends Factory
             'title_en' => 'Post of '.fake()->numerify().' number',
             'slug' => fake()->slug(),
             'view' => fake()->numerify(),
-            'content_uz' => fake()->text(160),
-            'content_ru' => fake()->text(160),
-            'content_en' => fake()->text(160),
+            'content_uz' => fake()->text(260),
+            'content_ru' => fake()->text(260),
+            'content_en' => fake()->text(260),
             'description_uz' => fake()->text(40),
             'description_ru' => fake()->text(40),
             'description_en' => fake()->text(40),
-            'img' => fake()->image(),
-            'created_by' => $this->has(User::factory(), 'createdBy'),
-            'updated_by' => $this->has(User::factory(), 'updatedBy')
+            'img' => 'logo-social.png',
+            'created_by' => fake()->randomElement([1,2]),
+            'updated_by' => fake()->randomElement([1,2])
         ];
     }
 }

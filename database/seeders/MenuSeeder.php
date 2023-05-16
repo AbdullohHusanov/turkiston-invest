@@ -13,9 +13,9 @@ class MenuSeeder extends Seeder
      */
     public function run(): void
     {
-        Menu::factory()
-            ->count(3)
-            ->hasMenuItem(4)
-            ->create();
+        Menu::insert([
+            'name' => 'Main',
+            'slug' => 'site_main_menu'
+        ]);
     }
 }

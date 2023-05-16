@@ -12,7 +12,15 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-
+        $this->call([
+            MenuSeeder::class,
+            MenuItemSeeder::class,
+            PostSeeder::class,
+            PostCommentSeeder::class,
+            PageSeeder::class,
+            ForumSeeder::class,
+            ForumCommentSeeder::class
+        ]);
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([

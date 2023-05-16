@@ -2,19 +2,19 @@
 
 namespace Database\Seeders;
 
-use App\Models\PostComments;
+use App\Models\ForumComment;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class PostComment extends Seeder
+class ForumCommentSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        PostComments::factory()
-            ->count(5)
+        ForumComment::factory()
+            ->count(15)
             ->create();
     }
 }
