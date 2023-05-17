@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\ForumComment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Validation\ValidationException;
 
 class ForumCommentController extends Controller
 {
@@ -35,16 +36,22 @@ class ForumCommentController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'message' => 'required|string',
-        ]);
-        ForumComment::query()->create([
-            'message' => $request->get('message'),
-            'question_id' => Cache::get('view_forums' . $request->userAgent()),
-            'client_id' => auth()->user()->id,
-        ]);
+        try {
+            $request->validate([
+                'message' => 'required|string',
+                '_id' => 'string'
+            ]);
+            ForumComment::query()->create([
+                'message' => $request['message'],
+                'question_id' => Cache::get('view_forums' . $request->userAgent()),
+                'client_id' => auth()->user()->id,
+                'parent_id' => $request['_id'] ?? null
+            ]);
 
-        return redirect(url()->previous())->with('success', 'comment create');
+            return redirect(url()->previous())->with('success', 'comment create');
+        } catch (ValidationException $exception) {
+            return redirect()->back()->with(['error' => $exception->getMessage()]);
+        }
     }
 
     /**
@@ -52,19 +59,16 @@ class ForumCommentController extends Controller
      */
     public function create(Request $request)
     {
-        $data = $request->validate([
+        $request->validate([
             '_id' => 'required|string',
             'message' => 'required|string'
         ]);
 
-        $parentCommentId = $data['_id'];
-        $message = $data['message'];
-
         ForumComment::query()->create([
-            'message' => $message,
+            'message' => $request['message'],
             'question_id' => Cache::get('view_forums' . $request->userAgent()),
             'client_id' => auth()->user()->id,
-            'parent_id' => $parentCommentId
+            'parent_id' => $request['_id']
         ]);
 
         return redirect(url()->previous())->with('success', 'comment create');

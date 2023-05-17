@@ -58,12 +58,12 @@
                     @endforeach
                 @else
                     <div>
-                        <p>🖕</p>
+                        <p>Not Found🖕</p>
                     </div>
                 @endif
 
                 <div class="flex justify-center mt-10">
-                    @include('site.components.pagination', ['pageCount' => $pageCount])
+                    @include('site.components.pagination', ['model' => $forums])
                 </div>
             </div>
         </div>

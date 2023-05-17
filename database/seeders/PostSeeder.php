@@ -23,28 +23,44 @@ class PostSeeder extends Seeder
         PostCategories::insert([
             [
                 'post_id' => 1,
-                'category_id' => 1
+                'category_id' => 1,
+                'created_at' => now(),
+                'updated_at' => now()
             ],[
                 'post_id' => 2,
-                'category_id' => 1
+                'category_id' => 1,
+                'created_at' => now(),
+                'updated_at' => now()
             ],[
                 'post_id' => 3,
-                'category_id' => 1
+                'category_id' => 1,
+                'created_at' => now(),
+                'updated_at' => now()
             ],[
                 'post_id' => 4,
-                'category_id' => 1
+                'category_id' => 1,
+                'created_at' => now(),
+                'updated_at' => now()
             ],[
                 'post_id' => 5,
-                'category_id' => 1
+                'category_id' => 1,
+                'created_at' => now(),
+                'updated_at' => now()
             ],[
                 'post_id' => 3,
-                'category_id' => 2
+                'category_id' => 2,
+                'created_at' => now(),
+                'updated_at' => now()
             ],[
                 'post_id' => 5,
-                'category_id' => 2
+                'category_id' => 2,
+                'created_at' => now(),
+                'updated_at' => now()
             ],[
                 'post_id' => 4,
-                'category_id' => 2
+                'category_id' => 2,
+                'created_at' => now(),
+                'updated_at' => now()
             ]
         ]);
     }

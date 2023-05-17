@@ -11,18 +11,6 @@ class PostCommentsController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function like(Request $request)
-    {
-        dd('ok');
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function dislike(Request $request)
-    {
-        dd('no');
-    }
 
     /**
      * Store a newly created resource in storage.

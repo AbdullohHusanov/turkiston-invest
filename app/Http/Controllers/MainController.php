@@ -14,9 +14,6 @@ class MainController extends Controller
 {
     public function index()
     {
-        $menusItems = nova_get_menu_by_slug('site_main_menu', 'ru'/*,app()->getLocale()*/);
-        Menu::all();
-//        dd($menusItems);
         $configs = [];
         $team = MainPageTeamSection::all();
         $blog = Post::query()->orderBy('created_at', 'desc')->get()->take(3);

@@ -55,7 +55,13 @@
                         </div>
                     @endforeach
                     <div class="flex justify-center mt-10">
-                        @include('site.components.pagination', ['pagesCount' => $pagesCount])
+                        <div class="pagination">
+                            <a href="{{$posts->previousPageUrl()}}{{$posts->previousPageUrl() ? '&': '?'}}category={{$selected_category}}">&laquo;</a>
+                            @for($i = 1; $i <= $posts->lastPage(); $i++)
+                                <a href="?category={{$selected_category}}&page={{ $i }}" class="{{$posts->currentPage() === $i ? 'active': ''}}">{{ $i }}</a>
+                            @endfor
+                            <a href="{{$posts->nextPageUrl()}}{{$posts->nextPageUrl() ? '&': '?'}}category={{$selected_category}}">&raquo;</a>
+                        </div>
                     </div>
                 </div>
             </div>

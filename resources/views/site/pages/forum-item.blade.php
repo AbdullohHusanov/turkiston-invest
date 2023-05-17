@@ -84,7 +84,7 @@
                                     {{--                                <p>Ответить</p>--}}
 
                                     @if(auth()->check())
-                                        <form action="{{ route('forum-comment-to-comment') }}" method="POST">
+                                        <form action="{{ route('forum-comment') }}" method="POST">
                                             @csrf
                                             <div class="flex mt-5 ml-3 ">
                                                 <input class="hidden" name="_id" value="{{$comment->id}}">
@@ -151,7 +151,7 @@
                 </p>
             @endif
             <div class="flex justify-center mt-10">
-                @include('site.components.pagination')
+                @include('site.components.pagination',['model' => $comments])
             </div>
         </div>
     </div>
