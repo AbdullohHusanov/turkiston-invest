@@ -10,7 +10,7 @@
             <div class="container px-3 flex justify-center items-center h-full">
                 <p class="size8 w-full  text-center text-white">
                     @if($currentPage !== null)
-                    {{ $currentPage['title_'.app()->getLocale()] }}
+                        {{ $currentPage['title_'.app()->getLocale()] }}
                     @else
 
                     @endif
@@ -24,9 +24,10 @@
                 <div class="logo mb-8"></div>
 
                 <p class="size3 font-medium text-center my-5">HISOBOT DAVRINI TANLANG</p>
-                <form action="{{ route('repost-filter') }}" method="POST">
+                <form action="{{ route('repost') }}" method="POST">
+                    @csrf
                     <div class="flex items-center gap-2">
-                        <select>
+                        <select name="year">
                             <option value="2022-01-01 00:00:00">2022</option>
                             <option value="2021-01-01 00:00:00">2021</option>
                             <option value="2020-01-01 00:00:00">2020</option>
@@ -34,14 +35,21 @@
                         <button class="button py-2">TANLASH</button>
                     </div>
                 </form>
-
-                @foreach($allPages as $page)
+                @if($allPages)
+                    @foreach($allPages as $page)
+                        <div class="my-5">
+                            <p class="size3">{!! $page['title_'.app()->getLocale()] !!}</p>
+                            <a href="{{'/repost/'.$page->slug}}"
+                               class="size3 text-link">{{ substr($page->created_at,0,10) }}</a>
+                        </div>
+                    @endforeach
+                @else
                     <div class="my-5">
-                        <p class="size3">{!! $page['title_'.app()->getLocale()] !!}</p>
-                        <a href="{{'/repost/'.$page->slug}}"
-                           class="size3 text-link">{{ substr($page->created_at,0,10) }}</a>
+                        <p>
+                            Pages Not Found
+                        </p>
                     </div>
-                @endforeach
+                @endif
             </div>
 
             <div class="content pl-5">
@@ -70,7 +78,7 @@
                     </p>
                 @else
                     <p>
-                        Content Not Found
+                        Content Not Selected
                     </p>
                 @endif
             </div>

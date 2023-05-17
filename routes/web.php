@@ -25,7 +25,7 @@ Route::get('/clients', [App\Http\Controllers\HomeController::class, 'index'])->n
 
 Route::get('/simple', [\App\Http\Controllers\SimpleController::class, 'index']);
 Route::get('/repost/{slug?}', [\App\Http\Controllers\PageController::class,'repost']);
-Route::post('/repostFilter', [\App\Http\Controllers\PageController::class,'repostFilter'])->name('repost-filter');
+Route::post('/repost', [\App\Http\Controllers\PageController::class,'repostFilter'])->name('repost');
 
 Route::get('/blog', [\App\Http\Controllers\BlogController::class,'blog']);
 Route::get('/blog/{slug?}', [\App\Http\Controllers\BlogController::class,'blogItem']);

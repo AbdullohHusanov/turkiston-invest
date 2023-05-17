@@ -14,8 +14,12 @@ class PageController extends Controller
         return view('site.pages.repost', ['currentPage' => $page, 'allPages' => $allPages]);
     }
 
-    public function repostFilter(Request $request)
+    public function repostFilter(Request $request): \Illuminate\Contracts\View\View|\Illuminate\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application
     {
-        dd($request);
+        $year = (+(substr($request['year'], 0,4)))+1 . '-01-01 00:00:00';
+
+        $pages = Page::query()->where('created_at', '>', $request['year'])->where('created_at', '<', $year)->get() ?? null;
+//        dd($pages);
+        return view('site.pages.repost', ['currentPage' => $pages[0] ?? null, 'allPages' => $pages ?? null]);
     }
 }
