@@ -7,7 +7,6 @@ use App\Models\ForumComment;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Validation\ValidationException;
-use mysql_xdevapi\CrudOperationLimitable;
 use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\NotFoundExceptionInterface;
 
@@ -78,7 +77,7 @@ class ForumController extends Controller
         }
     }
 
-    public function createForumComment (Request $request)
+    public function createForumComment(Request $request)
     {
         $forum = Forum::query()->where('slug', $request->get('slug'))->get()->first();
         $replyComment = ForumComment::query()->find($request->get('_id'));
@@ -86,6 +85,7 @@ class ForumController extends Controller
         Cache::set('view_forums' . $request->userAgent(), $forum->id, 3600);
         return view('site.pages.forum-item', ['forum' => $forum, 'comments' => $comments, 'replyComment' => $replyComment]);
     }
+
     public function storeForumComment(Request $request)
     {
         try {
@@ -99,7 +99,7 @@ class ForumController extends Controller
                 'client_id' => auth()->user()->id,
                 'parent_id' => $request['_id'] ?? null
             ]);
-            return redirect($request['slug'] ? 'forum/'.$request['slug'] : url()->previous())->with('success', 'comment create');
+            return redirect($request['slug'] ? 'forum/' . $request['slug'] : url()->previous())->with('success', 'comment create');
         } catch (ValidationException $exception) {
             return redirect()->back()->with(['error' => $exception->getMessage()]);
         }

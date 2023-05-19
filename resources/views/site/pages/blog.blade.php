@@ -16,7 +16,7 @@
                             </a>
                         @endforeach
                     </div>
-                    <p class="font-bold text-xl">Popular Articles</p>
+                    <p class="font-bold text-xl">{{__('Popular Articles')}}</p>
                     @foreach($topPosts as $topPost)
                         <div class="article-item">
                             <a href="blog/{{ $topPost->slug }}">
@@ -28,7 +28,7 @@
                                     </div>
                                     <div class="flex items-center mx-3">
                                         <span class="icon-news-calendar flex"></span>
-                                        <p class="size2 text-mute ml-1">{{ $topPost->created_at }}{{--01-01-2021--}}</p>
+                                        <p class="size2 text-mute ml-1">{{ $topPost->created_at }}</p>
                                     </div>
                                 </div>
                             </a>
@@ -49,7 +49,7 @@
                                     <p class="hidden md:block">
                                         {!! $post['description_'.$lang] !!}
                                     </p>
-                                    <a href="/blog/{{ $post['slug'] }}"><span>Read more</span></a>
+                                    <a href="/blog/{{ $post['slug'] }}"><span>{{__('Read more')}}</span></a>
                                 </div>
                             </div>
                         </div>
@@ -67,24 +67,4 @@
             </div>
         </div>
     </section>
-@endsection
-
-@section('custom_js')
-{{--    <script>--}}
-{{--        function openCity(evt, cityName) {--}}
-{{--            let i, tabcontent, tablinks;--}}
-{{--            tabcontent = document.getElementsByClassName("tabcontent");--}}
-{{--            for (i = 0; i < tabcontent.length; i++) {--}}
-{{--                tabcontent[i].style.display = "none";--}}
-{{--            }--}}
-{{--            tablinks = document.getElementsByClassName("tablinks");--}}
-{{--            for (i = 0; i < tablinks.length; i++) {--}}
-{{--                tablinks[i].className = tablinks[i].className.replace(" active", "");--}}
-{{--            }--}}
-{{--            document.getElementById(cityName).style.display = "block";--}}
-{{--            evt.currentTarget.className += " active";--}}
-{{--        }--}}
-
-{{--        document.getElementById("defaultOpen").click();--}}
-{{--    </script>--}}
 @endsection

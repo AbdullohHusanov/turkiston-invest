@@ -13,8 +13,11 @@ return [
     |
     */
 
-    'failed' => 'Бу ҳисоб маълумотлари бизнинг ёзувларимизга мос келмайди.',
-    'password' => 'Тақдим этилган парол нотўғри.',
-    'throttle' => 'Кириш уринишлари жуда коʻп. Илтимос, :seconds сониядан кейин қайта уриниб кўринг.',
+    'Posts' => 'Xabarlar',
+    'Pages' => 'Sahifalar',
+    'PostComments' => 'Xabar fikrlari',
+    'PostsCategories' => 'Xabarlar toifalari',
+    'PagesCategories' => 'Sahifalar toifalari',
+    'MainPageConfig' => 'Asosiy sahifa konfiguratsiyasi',
 
 ];

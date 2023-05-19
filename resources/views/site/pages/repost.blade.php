@@ -23,7 +23,7 @@
             <div class="menu border-r pr-5">
                 <div class="logo mb-8"></div>
 
-                <p class="size3 font-medium text-center my-5">HISOBOT DAVRINI TANLANG</p>
+                <p class="size3 font-medium text-center my-5">{{__("HISOBOT DAVRINI TANLANG")}}</p>
                 <form action="{{ route('repost') }}" method="POST">
                     @csrf
                     <div class="flex items-center gap-2">
@@ -32,7 +32,7 @@
                             <option value="2021-01-01 00:00:00">2021</option>
                             <option value="2020-01-01 00:00:00">2020</option>
                         </select>
-                        <button class="button py-2">TANLASH</button>
+                        <button class="button py-2">{{__("TANLASH")}}</button>
                     </div>
                 </form>
                 @if($allPages)
@@ -46,7 +46,7 @@
                 @else
                     <div class="my-5">
                         <p>
-                            Pages Not Found
+                            {{__("Pages Not Found")}}
                         </p>
                     </div>
                 @endif
@@ -78,7 +78,7 @@
                     </p>
                 @else
                     <p>
-                        Content Not Selected
+                        {{__("Content Not Selected")}}
                     </p>
                 @endif
             </div>

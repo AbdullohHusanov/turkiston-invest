@@ -18,7 +18,7 @@ $lang = app()->getLocale();
         <div class="flex justify-between w-fit mt-10">
             <div class="flex items-center">
                 <span class="icon-news-user flex items-center"></span>
-                <p class="size1 text-mute ml-1">{{$post->createdBy->name}}{{--Admin Admin--}}</p>
+                <p class="size1 text-mute ml-1">{{$post->createdBy->name}}</p>
             </div>
             <div class="flex items-center mx-3">
                 <span class="icon-news-calendar flex"></span>
@@ -38,7 +38,7 @@ $lang = app()->getLocale();
     <div class="container">
         <div class="comments">
             <div class="flex justify-between">
-                <p>{{ count($comments) }} Комментариев</p>
+                <p>{{ count($comments) }} {{__('Комментариев')}}</p>
             </div>
         </div>
 
@@ -51,13 +51,15 @@ $lang = app()->getLocale();
                     <textarea class="w-full" name="message" placeholder="Присоединиться к обсуждению..."></textarea>
                 </div>
                 <div class="flex justify-between float-right mt-3">
-                    <button type="submit" class="comment-btn">Comment</button>
+                    <button type="submit" class="comment-btn">{{__('Comment')}}</button>
                 </div>
             </form>
         @else
             <div style="text-align: center; padding: 15px;">
                 <h3>
-                    Iltimos avval <a href="/register">ro'yxatdan o'ting</a> yoki <a href="/login">kiring</a>
+                    {{__('Iltimos avval') }}<a href="/register">{{__('ro\'yxatdan o\'ting')}}</a>
+                    {{__('yoki')}} <a
+                        href="/login">{{__('kiring')}}</a>')
 
                 </h3>
 
@@ -94,14 +96,13 @@ $lang = app()->getLocale();
                                             <p>{{ $comment->dislike ?? 20 }}</p>
                                     </span>
                                 </form>
-                                {{--                                <p>Ответить</p>--}}
                             </div>
                         </div>
                     </div>
                 @endforeach
             @else
                 <div class="comment-item">
-                    <p>Not Comment</p>
+                    <p>{{__('Not Comment')}}</p>
                 </div>
             @endif
             <div class="flex justify-center mt-10">

@@ -5,7 +5,7 @@
     <div class="forum-wrapper mt-10">
         <div class="container">
             <div class="articles hidden md:block">
-                <p class="size6 font-bold">Popular Articles</p>
+                <p class="size6 font-bold">{{__('Popular Articles')}}</p>
                 @foreach($topForums as $forum)
                     <div class="article-item">
                         <a class="size3" href="/forum/{{ $forum->slug }}">
@@ -27,8 +27,8 @@
 
             <div class="forums-list pl-0 md:pl-5">
                 <div class="flex justify-between mb-5">
-                    <p class="size6 font-bold">Recent articles</p>
-                    <a href="/add-forum" class="comment-btn hover:text-white">Add</a>
+                    <p class="size6 font-bold">{{__('Recent articles')}}</p>
+                    <a href="/add-forum" class="comment-btn hover:text-white">{{__('Add')}}</a>
                 </div>
                 @if($forums !== null)
                     @foreach($forums as $forum)
@@ -62,7 +62,7 @@
                     @endforeach
                 @else
                     <div>
-                        <p>Not Found🖕</p>
+                        <p>{{__('Not Found')}}</p>
                     </div>
                 @endif
 
