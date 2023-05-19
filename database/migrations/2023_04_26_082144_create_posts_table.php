@@ -23,7 +23,7 @@ return new class extends Migration {
             $table->text('description_uz');
             $table->text('description_ru');
             $table->text('description_en');
-            $table->string('img')->nullable()->default('/logo-social.png');
+            $table->string('img')->nullable()->default('/default_image_posts.jpg');
             $table->bigInteger('created_by')->unsigned()->nullable()->default(null);
             $table->bigInteger('updated_by')->unsigned()->nullable()->default(null);
             $table->timestamps();

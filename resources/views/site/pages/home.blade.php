@@ -284,12 +284,12 @@
                     @foreach($team as $worker)
 
                         <div class="slide aspect-[4/6] h-full flex-shrink-0 snap-center rounded overflow-hidden">
-                            <div class="w-full h-full object-cover flex flex-col justify-center items-center">
+                            <div class="object-cover flex flex-col justify-center items-center mr-5">
                                 <img class="w"
-                                    src="{{'/storage'. $worker->icon ?? Vite::asset('resources/images/icons/team1.png')}}"
+                                    src="{{'/storage/'. $worker->icon ?? Vite::asset('resources/images/icons/team1.png')}}"
                                     alt="">
                                 <p class="size4 mt-2">{{ $worker->full_name }}</p>
-                                <p class="size2 text-note">{{ $worker->position }}</p>
+                                <p class="size2 text-center text-note">{{ $worker->position }}</p>
                             </div>
                         </div>
 

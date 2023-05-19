@@ -29,7 +29,7 @@ class PostFactory extends Factory
             'description_uz' => fake()->text(40),
             'description_ru' => fake()->text(40),
             'description_en' => fake()->text(40),
-            'img' => 'logo-social.png',
+            'img' => 'default_image_posts.jpg',
             'created_by' => fake()->randomElement([1,2]),
             'updated_by' => fake()->randomElement([1,2])
         ];

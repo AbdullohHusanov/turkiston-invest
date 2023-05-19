@@ -37,11 +37,10 @@ class BlogController extends Controller
             $cat = $category_in;
         }
 
-//        dd($request->getRequestUri());
         $categories = PostsCategories::all();
         $topPosts = Post::query()->orderBy('view', 'desc')->get()->take(5);
         $posts_ids = PostCategories::query()->where('category_id', $category->id)->get('post_id');
-        $posts = Post::query()->whereIn('id', $posts_ids)->paginate(10, ['*'], 'page', $request->get('page') ?? 1);
+        $posts = Post::query()->orderBy('id','desc')->whereIn('id', $posts_ids)->paginate(10, ['*'], 'page', $request->get('page') ?? 1);
         return view('site.pages.blog', ['categories' => $categories, 'posts' => $posts, 'topPosts' => $topPosts,'selected_category' => $cat]);
     }
 
