@@ -19,4 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/test', [\App\Http\Controllers\TestController::class, 'index']);
-Route::get('/forum-comments', [\App\Http\Controllers\ForumCommentController::class, 'index']);
+Route::get('/forum-comments', [\App\Http\Controllers\ForumController::class, 'insi']);

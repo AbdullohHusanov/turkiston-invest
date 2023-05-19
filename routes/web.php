@@ -36,8 +36,9 @@ Route::post('/blog-comment/dislike', [\App\Http\Controllers\BlogController::clas
 Route::get('/forum', [\App\Http\Controllers\ForumController::class,'forum']);
 Route::get('/forum/{slug?}', [\App\Http\Controllers\ForumController::class,'forumItem']);
 Route::get('/add-forum', [\App\Http\Controllers\ForumController::class, 'createForum']);
-Route::post('/add-forum', [\App\Http\Controllers\ForumController::class, 'insertForm']);
-Route::post('/forum-comment', [\App\Http\Controllers\ForumController::class, 'store'])->name('forum-comment');
+Route::get('/forum-comment/{slug?}', [\App\Http\Controllers\ForumController::class, 'createForumComment'])->name('forum-comment');
+Route::post('/add-forum', [\App\Http\Controllers\ForumController::class, 'insertForm'])->name('add-forum');
+Route::post('/forum-comment', [\App\Http\Controllers\ForumController::class, 'storeForumComment'])->name('forum-comment');
 Route::post('/forum-comment/like', [\App\Http\Controllers\ForumController::class, 'like'])->name('forum-comment-like');
 Route::post('/forum-comment/dislike', [\App\Http\Controllers\ForumController::class, 'dislike'])->name('forum-comment-dislike');
 

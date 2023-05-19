@@ -19,7 +19,7 @@
                     <p class="font-bold text-xl">Popular Articles</p>
                     @foreach($topPosts as $topPost)
                         <div class="article-item">
-                            <a href="{{ $topPost->slug }}">
+                            <a href="blog/{{ $topPost->slug }}">
                                 {{ $topPost['title_' . $lang] }}
                                 <div class="flex justify-between w-fit">
                                     <div class="flex items-center">

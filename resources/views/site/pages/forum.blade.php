@@ -28,7 +28,7 @@
             <div class="forums-list pl-0 md:pl-5">
                 <div class="flex justify-between mb-5">
                     <p class="size6 font-bold">Recent articles</p>
-                    <a href="#" class="comment-btn hover:text-white">Add</a>
+                    <a href="/add-forum" class="comment-btn hover:text-white">Add</a>
                 </div>
                 @if($forums !== null)
                     @foreach($forums as $forum)

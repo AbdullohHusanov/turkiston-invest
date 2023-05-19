@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class ForumComment extends Model
 {
@@ -29,8 +30,8 @@ class ForumComment extends Model
         return $this->belongsTo(User::class, 'client_id', 'id');
     }
 
-    public function children()
+    public function children(): HasMany
     {
-        return $this::query()->where('parent_id', $this->id)->get();
+        return $this->hasMany(ForumComment::class, 'parent_id', 'id');
     }
 }
