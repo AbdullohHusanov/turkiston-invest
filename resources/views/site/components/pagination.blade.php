@@ -1,12 +1,11 @@
-<?php
-$pageCount = $model->lastPage() ?? 0;
-$currentPage = $model->currentPage() ?? 1;
-?>
+<?php $pageCount = $pageCount ?? 5 ?>
 
 <div class="pagination">
-    <a href="{{$model->previousPageUrl()}}">&laquo;</a>
+{{--        <a href="?page=previous">&laquo;</a>--}}
     @for($i = 1; $i <= $pageCount; $i++)
-        <a href="?page={{ $i }}" class="{{$currentPage === $i ? 'active': ''}}">{{ $i }}</a>
+        @if($pageCount != 1)
+            <a href="?page={{ $i }}" class="">{{ $i }}</a>
+        @endif
     @endfor
-    <a href="{{$model->nextPageUrl()}}">&raquo;</a>
+{{--        <a href="?page=next">&raquo;</a>--}}
 </div>

@@ -53,6 +53,9 @@
     .comment-item {
         display: flex;
         margin: 20px 0 20px 0;
+        .comment-info {
+            width: 100%;
+        }
     }
 
     .voting {
